@@ -25,6 +25,12 @@ class ScrabblePlayer:
         number_to_pick = RACK_MAX_SIZE - len(self.rack)
         self.rack += self.game.drawTiles(number_to_pick)
 
+    def exchangeTiles(self, to_replace):
+        for tile in to_replace:
+            self.rack.remove(tile)
+        number_to_pick = RACK_MAX_SIZE - len(self.rack)
+        self.rack += self.game.drawTiles(number_to_pick)
+
     def chooseMove(self, board):
         move = {}
         print "My current rack:"
@@ -34,8 +40,14 @@ class ScrabblePlayer:
         while True:
             txt = raw_input("Enter row, col, tile: ")
             if txt:
-                row, col, tile = txt.split()
-                move[int(row), int(col)] = tile
+                tokens = txt.split()
+                if len(tokens) == 3:
+                    row, col, tile = tokens
+                    move[int(row), int(col)] = tile.lower()
+                elif len(tokens) == 2 and tokens[0].lower() == "exchange":
+                    print "Exchanging ", tokens[1]
+                    self.exchangeTiles(tokens[1])
+                    return {}  # have to pass when exchanging
             else:
                 break
         return move
