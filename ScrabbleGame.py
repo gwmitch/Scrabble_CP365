@@ -4,25 +4,26 @@ import numpy as np
 import random
 import time
 import sys
+sys.path.append('/usr/local/lib/python2.7/site-packages')
 import cv2
+import twl
 from ScrabbleBoard import *
 from scrabble_globals import *
-
 
 class ScrabbleGame:
 
     tile_distribution = "eeeeeeeeeeeeaaaaaaaaaiiiiiiiiioooooooonnnnnnrrrrrrttttttllllssssuuuuddddgggbbccmmppffhhvvwwyykjxqz"
 
     def __init__(self, board_size=7):
-        self.word_list = {}
+        # self.word_list = {}
         self.board_size = board_size
         self.board = ScrabbleBoard(board_size)
         if VISUALIZE:
             self.initVisualize()
         self.tile_bag = self.initTiles(len(self.tile_distribution))
-        word_list_file = open(WORDLIST_FILENAME, 'r')
-        for line in word_list_file:
-            self.word_list[line.strip()] = True
+        # word_list_file = open(WORDLIST_FILENAME, 'r')
+        # for line in word_list_file:
+        #     self.word_list[line.strip()] = True
         self.old_board_score = 0
 
 
@@ -210,7 +211,7 @@ class ScrabbleGame:
             return True
         else:
             #os.system('''espeak -s 130 -v mb-en1 "checking %s"''' % word)
-            return word in self.word_list
+            return twl.check(word)
 
     def boardWouldBeLegal(self, move):
         # Fake move
