@@ -44,7 +44,7 @@ class ScrabbleGame:
     def pickRandomTile(self):
         return self.tile_bag.pop(random.randrange(len(self.tile_bag)))
 
-    def drawInitialTiles(self, rack_size=7):
+    def drawTiles(self, rack_size=7):
         rack = []
         for i in range(rack_size):
             rack += self.pickRandomTile()

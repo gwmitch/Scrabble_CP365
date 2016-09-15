@@ -4,8 +4,8 @@ from ScrabbleBot import *
 
 if __name__ == "__main__":
     sg = ScrabbleGame(BOARD_SIZE)
-    player1 = ScrabblePlayer(sg.drawInitialTiles(), sg)
-    player2 = ScrabbleBot(sg.drawInitialTiles(), sg)
+    player1 = ScrabblePlayer(sg.drawTiles(RACK_MAX_SIZE), sg)
+    player2 = ScrabbleBot(sg.drawTiles(RACK_MAX_SIZE), sg)
 
     p1turn = True
     if VISUALIZE:
@@ -29,6 +29,7 @@ if __name__ == "__main__":
             if sg.isLegalMove(m) and curr_player.hasTiles(m):
                 print m
                 points = sg.finalMove(m)
+                curr_player.updateRack(m)
                 print "SCORE %d POINTS" % points
                 curr_player.receiveScore(points)
                 if p1turn:
