@@ -26,18 +26,6 @@ class ScrabbleGame:
         #     self.word_list[line.strip()] = True
         self.old_board_score = 0
 
-
-    def hasTiles(self, move):
-        rack_copy = self.rack[:]
-        for m in move.values():
-            if m not in rack_copy:
-                return False
-            else:
-                rack_copy.remove(m)
-
-        return True
-
-
     def getScreen(self):
         # Build ANN input board
         # 26 = 1-hot encoding for letters

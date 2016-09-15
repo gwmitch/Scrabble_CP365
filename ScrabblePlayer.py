@@ -3,11 +3,21 @@
 # Base player class...defaults to human console control
 class ScrabblePlayer:
 
-    def __init__(self, starting_tiles):
+    def __init__(self, starting_tiles, game):
         self.rack = starting_tiles
+        self.game = game
 
     def receiveScore(self, points):
         print "Just got %d points!" % points
+
+    def hasTiles(self, move):
+        rack_copy = self.rack[:]
+        for m in move.values():
+            if m not in rack_copy:
+                return False
+            else:
+                rack_copy.remove(m)
+        return True
 
     def chooseMove(self, board):
         move = {}
