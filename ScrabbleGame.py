@@ -43,12 +43,18 @@ class ScrabbleGame:
 
 
     def pickRandomTile(self):
-        return self.tile_bag.pop(random.randrange(len(self.tile_bag)))
+        if len(self.tile_bag) > 0:
+            return self.tile_bag.pop(random.randrange(len(self.tile_bag)))
+        else:
+            print "OUT OF TILES IN THE BAG!!!"
+            return ''
 
     def drawTiles(self, rack_size=7):
         rack = []
         for i in range(rack_size):
-            rack += self.pickRandomTile()
+            r = self.pickRandomTile()
+            if r != '':
+                rack += r
         return rack
 
     def initTiles(self, number_tiles = 100):
