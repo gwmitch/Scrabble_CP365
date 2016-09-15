@@ -1,6 +1,7 @@
 import twl
 
-def evaluate_word(word, index, spaces_before, letters):
+def evaluate_word(word, index, spaces_before, letters, hand):
+    original_hand_size = len(hand)
     # explained later in the code
     letters_search = letters + " "
 
@@ -19,7 +20,18 @@ def evaluate_word(word, index, spaces_before, letters):
                 if letters[offset_i] != word[i]:
                     words_match = False
                     break
+            else:
+
+                if not word[i] in hand:
+                    return -1
+                else:
+                    letter_index = hand.index(word[i])
+                    hand = hand[:letter_index] + hand[letter_index+1:]
         if words_match:
+            # check if any letter from hand has been used
+            if len(hand) >= original_hand_size:
+                return -1
+
             # previously we appended a space to the letters on board, so that we don't run into
             # a non-existing index issue
             if letters_search[offset+len(word)] == ' ':
@@ -44,8 +56,8 @@ def anagram(boardword, hand):
             for word in combinations:
                 letter_occurrences = [index for index, char in enumerate(word) if char == letter]
                 for index in letter_occurrences:
-                    offset = evaluate_word(word, index, spaces_before, letters)
+                    offset = evaluate_word(word, index, spaces_before, letters, hand)
                     if (offset > -1):
                         possible_words.append((offset, word ))
 
-    return possible_words
+    return list(set(possible_words))
