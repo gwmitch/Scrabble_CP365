@@ -1,4 +1,4 @@
-
+from scrabble_globals import *
 
 # Base player class...defaults to human console control
 class ScrabblePlayer:
@@ -18,6 +18,12 @@ class ScrabblePlayer:
             else:
                 rack_copy.remove(m)
         return True
+
+    def updateRack(self, previous_move):
+        for tile in previous_move.values():
+            self.rack.remove(tile)
+        number_to_pick = RACK_MAX_SIZE - len(self.rack)
+        self.rack += self.game.drawTiles(number_to_pick)
 
     def chooseMove(self, board):
         move = {}

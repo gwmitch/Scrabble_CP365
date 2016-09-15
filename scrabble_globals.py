@@ -23,6 +23,8 @@ BOARD_FILENAME = IMAGES_DIR + "board.png"
 # Visualization will not work with values other than 15!!!!
 BOARD_SIZE = 15  # 15 is standard Scrabble board
 
+RACK_MAX_SIZE = 7
+
 
 TILE_POINTS = {
     'a':1,
