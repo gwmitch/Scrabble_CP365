@@ -29,7 +29,7 @@ def evaluate_word(word, index, spaces_before, letters):
 
 
 def anagram(boardword, hand):
-    letters, = boardword
+    letters = boardword
     cleanstring = letters.strip()
     combo = cleanstring + hand
     combinations = list(twl.anagram(combo))
@@ -46,6 +46,6 @@ def anagram(boardword, hand):
                 for index in letter_occurrences:
                     offset = evaluate_word(word, index, spaces_before, letters)
                     if (offset > -1):
-                        possible_words.append([offset, word])
+                        possible_words.append((offset, word ))
 
     return possible_words
