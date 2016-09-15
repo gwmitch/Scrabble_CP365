@@ -1,5 +1,6 @@
 import numpy as np;
 import twl;
+import random;
 from ScrabblePlayer import *
 from scrabble_globals import *
 
@@ -22,9 +23,9 @@ class ScrabbleBot(ScrabblePlayer):
         move = {}
         move = self.buildList()
         move = self.checkLegalMoves(move)
-        print move[0]
+        print move
         print self.rack
-        return move[0]
+        return random.choice(move)
 
 
     def buildList(self):
@@ -62,7 +63,7 @@ class ScrabbleBot(ScrabblePlayer):
         for move in moves:
             if(self.game.boardWouldBeLegal(move)):
                 finalMoves.append(move)
-                # print move
+                print move
         return finalMoves
 
 
