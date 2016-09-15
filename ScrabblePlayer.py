@@ -40,7 +40,6 @@ class ScrabblePlayer:
         while True:
             txt = raw_input("Enter row, column, (direction,) word: ")
             if txt:
-<<<<<<< HEAD
                 ltxt = txt.split()
                 print ltxt
                 if len(ltxt) == 4:
@@ -65,7 +64,7 @@ class ScrabblePlayer:
                     else:
                         col += 1
                 return move
-=======
+
                 tokens = txt.split()
                 if len(tokens) == 3:
                     row, col, tile = tokens
@@ -74,6 +73,5 @@ class ScrabblePlayer:
                     print "Exchanging ", tokens[1]
                     self.exchangeTiles(tokens[1])
                     return {}  # have to pass when exchanging
->>>>>>> 16a3aa81c730fbce982504838537aa90619387b4
             else:
                 break
