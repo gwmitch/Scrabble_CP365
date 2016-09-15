@@ -3,8 +3,9 @@
 # Base player class...defaults to human console control
 class ScrabblePlayer:
 
-    def __init__(self, starting_tiles):
+    def __init__(self, starting_tiles, game):
         self.rack = starting_tiles
+        self.game = game
 
     def receiveScore(self, points):
         print "Just got %d points!" % points

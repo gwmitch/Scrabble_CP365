@@ -4,8 +4,8 @@ from ScrabbleBot import *
 
 if __name__ == "__main__":
     sg = ScrabbleGame(BOARD_SIZE)
-    player1 = ScrabblePlayer(sg.drawInitialTiles())
-    player2 = ScrabbleBot(sg.drawInitialTiles())
+    player1 = ScrabblePlayer(sg.drawInitialTiles(), sg)
+    player2 = ScrabbleBot(sg.drawInitialTiles(), sg)
 
     p1turn = True
     if VISUALIZE:
