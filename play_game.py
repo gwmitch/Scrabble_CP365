@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
         m = curr_player.chooseMove(sg.board)
         if len(m) > 0:
-            if sg.isLegalMove(m):
+            if sg.isLegalMove(m) and curr_player.hasTiles(m):
                 print m
                 points = sg.finalMove(m)
                 print "SCORE %d POINTS" % points

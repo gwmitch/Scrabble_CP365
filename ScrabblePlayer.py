@@ -9,6 +9,15 @@ class ScrabblePlayer:
     def receiveScore(self, points):
         print "Just got %d points!" % points
 
+    def hasTiles(self, move):
+        rack_copy = self.rack[:]
+        for m in move.values():
+            if m not in rack_copy:
+                return False
+            else:
+                rack_copy.remove(m)
+        return True
+
     def chooseMove(self, board):
         move = {}
         print "My current rack:"
