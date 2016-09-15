@@ -69,4 +69,4 @@ class ScrabblePlayer:
                         col += 1
                 return move
             else:
-                break
+                return {}
