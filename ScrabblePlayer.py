@@ -29,7 +29,7 @@ class ScrabblePlayer:
             txt = raw_input("Enter row, col, tile: ")
             if txt:
                 row, col, tile = txt.split()
-                move[int(row), int(col)] = tile
+                move[int(row), int(col)] = tile.lower()
             else:
                 break
         return move
