@@ -20,7 +20,7 @@ $ export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 ```
 
 #### For Windows Users:
-```py
+```sh
 $ cd mwhitehead
 $ cd root
 $ rm *.*
