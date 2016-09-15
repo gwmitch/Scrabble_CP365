@@ -32,10 +32,31 @@ class ScrabblePlayer:
             print r.upper(),
         print
         while True:
-            txt = raw_input("Enter row, col, tile: ")
+            txt = raw_input("Enter row, column, (direction,) word: ")
             if txt:
-                row, col, tile = txt.split()
-                move[int(row), int(col)] = tile
+                ltxt = txt.split()
+                print ltxt
+                if len(ltxt) == 4:
+                    row, col, direction, word = ltxt
+                elif len(ltxt) == 3:
+                    row, col, word = ltxt
+                    direction = "h"
+                else:
+                    print "wrong input"
+                    return []
+                row = int(row)
+                col = int(col)
+                for c in word:
+                    while self.game.board.getTile(row,col) != " ":
+                        if direction == "v":
+                            row += 1
+                        else:
+                            col += 1
+                    move[int(row), int(col)] = c
+                    if direction == "v":
+                        row += 1
+                    else:
+                        col += 1
+                return move
             else:
                 break
-        return move
