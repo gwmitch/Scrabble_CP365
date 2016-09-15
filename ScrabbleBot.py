@@ -20,11 +20,15 @@ class ScrabbleBot(ScrabblePlayer):
     # Need to return a dictionary of (row, col):letter pairs
     # Input board is a ScrabbleBoard object
     def chooseMove(self, board):
-        move = {}
+        move = []
         move = self.buildList()
         move = self.checkLegalMoves(move)
-        print move
-        print self.rack
+        #print move
+        #print self.rack
+        if len(move) < 1:
+            move[7:7] = self.rack[0]
+            return {move[0]}
+
         return random.choice(move)
 
 
@@ -63,11 +67,12 @@ class ScrabbleBot(ScrabblePlayer):
         for move in moves:
             if(self.game.boardWouldBeLegal(move)):
                 finalMoves.append(move)
-                print move
+                #print move
         return finalMoves
 
 
-    def evaluate_word(self, word, index, spaces_before, letters):
+    def evaluate_word(self, word, index, spaces_before, letters,hand):
+        original_hand_size = len(hand)
         # explained later in the code
         letters_search = letters + " "
 
@@ -86,7 +91,17 @@ class ScrabbleBot(ScrabblePlayer):
                     if letters[offset_i] != word[i]:
                         words_match = False
                         break
+                else:
+
+                    if not word[i] in hand:
+                        return -1
+                    else:
+                        letter_index = hand.index(word[i])
+                        hand = hand[:letter_index] + hand[letter_index+1:]
             if words_match:
+                # check if any letter from hand has been used
+                if len(hand) >= original_hand_size:
+                    return -1
                 # previously we appended a space to the letters on board, so that we don't run into
                 # a non-existing index issue
                 if letters_search[offset+len(word)] == ' ':
@@ -111,8 +126,8 @@ class ScrabbleBot(ScrabblePlayer):
                 for word in combinations:
                     letter_occurrences = [index for index, char in enumerate(word) if char == letter]
                     for index in letter_occurrences:
-                        offset = self.evaluate_word(word, index, spaces_before, letters)
+                        offset = self.evaluate_word(word, index, spaces_before, letters, hand)
                         if (offset > -1):
                             possible_words.append((offset, word ))
 
-        return possible_words
+        return list(set(possible_words))
