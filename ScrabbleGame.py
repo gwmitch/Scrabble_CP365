@@ -204,7 +204,7 @@ class ScrabbleGame:
         if len(word) < 2:
             return True
         else:
-            #os.system('''espeak -s 130 -v mb-en1 "checking %s"''' % word)
+            # os.system('''espeak -s 130 -v mb-en1 "checking %s"''' % word)
             return twl.check(word)
 
     def boardWouldBeLegal(self, move):
@@ -243,11 +243,33 @@ class ScrabbleGame:
         return True
 
 
-    def getWordScore(self, word):
+    def getVerticalWordScore(self, word, row, col):
         score = 0
-        for w in word:
-            score += TILE_POINTS[w]
-        return score
+        word_multiplier = 1
+        for i in range(len(word)):
+            w = word[i]
+            if (row+i, col) in BOARD_LETTER_MULTIPLIERS:
+                multiplier = BOARD_LETTER_MULTIPLIERS[(row+i, col)]
+                score += TILE_POINTS[w] * multiplier
+            else:
+                score += TILE_POINTS[w]
+            if (row+i, col) in BOARD_WORD_MULTIPLIERS:
+                word_multiplier *= BOARD_WORD_MULTIPLIERS[(row+i, col)]
+        return score * word_multiplier
+
+    def getHorizontalWordScore(self, word, row, col):
+                score = 0
+                word_multiplier = 1
+                for i in range(len(word)):
+                    w = word[i]
+                    if (row, col+i) in BOARD_LETTER_MULTIPLIERS:
+                        multiplier = BOARD_LETTER_MULTIPLIERS[(row, col+i)]
+                        score += TILE_POINTS[w] * multiplier
+                    else:
+                        score += TILE_POINTS[w]
+                    if (row, col+i) in BOARD_WORD_MULTIPLIERS:
+                        word_multiplier *= BOARD_WORD_MULTIPLIERS[(row, col+i)]
+                return score * word_multiplier
 
     def getBoardValue(self):
         total = 0
@@ -261,7 +283,7 @@ class ScrabbleGame:
                 else:
                     word = self.getVerticalWord(row, col)
                     if len(word) > 1:
-                        total += self.getWordScore(word)
+                        total += self.getVerticalWordScore(word, row, col)
                     row += len(word) + 1
 
         # check the horizontals
@@ -273,7 +295,7 @@ class ScrabbleGame:
                 else:
                     word = self.getHorizontalWord(row, col)
                     if len(word) > 1:
-                        total += self.getWordScore(word)
+                        total += self.getHorizontalWordScore(word, row, col)
                     col += len(word) + 1
         return total
 
@@ -343,25 +365,3 @@ class ScrabbleGame:
 
         cv2.imshow('image', tmp_image)
         cv2.waitKey(100) # Don't close the window
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#
