@@ -6,8 +6,10 @@ import time
 import sys
 sys.path.append('/usr/local/lib/python2.7/site-packages')
 import cv2
+import subprocess
 import twl
 from ScrabbleBoard import *
+from ScrabbleVisualizer import *
 from scrabble_globals import *
 
 class ScrabbleGame:
@@ -398,3 +400,47 @@ class ScrabbleGame:
                               x_offset:x_offset+tile_img.shape[1]] = tile_img
 
         cv2.imwrite(BOARD_STATE_IMAGE, tmp_image)
+
+
+    def playGame(self, player1, player2):
+        p1turn = True
+        if VISUALIZE:
+            # Launch game viewer in a separate process
+            subprocess.Popen([PYTHON_EXECUTABLE, "run_visualizer.py"])
+
+        scores = {"player1":0, "player2":0}
+
+        consecutive_passes = 0
+        while True:
+            print self.board
+            print scores
+            if VISUALIZE:
+                self.dumpBoardImage()
+            if p1turn:
+                curr_player = player1
+            else:
+                curr_player = player2
+
+            m = curr_player.chooseMove(self.board)
+            if len(m) > 0:
+                consecutive_passes = 0
+                if self.isLegalMove(m) and curr_player.hasTiles(m):
+                    print m
+                    points = self.finalMove(m)
+                    curr_player.updateRack(m)
+                    print "SCORE %d POINTS" % points
+                    curr_player.receiveScore(points)
+                    if p1turn:
+                        scores['player1'] += points
+                    else:
+                        scores['player2'] += points
+            else:
+                print "PLAYER PASSED"
+                consecutive_passes += 1
+
+            if len(curr_player.rack) == 0 or consecutive_passes == 2:
+                print "GAME OVER"
+                print scores
+                return
+
+            p1turn = not p1turn
