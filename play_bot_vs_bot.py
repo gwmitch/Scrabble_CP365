@@ -6,7 +6,7 @@ from ScrabbleVisualizer import *
 
 if __name__ == "__main__":
     sg = ScrabbleGame(BOARD_SIZE)
-    player1 = ScrabblePlayer(sg.drawTiles(RACK_MAX_SIZE), sg)
+    player1 = ScrabbleBot(sg.drawTiles(RACK_MAX_SIZE), sg)
     player2 = ScrabbleBot(sg.drawTiles(RACK_MAX_SIZE), sg)
 
     p1turn = True
@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     while True:
         print sg.board
-        #print "BOARD VALUE:", sg.getBoardValue()
+        print "BOARD VALUE:", sg.getBoardValue()
         print scores
         if VISUALIZE:
             sg.dumpBoardImage()

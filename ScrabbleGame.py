@@ -25,6 +25,7 @@ class ScrabbleGame:
         # for line in word_list_file:
         #     self.word_list[line.strip()] = True
         self.old_board_score = 0
+        self.previously_formed_words = {} # Remember old words so scoring new moves is possible
 
     def getScreen(self):
         # Build ANN input board
@@ -65,10 +66,11 @@ class ScrabbleGame:
 
     def finalMove(self, move):
         self.performMove(move)
-        new_board_score = self.getBoardValue()
-        move_score = new_board_score - self.old_board_score
-        self.old_board_score = new_board_score
-        return move_score
+        #new_board_score = self.getBoardValue()
+        #move_score = new_board_score - self.old_board_score
+        #self.old_board_score = new_board_score
+        return self.scoreMove(move)
+        #return move_score
 
     def performMove(self, move):
         for key, val in move.items():
@@ -242,62 +244,95 @@ class ScrabbleGame:
         self.undoMove(move)
         return True
 
-
-    def getVerticalWordScore(self, word, row, col):
-        score = 0
+        
+    def getHorizontalWordScore(self, row, start_col, move):
+        # First find the col starting point of the move
+        leftmost_col = start_col
+                
+        # See if there are more existing tiles to the left
+        while self.board.getTile(row, leftmost_col) != ' ' and leftmost_col >= 0:
+            leftmost_col -= 1
+        leftmost_col += 1
+        
+        # Now work from left to right and calculate score
+        curr_col = leftmost_col
+        word_score = 0
         word_multiplier = 1
-        for i in range(len(word)):
-            w = word[i]
-            if (row+i, col) in BOARD_LETTER_MULTIPLIERS:
-                multiplier = BOARD_LETTER_MULTIPLIERS[(row+i, col)]
-                score += TILE_POINTS[w] * multiplier
-            else:
-                score += TILE_POINTS[w]
-            if (row+i, col) in BOARD_WORD_MULTIPLIERS:
-                word_multiplier *= BOARD_WORD_MULTIPLIERS[(row+i, col)]
-        return score * word_multiplier
+        while self.board.getTile(row, curr_col) != ' ' and curr_col < self.board_size:
+            letter_multiplier = 1
+            if (row, curr_col) in move:
+                if (row, curr_col) in BOARD_LETTER_MULTIPLIERS:
+                    letter_multiplier = BOARD_LETTER_MULTIPLIERS[(row, curr_col)] 
+                elif (row, curr_col) in BOARD_WORD_MULTIPLIERS:
+                    word_multiplier *= BOARD_WORD_MULTIPLIERS[(row, curr_col)]
+            print "letter SCORE: ", TILE_POINTS[self.board.getTile(row, curr_col)], "MULTIPLIER:", letter_multiplier
+            word_score += letter_multiplier * TILE_POINTS[self.board.getTile(row, curr_col)]
+            curr_col += 1
+        print "WORD SCORE: ", word_score, "MULTIPLIER:", word_multiplier
+        word_score *= word_multiplier
+        if curr_col - leftmost_col > 1:
+            return word_score
+        else:
+            return 0
+    
+    def getVerticalWordScore(self, start_row, col, move):
+        # First find the col starting point of the move
+        topmost_row = start_row
+                
+        # See if there are more existing tiles above
+        while self.board.getTile(topmost_row,col) != ' ' and topmost_row >= 0:
+            topmost_row -= 1
+        topmost_row += 1
+        
+        # Now work from top to bottom and calculate score
+        curr_row = topmost_row
+        word_score = 0
+        word_multiplier = 1
+        while self.board.getTile(curr_row, col) != ' ' and curr_row < self.board_size:
+            letter_multiplier = 1
+            if (curr_row, col) in move:
+                if (curr_row, col) in BOARD_LETTER_MULTIPLIERS:
+                    letter_multiplier = BOARD_LETTER_MULTIPLIERS[(curr_row, col)] 
+                elif (curr_row, col) in BOARD_WORD_MULTIPLIERS:
+                    word_multiplier *= BOARD_WORD_MULTIPLIERS[(curr_row, col)]
+            print "letter SCORE: ", TILE_POINTS[self.board.getTile(curr_row, col)], "MULTIPLIER:", letter_multiplier
+            word_score += letter_multiplier * TILE_POINTS[self.board.getTile(curr_row, col)]
+            curr_row += 1
+        print "WORD SCORE: ", word_score, "MULTIPLIER:", word_multiplier
+        word_score *= word_multiplier
+        if curr_row - topmost_row > 1:
+            return word_score
+        else:
+            return 0
+            
+    def scoreMove(self, move):
+        final_score = 0
+                        
+        if self.isMoveHorizontal(move):        
+            # First find the col starting point of the move
+            leftmost_col = self.board_size+1
+            for (row, col), letter in move.items():
+                if col < leftmost_col:
+                    leftmost_col = col
+                    
+            curr_row = move.keys()[0][0] # all have the same row because the move is horizontal
+            final_score += self.getHorizontalWordScore(curr_row, leftmost_col, move)
+            for (row, col), letter in move.items():
+                final_score += self.getVerticalWordScore(row, col, move)
+        else:
+            # First find the row starting point of the move
+            topmost_row = self.board_size+1
+            for (row, col), letter in move.items():
+                if row < topmost_row:
+                    topmost_row = row
+                    
+            curr_col = move.keys()[0][1] # all have the same col because the move is vertical
+            final_score += self.getVerticalWordScore(topmost_row, curr_col, move)
+            for (row, col), letter in move.items():
+                final_score += self.getHorizontalWordScore(row, col, move)
 
-    def getHorizontalWordScore(self, word, row, col):
-                score = 0
-                word_multiplier = 1
-                for i in range(len(word)):
-                    w = word[i]
-                    if (row, col+i) in BOARD_LETTER_MULTIPLIERS:
-                        multiplier = BOARD_LETTER_MULTIPLIERS[(row, col+i)]
-                        score += TILE_POINTS[w] * multiplier
-                    else:
-                        score += TILE_POINTS[w]
-                    if (row, col+i) in BOARD_WORD_MULTIPLIERS:
-                        word_multiplier *= BOARD_WORD_MULTIPLIERS[(row, col+i)]
-                return score * word_multiplier
+        return final_score
 
-    def getBoardValue(self):
-        total = 0
-
-        # check the verticals
-        for col in range(self.board.board_size):
-            row = 0
-            while row < self.board.board_size:
-                if self.board.getTile(row, col) == ' ':
-                    row += 1
-                else:
-                    word = self.getVerticalWord(row, col)
-                    if len(word) > 1:
-                        total += self.getVerticalWordScore(word, row, col)
-                    row += len(word) + 1
-
-        # check the horizontals
-        for row in range(self.board.board_size):
-            col = 0
-            while col < self.board.board_size:
-                if self.board.getTile(row, col) == ' ':
-                    col += 1
-                else:
-                    word = self.getHorizontalWord(row, col)
-                    if len(word) > 1:
-                        total += self.getHorizontalWordScore(word, row, col)
-                    col += len(word) + 1
-        return total
 
     def isLegalMove(self, move):
 
