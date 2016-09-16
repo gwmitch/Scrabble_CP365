@@ -9,7 +9,6 @@ import cv2
 import subprocess
 import twl
 import urllib2
-import wordnik
 from ScrabbleBoard import *
 from ScrabbleVisualizer import *
 from scrabble_globals import *
