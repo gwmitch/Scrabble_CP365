@@ -27,12 +27,21 @@ class ScrabbleBot(ScrabblePlayer):
         #print self.rack
 
         #if there is no move available, just do nothing
+        if self.game.board.isEmpty():
+            wordList = twl.anagram(''.join(self.rack))
+            for word in wordList:
+                defMove = {}
+                print word
+                for i in range(len(word)):
+                    defMove[(7, 7+i)] = word[i]
+                print defMove
+                move.append(defMove)
+            # defMove = {}
+            # x = 7,7
+            # defMove[x] = self.rack[0]
+            # return defMove
         if len(move) < 1:
-            defMove = {}
-            x = 7,7
-            defMove[x] = self.rack[0]
-            return defMove
-
+            return move
         return self.greedyMove(move)
 
 

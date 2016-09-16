@@ -67,6 +67,7 @@ class ScrabblePlayer:
                         row += 1
                     else:
                         col += 1
-                return move
+                if(self.game.boardWouldBeLegal(move)):
+                    return move
             else:
                 return {}
