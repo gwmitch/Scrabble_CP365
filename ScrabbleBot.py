@@ -33,7 +33,7 @@ class ScrabbleBot(ScrabblePlayer):
             defMove[x] = self.rack[0]
             return defMove
 
-        return random.choice(move)
+        return self.greedyMove(move)
 
 
     def buildList(self):
@@ -112,8 +112,6 @@ class ScrabbleBot(ScrabblePlayer):
                     return offset
         return -1
 
-
-
     def anagram(self, boardword, hand):
         letters = boardword.letter
         cleanstring = letters.strip()
@@ -135,3 +133,22 @@ class ScrabbleBot(ScrabblePlayer):
                             possible_words.append((offset, word ))
 
         return list(set(possible_words))
+
+    def bigMove(self, moves):
+        high = 0
+        for move in moves:
+            if len(move) > high:
+                high = len(move)
+                finalMove = move
+        return finalMove
+
+    def greedyMove(self, moves):
+        high = 0
+        for move in moves:
+            self.game.performMove(move)
+            if self.game.scoreMove(move) > high:
+                print high
+                high = self.game.scoreMove(move)
+                finalMove = move
+            self.game.undoMove(move)
+        return finalMove
