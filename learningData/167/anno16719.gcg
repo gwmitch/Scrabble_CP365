@@ -1,0 +1,36 @@
+#player1 Player_1 Player 1
+#player2 Player_2 Player 2
+#description Saved by Elise version 0.1.9 dev
+#lexicon TWL06
+>Player_1: AEIIOSU -AIIOU +0 0
+#note An endgame puzzle.
+>Player_2: DIKORS? 8G KID +16 16
+>Player_1: CDEFFSS J8 SEC +20 20
+>Player_2: MORSSZ? F6 ZaS +41 57
+>Player_1: DEFFGNS H7 DIFF +11 31
+>Player_2: EEMOORS I7 ODE +17 74
+>Player_1: AEGNOSW 11E WOGS +28 59
+>Player_2: ELMORRS 10D ROM +26 100
+>Player_1: AACEEIN 12D AE +10 69
+>Player_2: AAELMRS 6F ZA +11 111
+>Player_1: ACEIINX 6I CINE +15 84
+>Player_2: AELMRSU M6 SERUMAL +68 179
+>Player_1: AINPTTX N9 TAXI +32 116
+>Player_2: AEOPQUY O7 QUEY +59 238
+>Player_1: BELNPTT O12 BENT +35 151
+>Player_2: ABEHOPR 5J HOB +29 267
+>Player_1: DGHLNPT 13B PHT +18 169
+>Player_2: AAEPRVY B10 PREPAY +38 305
+>Player_1: DEEGLNU A8 GLUED +38 207
+>Player_2: AAINOTV 4J ATONIA +33 338
+>Player_1: AEJLNTW O1 JAWAN +45 252
+>Player_2: DGLORTV 15A GYRO +27 365
+>Player_1: EIILOOT -IILOO +0 252
+>Player_2: ADEILTV 15A GYROIDAL +39 404
+>Player_1: EENRRT? 7E TARDO +14 266
+>Player_1: EEINRV? (challenge) +125 391
+#note What a brutal challenge penalty! I give player 1 125 extra points just to make this position interesting (and to allow the GCG to load in Elise or Quackle with the right scores)...
+>Player_2: EIOOTUV 14H ETUI +8 412
+>Player_1: EEINRV? L3 ROBE +6 397
+>Player_2: IILNOOV N14 OI +10 422
+#rack1 EEINV?

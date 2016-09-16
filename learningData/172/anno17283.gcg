@@ -1,0 +1,42 @@
+#player1 Noah Noah
+#player2 Betty Betty
+>Noah: BEEIIPS -BEII +0 0
+#note Considered trade BEII, trade BEI, PIE 8G and BI 8G. I didn't think of PIE 8F which seems pretty good to me as well. A sim seemed to be a good comparison method in this situation. PIE hooks aren't as bad as I'd guessed, and 8F actually allows higher scores than 8G. Betty isn't getting more than average off of PIE hooks them unless she has a pretty good scoring tile for column J, I suppose. I think I'm generally a bit too afraid of such hooks, so something to be mindful of in later games. Taking more time during games to actually think about what plays go in certain places might help with this. A 10000 iteration 2-ply sim ranks my candidates as follows: 8G PIE, 8G BI, ex. BEI, 8F PIE, ex BEII. While the results aren't what I expected, I have no quibbles with them.
+>Betty: CILO 8F COIL +12 12
+>Noah: EEILMPS F2 SEMPLI.E +68 68
+#note This play was easy to make. ;)
+>Betty: ADIU 3C ADI.U +14 26
+>Noah: ABGHNPR E9 BHANG +26 94
+#note This one made a shocking sound when it hit the board.
+>Betty: AFO D1 FA.O +24 50
+>Noah: AEPRUWX H1 WAXER +62 156
+#note Tough call here - EPRU is a much better leave than PU, but I judged the nine points to be worth it by a bit. Quackle is usually good at deciding the better play in these scenarios, and WAXER edges out WAX in a sim.
+>Betty: EIN 1A NEI. +21 71
+>Noah: DDEGPTU G7 D.G +22 178
+#note Wasn't sure enough of PUGGED to play it, as this looked like about as strong. I can draw good plays on row 5 (UPTREND mainly) occasionally, and DEPTU is just generally a decent leave. I think PUGGED still has the advantage though, scoring more, still keeping an okay leave, and turning over tiles with an above average pool (highlights: SSS?? with only 62 unseen).
+>Betty: AEFS 6H SAFE +31 102
+>Noah: DDEPTUW K5 D.PUTED +44 222
+#note I played this rather quickly, and maybe should've looked a bit longer. However, no other play appears to contend with 44 points.
+>Betty: HU J9 UH +28 130
+>Noah: GIJORTW 12A JOWI.G +50 272
+#note Again, nothing else is really near this.
+>Betty: IVY A12 .IVY +51 181
+>Noah: BEERRTT L4 BERET +34 306
+#note I didn't think of BETTER L1 here. It neither opens column M nor leaves rows 1 and 2 as bingo lanes. On the other hand, it scores and leaves worse, while allowing smaller plays in the top right to give me more problems closing the board. It seems like these small plays are mostly just going to open stuff roughly equivalent to what BETTER closed though, while BERET just leaves them open/opens them). With my substantial lead, then, I believe BETTER lives up to its name.
+>Betty: AEILNRS M7 NAILERS +77 258
+#note As it happens, she actually has no bingos if I play BETTER here!
+>Noah: AORTTTV M3 TAV +23 329
+#note I could try to undouble Ts, but I can't score very much if I do it, and I'd have to keep the V, which is also very bad. This is fine.
+>Betty: EKO C12 .OKE +22 280
+>Noah: ?ANORTT I8 .OT +14 343
+#note Very difficult play here. Thought about cONTRAST and numerous non-bingo plays. All the column N plays are so dangerous and I don't really see a need to open up all that stuff with TRONA or NOTA if I can just do LOT, still keeping a great leave but playing it safer. Comparing LOT and cONTRAST, they both probably lose to two big plays. cONTRAST could *maybe* lose to one big (70ish) play, some solid plays and a really bad draw. LOT probably loses if I get draws that give me no big plays for the rest of the game and Betty gets one big play. It seems really likely that I will get a bingo by the end of the game with LOT though, and cONTRAST gives Betty a lot more opportunities to get a strong play, with column H and column O now available. The fact that she probably doesn't know cONTRASTY is a slight advantage, but not a huge one. I think I still like LOT, but I don't have any solid numbers behind any play here so I could well be wrong.
+>Betty: CEIOQRU 13G CIRQUE. +22 302
+#note Actual rack.
+>Noah: ?AILNRT N1 TRINAL +31 374
+#note Another tough one! Here I can basically take ENTRAILs/ELATeRIN/ENTAILeR, play TRINAL, or play something even shorter. The analysis here is fairly involved, and I didn't figure it all out in game, though this was my general idea, but I think I've analyzed it well enough here. Bingoing loses to all of Betty's bingos from either of my initials or on column N (even NONAcTOR wins by one post-ENTAILeR), as far as I can tell, but a lot of these aren't easy (NONMONEY, WOOMERAS, NONARTS, etc.). I know that Betty doesn't study a whole lot, so she's probably going to miss a fair number of these. How does TRINAL lose? First, say she doesn't have the Z. If she bingos, she can't win if she draws it, because I can block a spot if she set one up (she can't really set up two) and just stick her. TRINAL + 20 for the Z puts me up 92, so I don't have to score much at all to beat even her highest-scoring bingos. If I draw the Z, then it also seems pretty hard to lose, since there are two very good spots for it on this board. I'm guaranteed to hit the double-letter score on row H if she doesn't play on row 15, which appears to always be good enough to win. On the other hand, her actually getting a play there is unlikely, and even then I still have a lot of good draws on row 1 (ZETA, ZITS, ZOOTY). Now, say she does have the Z. She will rarely get a bingo with it, and if she does, I still win if I bingo back. On the other hand, she might have a high scoring Z play, in which case she will play it almost certainly. If she does, I think the only way she can win is if she gets one of the 66 + ones (ZOOTY/RITZ aren't enough), and has to fade a bingo and draw an unblockable out in one. All the cases where TRINAL loses seem like edge cases, especially compared to the many bingos that are available in the pool, even factoring in that she will likely miss a fair number of the bingos. There is one last case to consider, and one I didn't look at seriously in the game, but should've -- playing shorter, with something like TRIAL, ENTAIL, or LIRI. The advantage of these plays is that they block Z plays and maybe draw more bingos than TRINAL. The disadvantages are that they do worse than TRINAL if I draw the Z and that they score less. I think these are actually a lot like ENTAILeR type plays - if she bingos and I draw the Z, I am often down too much to beat her. Thus I think TRINAL is the best play.
+>Betty: ANY O6 ANY +20 322
+>Noah: ??NORTZ H12 Z.Ne +66 440
+#note We both played the best endgame.
+>Betty: EMOOS 1K SMO.E +30 352
+>Noah: ?ORT N9 TORe +14 454
+>Noah:  (O) +2 456

@@ -1,0 +1,33 @@
+#player1 Opponent Opponent
+#player2 Kenji Kenji
+>Opponent: ?EEIORW 8H WOE +12 12
+>Kenji: ALMOORX 9G LOX +41 41
+>Opponent: ?EEGIIR 10F GIE +16 28
+>Kenji: AHMNORR 11B MARRON +22 63
+>Opponent: ?ADEIRT K5 DIAsTER +84 112
+>Kenji: CEGHTTU D10 G.UTCH +32 95
+#note GHAUT is better for the board, as I'm behind.
+>Opponent: ?NOPSSU 12I UNStOPS +76 188
+>Kenji: ADEINST 15D .ANDIEST +86 181
+>Opponent: AEEIMOT J10 MO.IE. +28 216
+>Kenji: ACDLRTV 7I CR.VAT +32 213
+>Opponent: AEHOQRT N10 QO.H +38 254
+>Kenji: BDEIJLU B9 JU.BLED +42 255
+>Opponent: AAADERT A14 AA +17 271
+>Kenji: EEIIIVZ O8 IVIE. +37 292
+>Opponent: ADEERTW M11 W.AD +32 303
+>Kenji: EINNOPZ 6M ZIN +29 321
+>Opponent: BEELLRT 12B .L.ET +15 318
+>Kenji: EEKNOPY L3 KYE +23 344
+#note Maybe, but we need to address the QOPHS problem.  Sketchy at best.  Opinions welcome.
+>Opponent: ABELRSY 14I B.AR.S +62 380
+>Kenji: AEFNNOP O1 NONFA. +39 383
+>Opponent: EGIILRY 3L .IL. +16 396
+#note You might want to try this endgame yourself on both sides, but it is brutally hard.  Quackle just can't handle it.
+>Kenji: EEFOPTU M2 F.E +11 394
+#note Quackle screws this endgame up laughably.  It thinks TUP wins by 53, but it actually loses.  This is the only play that wins, I think.
+>Opponent: EGIRY G13 YI. +11 407
+>Kenji: EOPTU 9K .ET +4 398
+>Opponent: EGR C11 ..E +12 419
+>Kenji: OPU C7 UPO +17 415
+>Kenji:  (GR) +6 421

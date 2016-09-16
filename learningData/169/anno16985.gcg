@@ -1,0 +1,56 @@
+#player1 joshua_sokol joshua sokol
+#player2 michael_fagen michael fagen
+>joshua_sokol: IILNRWX H8 WIN +12 12
+#note Interesting position. Quackle's simulation doesn't clearly favor any play (4 ply). 8G NIX, 8F WIN, exch. ILWX, 8F NIX 8H NIX and 8G XI all simulate within a percentage point of one another.
+In detail, 8G NIX sims highest, allowing on average 34 points next turn and a 1/5 bingo percentage for opponent, and 29 points for my next turn with a 1/12 bingo percentage. 
+My play sims 4th, behind 8F WIN and exch. ILWX, with a 37-point average score for my opponent next turn and around the same bingo %, allowing the second highest comeback score for me the turn after, clocked at 37.8 points, but the lowest bingo percentage of all the options. 
+
+I played this, hit my clock, and acted like I wanted to change it after the fact, which Michael seemed to have fallen for, which would negate the human aspect of seeing that I was setting myself up. 
+>michael_fagen: CEITV 11H EVICT +27 27
+#note CIVET looks to be a slight improvement.
+>joshua_sokol: ILLMRTX 7H TRILL +14 26
+#note this seems right
+>michael_fagen: ENN J6 N.NE +6 33
+>joshua_sokol: ADEEJMX 12D MAXED +46 72
+#note I considered G8 AXE at length but thought that it both forked the board unnecessarily (which could be problematic in the future), gave up more points in the long run and ran into problems in the short run because of my leave. Turns out MAXED gives back more points in general, but scores 4 more and gives me a more flexible leave. 
+
+I also felt like after a play like N(I)NE I was more worried about a bingo than about him scoring 30+ and ripping apart his leave, so I think with that inference in mind (most likely only one-pointers) I think MAXED is clear, as it takes out his best 7 lane and doesn't give another plausible one back. Only thing is the floating A. I think this makes MAXED a clearly better play. 
+>michael_fagen: ENPRU 11B PRUNE +31 64
+>joshua_sokol: ?DEFGJU D8 JUG.. +23 95
+#note I needed to see FJE(L)D. It looks like a better play than this. Scored as 33? Weird
+>michael_fagen: CIY 12L ICY +20 84
+>joshua_sokol: ??DEEFG 8A GaD.E +39 134
+#note Well, I guess I missed FlEDGEs and FEnaG(L)ED. I didn't know FroGE(Y)ED
+>michael_fagen: AW M12 .AW +16 100
+>joshua_sokol: ?EFNNOT N14 OF +20 154
+#note I inferred a strong leave.
+>michael_fagen: AEL O13 LEA +30 130
+>joshua_sokol: ?EEENNT H5 EN...... +12 166
+#note I guess play the bingo that I missed?
+>michael_fagen: Q 9G Q. +21 151
+>joshua_sokol: ?EENTTU C1 UNTEsTE. +68 234
+#note L1 UNsETT(L)E is optional, as well as UnTENTE(D), UNlETTE(D), UNwETTE(D) and TaUTENE(D).
+>michael_fagen: ALOR 8L ORAL +18 169
+>joshua_sokol: FIIORTT 1A FR.IT +27 261
+>michael_fagen: AAEGORS 2E AGAROSE +66 235
+>joshua_sokol: AHIMOTU 1H OHIA +36 297
+#note Do I really leave two juicy spots for him up top and play 10F HI(N)? It is 46 points... I preferred to play it safe as the Z is still out there and dangerous.
+>michael_fagen: AD 10D .AD +27 262
+>joshua_sokol: ABIMTUY 3G MAY +38 335
+#note I thought the leave was better cause of MT synergy blah blah. Well, I'll leave MT+ over BT+ next time, annotate the game and see that leaving BT+ was better and get frustrated :(
+>michael_fagen: EK G12 .KE +12 274
+>joshua_sokol: BIPSTUV 15G SPIV +35 370
+#note Michael was holding SS and was frustrated I had the other one. 
+>michael_fagen: BOS F6 BOS +25 299
+>michael_fagen: BOS --  -25 274
+#note 5s are useful
+>joshua_sokol: BHIOOTU D3 OHO +25 395
+#note OK so knowing he didn't have the Z and had SS (he said I was about to draw the Z after I played SPIV) I was trying to figure out what the best play was, but had no ideas. I'm going to infer his real rack and simulate, which should give me good insight. 
+
+The simulation gives reason to my particular play and around 150 others. Mine comes in first place, followed by 6A OU(T)HIT (which Michael may well have challenged), N5 OHI(A) and D4 THO.
+>michael_fagen: BDEORSS N6 BO.RD +18 292
+#note 13B BES and 13A REDS are best, and they might have given Michael 89 total points because I think I would have challenged JUGUMS, which would have negated my knowledge of GADJE/...
+>joshua_sokol: BIIOTUZ E5 BIZ. +38 433
+#note 14D BIZ(E) to block JUGUMS. Not needed.
+>michael_fagen: ESS F4 ESS +14 306
+>michael_fagen:  (IOTU) +8 314

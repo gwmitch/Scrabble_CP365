@@ -1,0 +1,42 @@
+#player1 Jim_Burlant Jim Burlant
+#player2 Stefan_Rau Stefan Rau
+>Jim_Burlant: ADIKSTW 8G DAWK +24 24
+#note Best.  This is the preferred placement because I'm sitting on the S, so there's no reason for me to not set up the hook for the 2x2 line.  Play incorrectly scored as 22.
+>Stefan_Rau: AGO 9H GOA +20 20
+>Jim_Burlant: DEGISTZ K5 ZIGS +41 65
+#note The sim is a bit surprising, as Q wants me to hold onto the S and play 10I GED for 23.  This is the sim runner up, but then again the difference in the sim (0.3% and 1 equity point) suggests it's a matter of style preference.  I couldn't see turning down 41 points.
+>Stefan_Rau: FO 10I OF +37 57
+>Jim_Burlant: DEEEOOT 5I OO.E +13 78
+#note Not thrilled about this play due to board position but this rack doesn't really leave much choice.  I chose this over OOZED because of rack balance and the potential OOZE back hook that I had in my rack.   Later in the game, where the unseen X could lose the game if opponent had it, I might exchange out of this.  But this early I won't get paranoid about it.  Q agrees; this is best.  Exchanges sim 10 points and roughly 5% winning chances behind this.
+>Stefan_Rau: AEFNSU M3 UNSAFE +40 97
+>Jim_Burlant: ACDEEET K10 TEED +16 94
+#note Nothing stands out from a scoring standpoint, and the sim indicates that this is as good as anything else.  Other options worth considering are TEE K10, TACE K10, 7E CEE.
+>Stefan_Rau: BEIV H3 VIBE +27 124
+>Jim_Burlant: ?ACELTU N8 sULCATE +71 165
+#note Wasn't sure enough about the other choices to take a chance on them, and I couldn't think of the words I do know, NUCLEATE or ULCERATE. I didn't like this when I put it down due to board position, and Stefan's comeback will illustrate why.   Best are apparently 12G ACULEATE and 12D NUCLEATE.
+>Stefan_Rau: ?AIQ 15L QAdI +74 198
+>Jim_Burlant: DEEELST O2 DELETES +83 248
+#note And when you're having a tournament like I had, you luckbox your way out of plays like my last one.  I'm 70% to win according to the duck.
+>Stefan_Rau: HO J4 O.H +27 225
+>Jim_Burlant: CINOPUV 12H COV.N +26 274
+#note Sim winner is M12 PUNA 22.  I chose this because it killed bingo lines, scored reasonably well, and unloaded the V.  But the star play is one I'd have never found.  OVI(D)UC(T) 13H scores 34, and it sims neck and neck with PUNA.  This is a respectable bronze medalist, roughly 4 points and 2-1/2% winning chances down on PUNA.  
+>Stefan_Rau: AEIMRTU 7A MURIATE +65 290
+#note The only playable bingo for Stefan, and he's winning 42% in a short sim.
+>Jim_Burlant: IJNPPSU A5 JU.P +45 319
+#note Well, that certainly worked out.  Nothing much has changed - I'm still 65% to win in a short sim, and no other play is worth considering.
+>Stefan_Rau: ORY H12 .ORY +27 317
+>Jim_Burlant: AHINNPS 13G N.H +20 339
+#note Best statically, and in the 2-ply sim this is one of the top 2 plays after 1400 iterations.  Other strong choices include 6E NAPE, D4 PANINI, 13G POH.
+>Stefan_Rau: ELLY 9A YELL +27 344
+#note Critical position if you're Stefan, and there are no easy answers.  Stefan's reasoning made sense when we talked about this post-mortem:  his priority was controlling the board.  JELLY, which scores 30, leaves me any number of 8's starting from row 7, and YELL/JUMPY restricts me to 7's starting in S.  What was more likely?  An 8 starting on row 7?  Or a 7 that had to start in S?  This is where the computer has the advantage over a human, as it can enumerate every possible bingo in the unseen pool in a matter of seconds, and no human can do that.   A 2-ply sim run against this rack fragment likes JELLY (which outscores this by 3) by nearly 4-1/2 points and 4% winning chances.  I'm guessing that, besides giving up 3 scoreboard points to JELLY, Q doesn't like that this also gives up a potential X bomb at 10B.  What I don't know is if Stefan had the X. 
+>Jim_Burlant: AIINOPS E9 SINOPIA +76 415
+#note Unlucky break for Stefan, lucky draw for me.  This is 90% to win.
+>Stefan_Rau: BNRW 15C BR.WN. +15 359
+>Jim_Burlant: AAIIRRT C9 .ARI +4 419
+#note Defending against a possible XI.  Simmed against random racks this doesn't do so well.  Against an inferred XI this jumps to the top of the sim.
+>Stefan_Rau: EGIMRTX B11 EXIT +33 392
+>Jim_Burlant: ADINRT A13 TAD +16 435
+#note Missing F10 DAN 19.  Sum total of the mistakes were one suboptimal bingo, and missing 3 points on the last play of a clinched game.  Rest of the plays were on the mark or, in the case of COVEN, just about the best possible play I was capable of finding.  Pretty happy about how I played this one.  And before I forget, a tip of the hat to Stefan.  He played a very strong game himself; it came down to a coulda/woulda/shoulda moment that could have just as easily won him the game.
+>Stefan_Rau: GMR 3K GR.M. +8 400
+#note Final score recorded as 433 - 406.
+>Stefan_Rau:  (INR) +6 406

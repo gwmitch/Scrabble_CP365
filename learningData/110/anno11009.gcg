@@ -1,0 +1,59 @@
+#player1 Jerry Jerry
+#player2 New_Player_1 New Player 1
+>Jerry: EENNQRT -NQ +0 0
+#note Sim suggests my trade (NQ) was best.
+>New_Player_1: EIOORTY -EIOO +0 0
+>Jerry: EEELNRT -E +0 0
+#note Sim suggests my move (exchange E) was among the best choices.  EEL or LEE 8G 6 seems to be its favorites.
+>New_Player_1: ?AAGIST 8F AnTISAG +68 68
+#note Simulates best - with estimated winning chances of 69% right off the bat!
+
+>Jerry: EEELNRT L8 .REENLET +70 70
+#note Sims better than LATEENERs for 66 or 62 points...with about 40% winning chance
+
+>New_Player_1: JOY 11J JO.Y +28 96
+>Jerry: AGMOSUW N11 SWUM +33 103
+#note GAMUT 15H (24) and SWUM sim neck and neck for best choice, 40% winning chance estimate.
+>New_Player_1: ADEELNU G7 U.ANELED +61 157
+#note Estimated winning chances: 67%
+>Jerry: ADFGOTX H13 FOX +47 150
+#note Sims best - about 35% winning chance estimate
+>New_Player_1: AHY O13 HAY +36 193
+#note About 65% win probability
+>Jerry: ADGMNPT 11C TAMP.D +22 172
+#note My play TAMPED sims about 2.5 points behind GIMP I7 (14) with MAP 7I (23) next best
+>New_Player_1: BEI J11 .IBE +15 208
+#note Still expected to win 60% of the time
+>Jerry: CCGINPS K5 PIC. +16 188
+#note My first big error.  PACING D10 (26) sims 12 equity points better than PICA - with better winning chances (40% vs 33%)
+>New_Player_1: BEIR 12A BRIE +24 232
+#note Estimated 66% winning chances
+>Jerry: ACEGNST A12 .ANG +21 209
+#note CIG 6J (12) sims about 2 equity points better - with similar winning chances (37%)
+>New_Player_1: ORT J4 ROT +13 245
+#note about 64% winning chances
+>Jerry: CELOSTW 10K W. +10 219
+#note Another inferior play.  COW I3 (21) sims 10 points better than my play, its second choice.  Winning 46% vs 40%
+>New_Player_1: KRTU 3J TURK +20 265
+#note about 70% winning expectation
+>Jerry: CEILOST 4C CLOISTE. +72 291
+#note Actually moved to 56% winning expectation after this.  COSTLIER is the other bingo - simming slightly worse
+>New_Player_1: AFI H1 FIA. +21 286
+#note Win expectation around 30%
+>Jerry: EGINOVZ C9 VO..NG +28 319
+#note If Quackle is told what Chris held - it says the best play is ZERO L1 (46).   Frankly, I think I totally missed ZERO (and ZORI); I don't recall even considering them.  
+
+Without knowledge of Chris' rack, the sim prefers EVITING where I played VOTING.  VOTING isn't a horrible other choice....but it sure is lacking compared to ZERO and ZORI
+>New_Player_1: ?DENORU 1H .OUNDERs +89 375
+#note Founder(s) is perfectly good, but FRONDEUR puts the D on the double letter, scoring 3 more.  Note that ZERO or ZORI for me last turn still leaves Chris with a bingo: RESOUND - but it's only 76 points, not 86
+>Jerry: EHINOQZ I7 Q. +21 340
+#note Sim prefers O(O)ZE E2 (26) by about 3.2 equity points - and 3% winning chance (15% vs 12%). ( I don't see where any winning chances are coming from, though.)
+>New_Player_1: AILV E3 V.ILA +16 391
+#note SILVA O1 (11) may be preferrable - killing that triple word line.  It and VIOLA and VOILA all sim around 93% winning expectation
+>Jerry: EHINOOZ 10B Z.NE +40 380
+#note ZECHIN C2 (42) allows an out in 2, but doesn't score much on 2nd turn.  I chose ZONE for the big scoring 2nd turn
+
+>New_Player_1: ADEEIRS N1 .ESIDE +27 418
+>Jerry: HIOO A8 OHO +32 412
+>New_Player_1: AR 15J RA. +17 435
+>New_Player_1:  (I) +2 437

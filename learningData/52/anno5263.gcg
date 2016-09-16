@@ -1,0 +1,41 @@
+#player1 Dave Dave
+#player2 Kwak Kwak
+>Dave: DEEIPSZ 8G ZEP +28 28
+>Kwak: AELOOUU G6 OU.O +15 15
+>Dave: CDEEISY F2 DICEY +36 64
+>Kwak: AEEJLRU F9 JEU +21 36
+>Dave: AEGSTTU 4F .UTTAGES +74 138
+>Kwak: AAELRRW H1 WAR. +21 57
+>Dave: AEEFGIO K2 FO.IE +18 156
+#note Static evaluator slightly prefers FOE 3L which looks just silly.  This must be better.
+>Kwak: ACDELRV 3B CLAV. +20 77
+>Dave: AEGHMNT J3 M.TH +36 192
+#note A few ways to play here.  Maximally augment your score with a double-double.  Play for optimal leave with HM J6.  Or this play which has just the right mix of score and leave.  The only downside is that it leaves the double-double for him.
+>Kwak: BDEGHRR 11E B.RGHER +52 129
+#note See.
+>Dave: AEGINTU M4 .AUTEING +61 253
+>Kwak: ?ADDKLY 8L Y.LK +45 174
+>Dave: AEEEORT 10H AERO +20 273
+#note This is one of those tricky turns where the best ways to play are very dependent on the score, and therefore one in which I wouldn't rely on Quackle.  The optimum play for leave is OGEE, but this scores hardly anything.  I would only play like this if I was way down and really needed a bingo fast.  OE 12H is a milder fish, which keeps a slightly worse leave for double the points.  But there aren't a ton of places to bingo, and I don't want to slow down too much with the lead.  It would be a good way to play with a slight deficit. (less than a bingo)  OCREAE burns through a lot of the rack, but scores well and turns over tiles.  I think the upside is not enough to make up for giving him easy scores on column A.  OATER 12H is a nice play I didn't see, but it does give a new bingo line on row 13.  My play scores well while keeping the board very tight.  I'm both trying to minimize both the chance of him bingoing and the scores of his bingos.  Unless he happens to bingo off the K to the triple, I'm likely to have good comebacks to his bingos that keep me in the driver's seat.
+>Kwak: ?ADDINV D1 VI.ND +26 200
+>Dave: ADEEMST N5 EM +22 295
+#note There is something to be said for MALT N6 just for the extra defense of taking out the bingo line.  But the leave here is so nice that I'm hoping to put him away once and for all.
+>Kwak: ?ADEILS B1 DE.rIALS +74 274
+>Dave: ADELOST A6 LEAD +25 320
+#note OD A1 keeps a great leave, but it's hard to justify keeping the A8 spot open, since it's his biggest opportunity on the board.   I'd rather play long and keep scoring than fish for unlikely bingos here.  Unfortunately, I missed my one big play here: OSTEAL A4.
+>Kwak: ?AEIIOR 12D OI +8 282
+>Dave: NNOSTWX 13B TOWN +24 344
+>Kwak: ?AEIINR O8 .AIsERIN +86 368
+#note Ouch.  What really hurts here is not just his bingo, but also my lack of vowels.
+>Dave: AFNRSTX N12 FAX +51 395
+>Kwak: INOOPQS J8 SO.. +19 387
+#note As they say in Go, play urgent moves before big ones.  There is no rush to play QI, because I do not have a blocking play.  What I do have is an S, so the duck wisely beats me to the best spot for it.
+>Dave: BNRST C13 .RT +3 398
+#note Quackle agrees.  Unfortunately, there is no way to force QI 12A while still allowing BR(IT)T or BR(IT)S as a follow up.  Yes, I did think about that before my play.
+>Kwak: INOPQ 12A QI +23 410
+>Dave: BNS 6A ..BS +16 414
+#note Quackle agrees.
+>Kwak: NOP A1 OP +25 435
+>Dave: N 3J ..N +7 421
+#note A perfect endgame.  A lot of high quality plays.  One big miss.  A close loss to the duck.
+>Dave:  (N) +2 423

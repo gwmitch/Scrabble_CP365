@@ -1,0 +1,59 @@
+#player1 Deen_Hergott Deen Hergott
+#player2 Josh Josh
+>Deen_Hergott: III -III +0 0
+#note "Opponent exchanges 3 on his first move, part 2"
+>Josh: ACORTUX H3 OXCART +46 46
+#note held for 3 minutes
+>Deen_Hergott: EEEILRT 5E ERE.TILE +90 90
+#note Let go for this
+>Josh: ADIQRUV L1 QUIV.R +56 102
+#note It took me a while to decide between QUAVER and QUIVER. I thought I made the correct choice. What do you think?
+>Deen_Hergott: ITW I2 TWI. +29 119
+>Josh: AABDENW G1 WAB +22 124
+#note This is a classic dynamic board/close game scenario.
+
+There were two standout moves to consider in this position. G1 WAB for 22 and 4A BWANA for 28. Both of them give similar things back: i.e a triple word score, but BWANA gives more points away because of overlapping plays on row 3. BWANA also scores more points, definitely more than enough to make up for the extra giveaway plays. 
+
+WAB leaves better than BWANA, but does that make up for the rest of the point difference? Normally I would say no and take the points. But in this particular position, it seems favorable to keep things a bit more closed and use a bingo leave to my advantage. 
+
+Also, going for QADI or QAID next turn was a consideration, but I'm probably just as likely to draw into it after BWANA as I am after WAB, and it's also not as important since I am opening the left side of the board.
+
+So what do I choose?! If I could go back I might have chosen the other. I knew how close the two plays were, so I spent a couple of minutes deliberating.
+
+If you are interesting in Quackle's analysis, which is actually meaningful in this position, here it is:
+
+After 40,000 iterations, looking 4 moves ahead, BWANA is valued 0.3 points ahead of WAB. And Quackle's win percentage metric, which has mysteriously escaped years of being sought for interrogation as to what it actually relies on, has BWANA 0.17% higher than WAB. Opponent averages for next turn are as follows: 3.5 points higher average score after BWANA, 2.9 point superior standard deviation and 1.2% higher bingo chances. My next turn, I average 1.8 points less, bingo 12.4% less after BWANA. The next turn's details are similar to this turn's. But they total up to a 5.898-point loss. Perhaps looking 6 turns ahead, the total might surpass 6 points and allow my play to have a higher value than BWANA! 
+>Deen_Hergott: DIY 7L YID +30 149
+>Josh: AADDEIN 1L .ADI +42 166
+>Deen_Hergott: FIMNO 6J FO.MIN +45 194
+#note Ugh! I held this, but I seemed to remember INFORMS having an anagram. Deen must have been confusing this with DORMIN and FORMIC.
+>Josh: ADENNOV 4A VANED +29 195
+#note And one mistake follows another. It's all about to snowball. From not challenging FORMIN to missing ADO(W)N this turn, the cherry on top is about to reveal itself.
+>Deen_Hergott: DEILOPT B1 PET.LOID +76 270
+#note If I play ADOWN, he plays L(E)PIDOTE or P(E)TIOLED, both words I am quite familiar with. Instead, I completely blank on this, thinking he is confusing it with SEPALOID and PETALINE. Why are there two words that mean "resembling a petal" anyway? 
+
+I must have solved this once whilst studying it and forgot about it! Definitely the low point in my tournament.
+>Josh: CENNORR -  +0 195
+>Deen_Hergott: BEG A7 BEG +31 301
+>Josh: CENNORR 1D CRO.N +39 234
+>Deen_Hergott: H 2F H. +26 327
+>Josh: AEFMNRY 7G F.Y +17 251
+#note This whole comedy of errors transformed a close game into a game I am only winning once in around 15 times. My play is 2K F(U)RAN, but I had a tell that he had a blank and a bingo leave. He didn't.
+>Deen_Hergott: IJS O4 JI.S +27 354
+>Josh: AEIMNRS 9H SEMINAR +77 328
+#note undeserved. I am back to life at least. Held again for 4 minutes. If he had challenged, gotten a free turn, then gotten away with a phony, then maybe I would deserve to win this game.
+>Deen_Hergott: HPT 3K P.TH +18 372
+>Josh: AGKORUZ -KAGURO +0 328
+#note I had no clue what to do here. I missed K8 G(I)AOUR and J9 (M)UZAK though, and GIAOUR is definitely correct.
+>Deen_Hergott: ENT 10I TEN +15 387
+>Josh: AAELOSZ 11G ZEALS +42 370
+#note What was I trying to block? That's what I asked myself after making this play. I should have gone with my original play of SLEAZO at C8. M9 (A)ZALEA is also nice, and I missed that.
+>Deen_Hergott: NO A1 ON +20 407
+>Josh: AEGOORU H11 .RUGO +21 391
+#note For a double-blank(eted) pool, I'm actually not too worried about an immediate bingo... Anyways, hoped I would draw at least a blank and that he would have one of the U's, but he would have to have drawn them after ON... So I'm better off Hail Mary-ing it with N9 (R)OUGE, maximizing my leave value. Maybe I can draw K? and manage to outscore.
+>Deen_Hergott: ?AEGKLO 14F KE. +18 425
+#note Actual rack. Deen wondered if if KAGOULE* was also a word, like CAGOULE+. He admitted that this was a mistake, since I could have AENEOUS/SKEG (also AQUEOUS!). Crazy that that blank was still in the bag after all, but I didn't deserve to draw it. 5N K(I) is his play here.
+>Josh: AAEOSUU O9 SAU +13 404
+#note Best endgame!.. :)
+>Deen_Hergott: ??AEGLO E8 GELAtOs +70 495
+>Deen_Hergott:  (AEOU) +8 503

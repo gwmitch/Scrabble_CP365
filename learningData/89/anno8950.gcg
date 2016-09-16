@@ -1,0 +1,49 @@
+#player1 double_noob double noob
+#player2 noob noob
+>double_noob: IO 8H OI +4 4
+>noob: CLNU 8E UNC..L +8 8
+>double_noob: AELZ H6 AZ.LE +14 18
+>noob: NT 10G N.T +3 11
+>double_noob: HO I10 .HO +6 24
+>noob: AT 9D AT +4 15
+>double_noob: EX D9 .XE +10 34
+>noob: HO 12I .HO +6 21
+>double_noob: AKT 11A TAK. +8 42
+>noob: ADEFPSY B11 .YE +6 27
+>double_noob: OW A13 OW +7 49
+>noob: OP A9 OP. +5 32
+>double_noob: RT 6G R.T +3 52
+>noob: OU G4 OU. +3 35
+>double_noob: AV 4E AV. +6 58
+>noob: ILM E1 LIM. +6 41
+>double_noob: AR 2C RA. +3 61
+>noob: JO 1B JO +11 52
+>double_noob: OP I4 OP. +5 66
+>noob: IL 4I .IL +3 55
+>double_noob: AET K1 TAE. +4 70
+>noob: CE 2K .CE +5 60
+>double_noob: ESW K12 .WES +7 77
+>noob: GG 14K .GG +5 65
+>double_noob: AY 1E .AY +6 83
+>noob: IN 1I NI. +3 68
+>double_noob: AE J7 A.E +3 86
+>noob: AV 7J .VA +6 74
+>double_noob: MU 9J .MU +5 91
+>noob: IT G10 .IT +3 77
+>double_noob: EF 12E EF. +6 97
+>noob: GNS E12 .NGS +5 82
+>double_noob: BI 15E .IB +5 102
+>noob: DE 2H DE +5 87
+>double_noob: DEENQRU 14C ER. +4 106
+>noob: ER L5 ER. +3 90
+>double_noob: ?BI B7 BId +5 111
+>noob: DNS 5L .NDS +5 95
+>double_noob: DDINQRS L9 .RN +3 114
+>noob: ?EFIRU 11L .EIF +7 102
+>double_noob: ?DDIS N11 .DS +4 118
+>noob: IQR 15I QI. +12 114
+>double_noob: ?U M4 U. +2 120
+>noob: DR 8B .D +3 117
+>double_noob: ? -  +0 120
+>noob: R M1 R. +2 119
+>noob:  (?) +0 119

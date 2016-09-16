@@ -1,0 +1,61 @@
+#player1 Zev Zev
+#player2 Josh Josh
+>Zev: IJNX 8G JINX +36 36
+#note Facebook Scrabble, Zev has just beaten me twice, the second time after finding NIO(B)ATES for an unlikely 3x3!
+>Josh: AEENORS 9C ARENOSE +75 75
+#note I was hoping that this would be more of a strategic game than a luck game, but let's see how things pan out.
+>Zev: EFZ 8A FEZ +56 92
+>Josh: GPY 10A GYP +31 106
+#note I don't remember all of my racks, but this was by far the highest scoring play that I saw. I think I also had another S.
+>Zev: BGU 10I BUG +13 105
+>Josh: ABCST 10E TAB +25 131
+#note only two I remember
+>Zev: ADI K10 .ADI +12 117
+>Josh: CCEIRSV B1 CRESCIV. +84 215
+#note I noticed that I had blocked my own CREVIC(E)S, but I kept looking and thanks to VOID challenge found this. I don't think I knew it. Maybe I shouldn't play words I checked the validity of, who knows? This brings me to a comfortable lead, but last game's freak 3x3 was still fresh in my mind. The more options each player has, the harder it is for the more skilled player to come out victorious. 
+>Zev: ??ADENT 1A A.cENTeD +140 257
+#note You all knew what was coming! I'm really considering playing facebook Scrabble like tournament Scrabble, where I'll only play words I think are valid and where I will pass if I play an invalid word, but I guess that's only fair if everyone does the same.
+>Josh: AFIMOOU 12K .UOMI +18 233
+#note I guess DUOMO instead. I thought that OO was better for me to have than II next turn, and that he would have more trouble scoring on the triple with an I than with an O for the same reason. OO works better in words than II does, and he's equally likely to have either. I thought that factor was enough to make DUOMI better than DUOMO. Rationalizing strategically when the game was probably set to fall into Lady Luck's hands, so why complicate tiny strategical questions?
+>Zev: ADIIITY 5A A.IDITY +26 283
+#note good find, although it would seem N10 DI(M)ITY is a better play than this. I guess it's important to play defense and not open 3x3 lanes, which DI(M)ITY fails to do. 
+>Josh: AEEEFHS 13M FE +24 257
+#note What to do here? I decided to rely on luck since that seemed to be the factor at play in this game, but I missed the most luck-inducing play, 4B (S)HEA
+>Zev: DENV O11 V.NED +33 316
+>Josh: AEEHOSW 11D HAWSE +47 304
+#note Here I must have decided that I could still win the game without too much luck. This put me within reach to maybe score more than Zev without a bingo.
+>Zev: OOP 12B POO +20 336
+#note Ooh, is Zev vowel heavy? Maybe I do have a chance here!
+>Josh: EGILLOT 4B .TOLE +22 326
+>Zev: EHLOT 13C HELOT +34 370
+#note 6E THOLE scores 4 more but maybe this is the right play. Who knows? I guess Zev didn't have the case S here and he was trying to block the only hook left for mine. That's a plausible inference, right?
+>Josh: EGIILNT 3F LIGNITE +63 389
+#note Ooh! I get to bingo now! But wait, should I really score 40 more points than anything else reasonable for this turn? Look at what this gives back! J2 Is a killer Q spot. Oh wait, M3 is a killer S spot too! So if I pull ahead by 20 points, there's a very good chance I can hit one of the two spots... Hmmm, Quackle isn't liking my chances. What could that mean? Well, if I infer a Q on Zev's rack, the bingo is no longer the highest valued play on the simulation's list! What if I infer an S? If I infer an S, the bingo pops right back up as Quackle's favorite play! So I guess I have to "hope" that luck is right by my side, no matter what I do...
+>Zev: AQU 2J QUA +67 437
+#note Hey, no fair, that's more points than the bingo I just played!
+>Josh: AEKLRUW 1L WAUK +55 444
+#note So! Another interesting position as I know Zev didn't have IS or OIN on his previous rack (as QUAIS and QUOIN are better). This would make the I the most likely tile in the bag, followed by the N and the S, and then an O as there are two of those unseen. This makes Zev more likely to have an O than any of the other tiles. This is pretty theoretical though, as he needed combinations of tiles rather than individual tiles to make obviously superior plays. 
+
+But I should have thought about this play more than I did. It seems like the right choice, right? Well let's analyze this position. I win after WAUK if I draw the S or the M in some cases. I lose to draws of RRS, ROS, RAS, RIS and RLS if I draw the S. I win with any MS draw. I win with a few other M draws. The wins with the M make up for the losses with the S, so I need to figure out around how likely it is for me to draw the S, and then I can figure out how much of the time WAUK wins. 
+
+Now, since S was one of the tiles Zev keeps a bit less than average with QUA and also probably the least likely tile to keep with HELOT, I'm estimating his chances of having the S on his QUA turn at around 1/3. Since he took 3 of the 6 remaining tiles with his play, he has a 50% chance of drawing the S if he doesn't already have it. So 2/3 of the time he will draw the S 50% of the time, which I believe makes it so that he has the S 2/3 of the time after QUA. Therefore WAUK wins me the game around one third of the time. 
+
+Now, what other play should I be considering? There is one other play that I found postgame that might be better than WAUK all things considered. That play is 14E AW. At first glance you may find that AW gives me the chance of drawing a bingo. The 7s that I can draw are LURKERS, LUNKERS and SULKIER. SULKIER plays at M3 whereas the other two play at F15. For this gamble to work, it would seem like either IRS or INS would need to be in the unseen pool, since Zev may see what is available. Only if EIKLNRSU or EIKLRRSU is in the pool will Zev not be able to make a sure block for my bingo from my perspective, but perspective is important here, cause if EIKLORSU or EIKLMRSU is in the pool Zev may have to block lane 15 if he sees LOUSIER or MISRULE(D) play there and it seems he can't reasonably block the M3 lane.
+
+But wait, there's more. Not only does AW threaten bingos in multiple spots some of the time, it also allows me to outscore Zev without a bingo. L1 is still a huge hotspot, but so is lane 15. If I draw the M, I'm in business, as Zev can't score anything next turn with still one tile unseen. If I draw the S, I can also win in many scenarios. So I win virtually every time I draw the M, and a lot of the time that I draw the S. Zev is holding the M probably around 75% of the time, so 25% of the time I have a 2/3 shot at it. That makes around 16% of time to draw the M. The S, around 20% because of the increased chance I have that Zev doesn't have it yet. So I win around 16% of the time plus around 15% of the time with the S again, and this isn't accounting for Zev making a mistake in a one-tile in the bag situation, which is much more difficult than an endgame situation. 
+
+So AW might in fact be a better play than WAUK. They are at least similar in winning percentage. Maybe WAUK is a bit better, maybe AW is a bit better. If I add the inferences it adds to the estimated winning percentage since after AW I kind of do want to draw an R or an N, or maybe even an O or an I, but especially an S. Inferences included, here is the order of letters I am most to least likely to draw if Zev made the "right" play last turn. ROS (significantly more than average), IN (slightly more than average), and AM (slightly less than average). That favors AW, but it also favors WAUK, just to a lesser extent. 
+
+This was a very interesting position!
+>Zev: MNOORRS 14B MORON +37 474
+#note But obviously I didn't do *any* of the analysis I just showed when strategizing about my last turn, even when it sort of mattered. This is 4 off ROM 14D. 
+>Josh: AEILRR 7J AIRER +15 459
+#note Or ARIEL. 
+>Zev: RS H11 .RS +13 487
+#note So I wanted to post this game for two reasons. Number one is to rant about games where luck seems too imposing.
+
+Number two is to show that fatalistic attitudes in Scrabble, even when justified, will never help you win games. It's always important to try and find the best play no matter what luck has to say about it. I didn't play this game that well at all mostly because of my attitude. I could have won it! There is no use or productivity in letting unfortunate turns of events (like an unwarranted triple-triple) get in the way of trying to win the game, or just trying to make a good play!
+
+So if you read all of this, you are awesome and I love you (even if I was the one to tell you to come read it!)
+>Zev:  (L) +2 489
+#note Thank you for tuning in! Until next time :D

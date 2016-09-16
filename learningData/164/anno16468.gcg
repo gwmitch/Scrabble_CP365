@@ -1,0 +1,47 @@
+#player1 Lester Lester
+#player2 Mike Mike
+#description Saved by Elise version 0.0.7
+>Lester: OOOUU -OOOUU +0 0
+>Mike: AEKNORS -K +0 0
+#note Too cute; just take KRONA 8D.
+>Lester: ?DEEGRT 8D GREETeD +70 70
+>Mike: AENORST E5 ANT.ORSE +82 82
+>Lester: OOOOUUU -OOOOUUU +0 70
+#note 3-ply winprob simulation (80), -108.84 / 17.1%
+>Mike: ?AIJLMO 5D M.JOLIcA +82 164
+#note Whee!
+>Lester: BCEK D12 BECK +42 112
+>Mike: EFINSVY 15A FIN. +33 197
+#note The K is reasonably safe to ignore, so VINYL H1 is best.
+>Lester: ADQ I3 QA.D +24 136
+>Mike: AAEESVY 10B VEE.Y +27 224
+#note Several plays are close here; VASE or EAVES on column L, YEA, AYE, or EAVE on row 4, this. I don't mind this.
+>Lester: AGIV 4A VIGA +32 168
+>Mike: AAIIPST 14B PI.A +26 250
+#note 3-ply winprob simulation (5760), +56.95 / 87.4% [154.85s]
+>Lester: EENU 3I .UEEN +28 196
+>Mike: AIMOSTW 2J MOW +31 281
+#note Quackle prefers either 13C WE or 6E NOW, fishing a bit more aggresively. Elise wants to take the points with WETS L2. Not sure who to believe here.
+>Lester: CELW 1H CLEW +38 234
+>Mike: AEEINST A1 NAI.ETES +149 430
+#note Of course, there's the school of thought that says there's only one right play: the one that works.
+>Lester: GHIT H8 .IGHT +10 244
+>Mike: AIIILOU 2A .IOLI +10 440
+#note As mentioned in the previous game, I need to pick up some spread here, so since the win is locked up I'll focus on that. LINO 2A looks best.
+>Lester: NNRR -NNRR +0 244
+#note 3-ply spread simulation (160), +152.91 / 99.8%
+>Mike: AADEIPU F3 PU.A +19 459
+#note 3-ply spread simulation (480), +186.94 / 100.0% [30.81s]
+>Lester: FRTU 4L TURF +36 280
+>Mike: ADDEISX O4 .AXED +48 507
+#note 3-ply spread simulation (480), +208.21 / 100.0% [33.22s]
+>Lester: HOO N6 OHO +27 307
+>Mike: BDIORSU G7 D.B +18 525
+#note Not seeing the point of the computers' choices of BIO or BURD M8.
+>Lester: OYZ J8 .OZY +37 344
+>Mike: AIORRSU K11 OUR +16 541
+#note WETS L2; it's worth one-tiling for spread here.
+>Lester: LNNRST L2 ...S +24 368
+>Mike: AIRS 14K SARI +12 553
+#note SIRRA 13H.
+>Mike:  (LNNRT) +10 563

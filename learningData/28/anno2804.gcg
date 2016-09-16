@@ -1,0 +1,42 @@
+#player1 Ross Ross
+#player2 Quackle Quackle
+>Ross: DEIORRV H4 VOIDER +28 28
+>Quackle: DFINOUY 9C FOUND.Y +24 24
+>Ross: EGINPRT E6 REP.TING +72 100
+>Quackle: ?AACEII 3B AECIdIA +79 103
+>Ross: EFIKOTY B2 F.KEY +46 146
+>Quackle: ?ILSTTU 12A LUTe.IST +68 171
+>Ross: AIOOOTX A6 OXO +35 181
+>Quackle: AEMNORW 6G A.RWOMEN +73 244
+#note Oy vey!  Enough already.
+>Ross: ADHINOT 13H ANTHOID +76 257
+#note I need to study more.  It shouldn't take me so long to find bingos like this.
+>Quackle: ABGILOR 12L BLOG +31 275
+>Ross: AEEELNU A11 A.LEE +15 272
+>Quackle: AAAEIRS 2F AA +9 284
+>Ross: BEILNUU O7 LUBIN. +27 299
+>Quackle: AEIMPRS 1D IMPRESA +93 377
+>Ross: EEEHITU 2J HUE +27 326
+>Quackle: AQRRSTV L1 V.RT +22 399
+>Ross: EEGIJTZ 14F ZEE +35 361
+#note Many higher scoring plays in that spot, but I have to be mindful of the triple.
+>Quackle: ACOQRSS 10H SACS +29 428
+#note Indeed, I was right to worry:  Both blanks and all four S's.  *sigh*
+#note I've observed that Quackle's Championship Player is quite vulnerable to Q-stick gambits.
+#note If it thought more like a human, it would probably have played 4J QA(T)S and coasted home.
+>Ross: DEGIJTW 10N T. +4 365
+#note Quackle prefers 9M JI(B) to stick the Q.  I figured I'd need the J and I for points later.
+#note The main reason why the Quackle simulator logic is vulnerable to Q-sticks is that it sees plays like JI(B) and doesn't see plays like T(I) that are so low in static valuation that they fall below its cutoff.
+>Quackle: NOQR 5J ON +13 441
+>Ross: DEGIJW J4 J.. +13 378
+#note This is the best remaining spot for the J alone, and could be taken if I don't play here first.
+#note B10 JE(U) scores more points, but eats up the valuable E.
+>Quackle: QR 8H .R +8 449
+>Ross: DEGIW 14L WE +16 394
+#note The other thought was 1L (V)IE to set up 1L (VIE)W.  However, that eats up all of the vowels.
+>Quackle: Q -  +0 449
+>Ross: DGI 14L ..D +24 418
+>Quackle: Q -  +0 449
+>Ross: GI D3 .IG +12 430
+#note Nyuk, nyuk!
+>Ross:  (Q) +20 450

@@ -1,0 +1,45 @@
+#player1 Quick Elise 0.1.9 quick move
+#player2 NNet Elise 0.1.9 neural net evaluator
+#description Saved by Elise version 0.1.9 dev
+#lexicon TWL06
+>Quick: DEHMMNO 8D HOMED +30 30
+#note This is an experimental game between Elise's "quick move" evaluator and a new neural net evaluator in version 0.1.9.
+#note All move evaluations (including end-game) evaluations by the neural net player are done by artificial neural networks.
+#note At this point the TWL06 regular game neural net has been trained over a corpus of about 600 games (some of which it played itself in an earlier version). This is not the final neural net evaluator; it will learn from many more positions before release.
+#note Endgame evaluations are done by a separate neural network, trained over about 1,600 endgames (this will again improve before version 0.1.9 is released.)
+#note The regular game neural network may provide an alternative opponent, stronger than the normal "quick move", though not as strong as a deep-ply simulation.
+#note The endgame neural network may improve the endgame heuristics already used by Elise while simulating through the endgame.
+>NNet: ABCEEIT 7F ABET +24 24
+#note Neural net evaluation: 42.4%
+>Quick: EELMNN? 6H LENsMEN +68 98
+>NNet: CEISUVW H1 SWIVELED +57 81
+#note Neural net evaluation: 29.6%
+>Quick: DEEFGNY 6C DEFY +35 133
+>NNet: ACFOPRU 5B CAPO +33 114
+#note Neural net evaluation: 30.5%
+>Quick: AEGGGIN N5 ENGAGING +63 196
+>NNet: EFOORUW O8 WO +33 147
+#note Neural net evaluation: 16.7%
+>Quick: HIIJKTU C2 JIHAD +32 228
+>NNet: EFIORU? 11H FlUORINE +70 217
+#note Neural net evaluation: 28.3%
+>Quick: EIKPTTU K1 TUPIKS +22 250
+>NNet: DEILRUZ H11 FUZIL +54 271
+#note Neural net evaluation: 56.7%
+>Quick: EIIRRTV O1 RIVER +29 279
+>NNet: DEERRXY J1 EX +52 323
+#note Neural net evaluation: 67.8%
+>Quick: ABILLNT 13C BLINTZ +36 315
+>NNet: CDERRUY 14A CRY +23 346
+#note Neural net evaluation: 75.2%
+>Quick: ADELOOQ J10 QUOD +34 349
+>NNet: DENORTU D4 OPE +20 366
+#note Neural net evaluation: 80.2%
+>Quick: AEILOOS A13 OCA +15 364
+>NNet: DENRSTU 15D RUNDLETS +60 426
+#note Neural net evaluation: 94.0%
+>Quick: AEILORS 5J OKA +13 377
+>NNet: AAAANST L3 ATAMAN +26 452
+#note Neural net evaluation: 63 / 100.0% (endgame) 
+>Quick: EILRST 9A LITERS +23 400
+>Quick: (AAS) +6 406

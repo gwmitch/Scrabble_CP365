@@ -1,0 +1,58 @@
+#player1 Elise Elise
+#player2 Quackle Quackle
+#description Saved by Elise version 0.0.3
+#lexicon TWL06
+>Elise: AEJNSUW 8G JAW +26 26
+#note This game uses the improved tile guessing in Elise version 0.0.3. (In fact this was the first game Elise 0.0.3 played against Quackle.) 
+#note 3-ply winprob simulation (1930), +1.10 / 58.7% [28.64s]
+>Quackle: AADEMTY G8 JAY +14 14
+#note This scores weakly while keeping the board relatively open. Accordingly, Elise thinks Quackle has a killer rack leave. (ADEMT, the actual leave, at 6.6 points above average, is certainly strong.) 
+>Elise: EGNSTUV 11D VUGS +30 56
+#note 3-ply winprob simulation (2200), -11.48 / 53.8% [49.42s]
+>Quackle: ADEGMTY D9 GYVED +26 40
+>Elise: EKNRTX? 9F TAX +19 75
+#note TAXER 9F scores 9 more, but opens up a DWS-DWS line and increases the average value of opponent reply by about 10 points. TAX H7 elicits likely column F reply, including play of the TLS at F10. Opponent reply after NEXT C12 is very strong, using either TWS or DWS+X. 
+#note 3-ply winprob simulation (3310), +27.45 / 70.4% [74.81s]
+>Quackle: AEILMNT 7I AILMENT +67 107
+#note AILMENT is better than ALIMENT because the L forms far fewer DWS-DWS plays than the I does.
+>Elise: CEKNRU? O6 sTRUCKEN +92 167
+#note Several other possible bingoes, but this outscores all the others. 
+#note 3-ply winprob simulation (1280), +20.01 / 68.9% [37.20s]
+>Quackle: ABGIIO? K5 OBLIGAtI +90 197
+#note Even though the L forms far fewer DWS-DWS plays, given the right rack...
+>Elise: ACDDEEI 10F EYED +26 193
+#note 3-ply winprob simulation (1380), -32.83 / 42.4% [30.27s]
+>Quackle: BDIRRST L12 DRIB +26 223
+>Elise: ACDILOU 15J CUBOID +33 226
+#note 3-ply winprob simulation (1650), -31.95 / 41.8% [36.42s]
+>Quackle: MNRRSTU 6G RUN +9 232
+#note "Little moves" are revealing. This little move leads Elise to think Quackle holds at least three of ANRSTZ, with an rack +3.4 points better overall than average
+>Elise: AEELNOP 6K BONES +18 244
+#note 3-ply winprob simulation (2080), -16.54 / 51.3% [39.63s]
+>Quackle: EMRRSTV C12 REV +20 252
+>Elise: AAELOPQ N14 QI +22 266
+#note 3-ply winprob simulation (1180), -25.31 / 45.1% [21.64s]
+>Quackle: AAIMRST G5 AR +2 254
+#note Pretty much the definition of telegraphing a bingo rack. Elise estimates Quackle's rack at 21.8 points better than average after this move.
+>Elise: AAEILOP C5 PILEA +13 279
+#note Blocks many possible bingo replies on rows 4 and 5. Without tile inferences, Elise favors ILEAC J11. 
+#note 3-ply winprob simulation (1390), -29.12 / 41.2% [34.78s]
+>Quackle: AIMNRST 4D MARTINS +73 327
+#note Had Elise played ILEAC J11, Quackle would have had MARTIANS for 79, costing Elise 5 points net and dropping win probability on the next move from 11.4% to 9.1%.
+>Elise: AAFOOOR 3C OAF +21 300
+#note ROOF 3B and OAF B6 are close behind, but only barely better than an exchange. Elise figures about 95% of all possible draws to AO from the unseen tiles are better than this rack. 
+#note 3-ply winprob simulation (2420), -68.95 / 11.4% [23.63s]
+>Quackle: EHLLTWZ 6B ZILL +33 360
+>Elise: AINOORS 7B ALOIN +20 320
+#note Elise guesses that Quackle holds the W.
+#note 3-ply winprob simulation (3210), -39.54 / 19.5% [87.19s]
+>Quackle: EHHOPTW 2A HETH +30 390
+#note (?) The idea surely was to set up something groovy for Quackle next turn -- WHOP or WHIP or PHEW at A1 being the most likely plays; a 5-letter TWS play using the W at 1D would be killer, but this requires a lucky draw. On the other hand, HETH gives Elise first shot at both triples. It gives up too much. Quackle calls itself the 99+% favorite with this move, but it could have done better by making a more defensive move here; Elise thinks WHOM L4 (29 pts, leaving EHOPT) and about thirty other moves are better (~96% for WHOM versus only ~88% for HETH).
+#note Other candidates include HE E13 and HOT 5J (94%) and POET B10, HET B11, DHOW I10, HOP 5J, OOT 5J (all about 93%).
+>Elise: EIORSST A1 OH +15 335
+#note STORIES/SORTIES/SORITES 1D and ROSIEST 15A win only one in eight times (on a draw of W, which Elise believes Quackle has), OH A1 wins 6 of 8 times (draw any of EEFOOP). EH A1 wins half the time (EEOO). Had Quackle played WHOM L4, ROSIEST 15A 81 now wins for Elise about 85%. 
+#note Pre-endgame evaluation, +3.38 / 75.0% [35.17s]
+>Quackle: EFOOPTW 1D WOOF +30 420
+>Elise: EEIRSST 15A RESITES +81 416
+#note This game was close enough the improved tile guessing in 0.0.3 made the difference; the choice of PILEA C5 over ILEAC J11 alone likely saved the game.
+>Elise: (EPT) +10 426

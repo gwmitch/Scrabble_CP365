@@ -1,0 +1,37 @@
+#player1 Player_1 Player 1
+#player2 Player_2 Player 2
+#description Saved by Elise version 0.0.7
+>Player_1: EEGLNST 8C GENTLES +68 68
+#note Sims ever-so-slightly prefer taking the points, but I don't like leaving E's in both the double-double line and next to the DWS, nor do I like leaving the T hook in the other double-double line.
+>Player_2: AWY 7H YAW +18 18
+>Player_1: EFGIKOT 6I FOG +22 90
+#note KIEF 6F looks pretty clear.
+>Player_2: ARX 5J RAX +32 50
+>Player_1: ?EIKLRT 4G KIRTLEs +101 191
+#note 3-ply winprob simulation (480), +96.91 / 91.6% [123.79s]
+>Player_2: AEINRTT 5B INTREAT +72 122
+>Player_1: ?ADLOOW 3L DOW +27 218
+#note AGaLWOOD is nice. Didn't know it.
+>Player_2: BGNU O1 BUNG +35 157
+>Player_1: ?AILORY C8 .YROIdAL +80 298
+#note 3-ply winprob simulation (1390), +101.13 / 96.1% [65.13s]
+>Player_2: Q B4 Q. +11 168
+>Player_1: EHINPTV 14B P.VIN +24 322
+#note Or NATIVE/VAHINE in this spot (don't like them defensively), or HELP 15A (probably worth playing).
+>Player_2: ADEOPRS 12B D.ASPORE +74 242
+>Player_1: DEEHNST 15F EDH +23 345
+#note Or HE 6F, but again, I want to play a little defense here.
+>Player_2: DEHIOO 13I HOODIE +37 279
+>Player_1: AEINSTU O7 AUNTIES +85 430
+#note 3-ply winprob simulation (2290), +115.83 / 99.7% [69.73s]
+>Player_2: ALMOO 3E MOOLA +23 302
+>Player_1: BEFIINS 11I FIB +25 455
+#note Maybe FINES 2B, to prevent opening up lines there? It probably doesn't matter much.
+>Player_2: AIU 4B .UAI +37 339
+>Player_1: EEINSVZ 2B ZINES +42 497
+#note Don't understand Elise's suggestion of NIEVE 2A; can live with Quackle's choice of ZEP/ZIP F10.
+>Player_2: ACEEJMU A1 JAM +51 390
+>Player_1: CERTV 2I VET +14 511
+>Player_2: CEEU 15A CE. +19 409
+>Player_1: CR N12 R.C +12 523
+>Player_1:  (EU) +4 527

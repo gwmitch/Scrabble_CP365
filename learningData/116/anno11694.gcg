@@ -1,0 +1,61 @@
+#player1 Glenda Glenda
+#player2 Rhonda Rhonda
+>Glenda: AGHOSUZ 8G HOG +14 14
+#note It's very close between 8H SOUGH and 8G ZAG here. They both score 26 points. I don't think HOG should be a candidate since it scores so weakly. Generally we should only sacrifice that many points for a super-premium bingo rack.
+>Rhonda: ?EHISTU I8 .USHIEsT +63 63
+#note There are lots of bingos available. The first one Rhonda saw was GUSHIEST, so she played it. It's a cute play, but we remember John Williams' first piece of advice: when you see a good play, look for a better one. The clear winner here is H8 (O)UTSHInE 92. Given the commonness of the OUT- prefix in Scrabble, it's likely Rhonda would have found the star play if she had kept looking.
+>Glenda: ACERSUZ 15G ZE.A +39 53
+#note 15G ZETA 39 is the best play. J6 ZAS is reasonable, but it really doesn't compete with Glenda's ZE(T)A.
+>Rhonda: MSTUWWY G7 W.Y +20 83
+#note Very interesting spot. Maximizing score with F6 MUSTY 32 keeps the horrible rack of WW. I kind of like 10F WUS(S)Y, which keeps the much more manageable MTW but scores 5 fewer points. No other plays score well, although 10I (S)WUM gets rid of the awful WU while keeping the S, so maybe we should consider it. Rhonda's play of W(H)Y is solid enough, ranking just behind the plays we already mentioned in the computer simulation.
+>Glenda: ACDPRSU 10I .CUP +14 67
+#note 14I (S)PUD accomplishes basically the same thing as Glenda's (S)CUP, but it scores 8 extra points, so it's clearly better. Also interesting is 11D PURDA(H). I might be tempted by K10 CARPUS; even though it spends the S, it scores 20 more points than Glenda's play. That is a huge gap, counting for 40% of that bingo bonus that we often seem so obsessed about earning. I try to keep that in perspective when I'm sacrificing points to build a bingo; if I'm sacrificing half as many points as the bingo bonus itself, I really have to think about whether it's worth playing toward an unsure bingo when I can just book a solid score now. That said, I think 14I (S)PUD 22 is a nice middle ground in this particular case: decent score, decent leave.
+>Rhonda: EMOSTUW 11E MOUT. +20 103
+#note The star play here is K5 OUTSW(U)M for a whopping 48 points. 11K MEOW 30 is also very strong, scoring well and theatening a big play along column O using our S on the next play. 11K MEW 28 earns honorable mention, scoring well enough and leaving the reasonable OSTU. Rhonda's MOUT(H) suffers from two problems: first, it just doesn't score enough compared with the other options; second, it keeps the W, which is among the worst tiles in Scrabble (it's a big bingo killer, and it's pretty inflexible for longer words).
+>Glenda: AADILRS 13C RADIAL.S +70 137
+#note While RADIALE is a word, it does not take an S (the plural is RADIALIA). The bingo in those letters is SALARI(E)D, and that was the best play from 13C. Also available was RADIALS, which goes down in two spots.
+>Rhonda: EILNOSW 10D LOW +31 134
+#note Rhonda's LOW is fine, but keeping LINES will bingo much more often than EINS (according to the computer simulation, we have a playable bingo 53% of the time on our next play with LINES vs. 38% with EISN). Also, even when we don't bingo, LINES is less prone to whammies than EISN, which can be crippled by an all-vowel draw. Given this, I'd play OW instead of LOW, but the margin isn't large.
+>Glenda: AMNNOTT K7 AMO.NT +16 153
+#note Nothing scores well here. L10 (P)OTMAN 22, L7 TAM(P)ON 22, or 9C NATT(Y) 22 are all fine here. I don't see any reason to open the 3x3 lane with the highest-scoring play, 12A ATOM 24. Glenda's AMOUNT uses the same tiles as TAMPON or POTMAN, so since it scores six fewer points (and has no clear strategic benefit), we prefer to take the points.
+>Rhonda: EEGIINS L6 GIE +12 146
+#note L4 GENII 21 keeps the nice ES leave. Seems like the clear winner to me. An argument could be made for fishing with 14I (S)EI since the EGINS leave will result in a bingo fairly often over our next two turns.
+>Glenda: AACENRT 9C CAN +15 168
+#note C5 CATERAN 68 is best. If we mis the bingo, 8K (ME)ANT seems like a solid alternative. 9C CANT(Y) scores 26 points, but I prefer keeping ACER on an open board to keeping AER on a fairly closed board, so I prefer (ME)ANT to CANT(Y).
+>Rhonda: AEEINSY 8K ..ANY +30 176
+#note Rhonda's MEANY is a good play, but I don't like keeping a 3:1 ratio of vowels:consonants if I can help it, so I'd probably opt for 12D YA (and keep EEINS instead of EEIS, a pretty big difference for only one tile).
+>Glenda: AEILRTV M7 L.V +15 183
+#note The bingos here are N7 I(N)TERVAL 76 and C4 VERTI(C)AL 71. If we miss the bingos, it's not terrible to fish with 9C (CAN)T(Y); AEILRV will bingo very often over our next two turns. 12A VIAL 28 is an option, but it's very volitatile since it opens the 3x3 column.
+>Rhonda: DEEEIRS J1 SEEDIER +66 242
+#note SEEDIER is the only bingo. Nicely done.
+>Glenda: AEIOQRT 1G QAT. +39 222
+#note I prefer 1H QI(S) to 1G QAT(S) because of its superior leave (why keep three vowels to one consonant when we can keep the bingo-prone ORATE).
+>Rhonda: ?ABFGNT 12B FAB +26 268
+#note FAB is best because it gets rid of our clunkiest tiles (FB) and keeps the strong GNT?. FAB scores best at I3, but Rhonda's placement is fine since it leave a more open board for a bingo with our blank (because FAB at I3 kills rows 3, 4, and 5 for bingos).
+>Glenda: EIILOOR 2D LOOIE +20 242
+#note LOOIE is a good play, but 2F OILI(E)R is slightly better (mostly because it scores 3 extra points).
+>Rhonda: ?DEGNOT 1A DOGE +24 292
+#note There are no bingos available here, which is somewhat surprising given the rack. The best plays are both at 14D: TEND for 32 or GOD for 25. TEND's strength is its score, GOD's is its incrediblely strong leave. Both plays win about 95% of the time.
+>Glenda: EEEIRRS 4J .EER +10 252
+#note 4H EI(D)ER 14 gives us the best chance at building a bingo from this mess.  14C ERE is about as good.
+>Rhonda: ?JNPTTU O4 JUTT. +23 315
+#note JUTT(Y) is the best play from ths terrible rack.
+>Glenda: AEEIIRS 14I .EI +9 261
+#note Glenda's SEI gives us a decent chance at a bingo. With the consonant-heavy unseen pool, L10 (P)AIR 18 is pretty strong too since we don't mind keeping EEIS when drawing from a pool that has 5 consonants for every vowel.
+>Rhonda: ?FINNPV L2 VI. +6 321
+#note I think it's best to exchange here. There's no place to score well, and no way to work toward a good leave. L1 FIV(E) is fine too, as is K3 F(E)N 21. I don't understand Rhonda's choice of VI(E) at all, using her only vowel, keeping duplicated ens with the unwieldy FP combo, and scoring almost nothing. 
+>Glenda: AEIIKRS 3D KIRS +33 294
+#note While KIRS vaults Glenda back into contention, L10 (P)AIK 26 keeps a rack that's more likely to bingo to B9 and seal this game. For that reason, I prefer PAIK or 12K T(R)AIK. Also interesting is 12K (T)IKI, which opens the O12 spot for our S, the only remaining one. (PAIK wins 47% of the time, TRAIK 45%, and Glenda's KIRS 22% of the time).
+>Rhonda: ?FNNNPR 5I F.N +16 337
+#note Without looking at the unseen tiles, Rhonda's play is fine, as is PIN in the same spot. But the only way we're going to lose a lead this big  is if Glenda plays the X for a lot of points, so it's best to block OX and EX by playing (O)P or (O)F at B2. At first glance it looks like K5 might be an even bigger threat with the X, but as it turns out, there are no possible words ending in -IX with the remaining unseen tiles (which are ABDEIORX). After blocking that spot, we have strong responses to Glenda's 14 AXED or 12K (T)AXED that are enough to win.
+>Glenda: ADEIORX 2A OX +39 333
+#note In this very close, very tricky endgame, Glenda can force the win with 2A EX 39, but actually loses with OX if Rhonda plays perfectly from here on out.
+>Rhonda: ?BNNPR D8 P.. +8 345
+#note The winning play here is D12 (BA)RB 11. It threatens an out play next turn with D5 PiNN(AL). The most important concept to learn in endgames is the out-in-two. It's almost always best to make a play that guarantees you can go out on the subsequent play. In this case, Rhonda threatens to go out, but the out play can be blocked. However, Glenda must sacrifice so much in order to block Rhonda's out play, that Rhonda can still force the win by merely threatening to go out. This, by the way, is why Glenda could have forced the win with EX instead of OX: by keeping the O Glenda could block PINNAL with the high-scoring OR(C)A, and thus guarantee the win. I wasn't kidding when I said this endgame was interesting and complex. Rhonda's actual play, P(AL) doesn't make it easy for her to go out any time soon, and thus it doesn't put pressure on Glenda.
+>Glenda: ADEIR 3I R.D.A +22 355
+#note Glenda's play is cute (as is the slightly longer REDIAE in the same spot). However, since Rhonda only has one place to score well (14C BReN), Glenda can force the win by blocking that play. 14C ED, 14D DE, 14B RED, etc. all guarantee a win for Glenda.
+>Rhonda: ?BNNR 14A aRB +13 358
+#note Rhonda can force the win here with 14C BReN 23.
+>Glenda: EI 12K .IE +6 361
+#note Nice comeback Glenda!
+>Glenda:  (NN) +4 365

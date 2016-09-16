@@ -1,0 +1,85 @@
+#player1 Kwok_Ka_Yee Kwok Ka Yee
+#player2 Wong_Shu_Ting Wong Shu Ting
+>Kwok_Ka_Yee: AAGOOSW 8G WAG +14 14
+>Wong_Shu_Ting: ?MOORUY 7F MOY +20 20
+>Kwok_Ka_Yee: AEENOOS 6F ON +16 30
+>Wong_Shu_Ting: ?EORSUU J8 SOUR +14 34
+>Kwok_Ka_Yee: ABEEOST 5D BETS +24 54
+>Wong_Shu_Ting: ?EEELOU 4C LOE +16 50
+#note LOE is invalid.
+>Kwok_Ka_Yee: ADEEORY 3C ARD +21 75
+>Wong_Shu_Ting: ?AEEOPU K10 PEA +18 68
+>Kwok_Ka_Yee: EEINOTY L11 TYE +25 100
+>Wong_Shu_Ting: ??AEORU 13K R.U +12 80
+#note REU is invalid.
+>Kwok_Ka_Yee: EEINOUZ I8 .IN +13 113
+#note NUP is invalid.
+>Wong_Shu_Ting: ??AENNO 9D NONs +10 90
+#note NONS is invalid.
+>Kwok_Ka_Yee: EEHIOUZ 10E HO +16 129
+>Wong_Shu_Ting: ?AAAEET 8C EAT +13 103
+#note TOH is invalid.
+>Kwok_Ka_Yee: EEIIUXZ 11F XU +19 148
+>Wong_Shu_Ting: ?AADENP 7C PE +17 120
+>Kwok_Ka_Yee: EEIITTZ N11 ZETI +30 178
+>Kwok_Ka_Yee: EEIITTZ --  -30 148
+#note Both ZETI and REUT are invalid.
+>Wong_Shu_Ting: ?AADDNQ B6 QAt +39 159
+>Kwok_Ka_Yee: EEIITTZ B1 ZIT +29 177
+#note TARD is invalid.
+>Wong_Shu_Ting: ACDDINT 1B .IN +13 172
+>Kwok_Ka_Yee: EEIIKTU 12G TIE +6 183
+>Wong_Shu_Ting: ACCDDOT 13F CAT +12 184
+>Kwok_Ka_Yee: EEIIJKU I12 .EK +15 198
+>Wong_Shu_Ting: ACDDFOW 1B ...C +15 199
+>Kwok_Ka_Yee: EIIJOSU 15F JOES +41 239
+#note EEKS is invalid.
+>Wong_Shu_Ting: AADDFOW 7A D... +7 206
+#note DAPE is invalid.
+>Kwok_Ka_Yee: EIIINUV 14I .I +8 247
+>Wong_Shu_Ting: AAADFOW 6E D.. +10 216
+>Kwok_Ka_Yee: EIILNUV 14M NU +6 253
+>Wong_Shu_Ting: AAAEFOW O13 FEW +30 246
+>Wong_Shu_Ting: AAAEFOW --  -30 216
+#note NUE is invalid.
+>Kwok_Ka_Yee: EEIILRV O12 LIRE +18 271
+>Wong_Shu_Ting: AAAEFOW 4B A... +17 233
+#note ZITA is invalid.
+>Kwok_Ka_Yee: EGGILRV N10 VIE +16 287
+>Wong_Shu_Ting: AAEFLOW 2A L. +2 235
+>Kwok_Ka_Yee: DGGIILR 15L DIR. +12 299
+>Wong_Shu_Ting: AAEFOVW -  +0 235
+>Kwok_Ka_Yee: FGGHILR O11 F.... +13 312
+>Kwok_Ka_Yee: FGGHILR --  -13 299
+#note FLIRE is invalid.
+>Wong_Shu_Ting: AAEFOVW -  +0 235
+>Kwok_Ka_Yee: FGGHILR 6B .I +16 315
+>Kwok_Ka_Yee: FGGHILR --  -16 299
+#note IPE is invalid.
+>Wong_Shu_Ting: AAEFOVW 10M O.A +6 241
+>Kwok_Ka_Yee: FGGHILR M9 H. +9 308
+>Wong_Shu_Ting: ABEFMVW O8 MA. +15 256
+>Kwok_Ka_Yee: FGGILRS E14 IS +14 322
+>Kwok_Ka_Yee: FGGILRS --  -14 308
+#note SJOES is invalid.
+>Wong_Shu_Ting: BEFVW L8 FE +14 270
+>Kwok_Ka_Yee: FGGILRS 9A IS +14 322
+>Wong_Shu_Ting: BVW -  +0 270
+>Kwok_Ka_Yee: FGGLR A9 .F +5 327
+>Wong_Shu_Ting: BVW -  +0 270
+>Kwok_Ka_Yee: GGLR 4A G.... +8 335
+>Kwok_Ka_Yee: GGLR --  -8 327
+#note GALOE is invalid.
+>Wong_Shu_Ting: BVW 4A B.... +10 280
+>Wong_Shu_Ting: BVW --  -10 270
+#note BALOE is invalid.
+>Kwok_Ka_Yee: GGLR 4A R.... +6 333
+>Kwok_Ka_Yee: GGLR --  -6 327
+#note RALOE is invalid.
+>Wong_Shu_Ting: BVW 4A W.... +12 282
+>Wong_Shu_Ting: BVW --  -12 270
+#note WALOE is invalid.
+>Kwok_Ka_Yee: GGLR 4A L.... +6 333
+>Kwok_Ka_Yee: GGLR --  -6 327
+#note LALOE is invalid.
+>Kwok_Ka_Yee: GGLR (GGLR) +-6 321

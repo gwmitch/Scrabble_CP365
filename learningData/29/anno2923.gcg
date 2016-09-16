@@ -1,0 +1,54 @@
+#player1 John John
+#player2 Evans Evans
+>John: DEORX 8H REDOX +42 42
+>Evans: EOPQRTT 7F TROPE +23 23
+#note Doh, EXPORT. -7
+>John: AGMO 6G OGAM +36 78
+>Evans: ?AEIQTY -  +0 23
+#note This is a really, really really bad challenge. Sigh.
+>John: CEE 9F CEE +11 89
+>Evans: ?AEIQTY 5E QAT +27 50
+>John: IIIII -IIIII +0 89
+>Evans: ?AEILTY 10H rEALITY +74 124
+#note I thought no bingos played... little did I know that TACTILELY and TACHYLITE both played through the disconnected T-C. Instead I phony John with GORER and it stays.
+>John: EFNS K3 FENS +22 111
+>Evans: AILNOSY 11J YO +19 143
+#note Q says to take the points and play longer with YONI (27, ALS) rather than this (19, AILNS). Close call. -3
+>John: EFLSW 12H FLEWS +42 153
+>Evans: AILMNSU H12 .ILM +27 170
+#note Missing the really pretty ALUMNI 8A, as well as AIMFUL 3H. Also worth noting: Superleaves pegs INSU at 4.89 and ANSU at 4.25, meaning FLAM is better than FILM. I often forget that the I isn't so bad when its good friend N is around. -17 (yikes, ALUMNI is that good)
+>John: ?ELORUV 15A VELORiU. +89 242
+>John: ?ELORUV --  -89 153
+#note Valid bingos John could have played: OVERFOUL, OVERFULL, TRUELOVE, PULLOVER and VERMOULU.
+>Evans: ABDNSTU 15F DU.B +9 179
+#note FUB 3K and BEDU 4J are obviously better, since they block his highest-scoring bingos. This mistake, I think, reveals a key leak in my game -- I need to respect my opponents more. I played DUMB here because PULLOVER was his most obvious bingo, and I thought it might be the only one he saw. But of course if he sees OVERFULL, blocking it with FUB is clearly the play! I saw OVERFULL right away, and there's no reason he wouldn't do the same. I should have just blocked the best bingo, but instead I decided to gamble and hope he wouldn't see it. That's not a good idea. With rack inferences in the sim, this play is -20.
+>John: ?ELORUV 3G OVER.ULl +80 233
+#note I deserve that.
+>Evans: AAENOST H1 NO.A +24 203
+>John: JO J14 JO +35 268
+#note Of course he blocks LABIATES.
+>Evans: AABEIST 9M AB +15 218
+#note Scores more at 7L. -2
+>John: ERR 7L ERR +13 281
+>Evans: AAEGIST F14 A. +5 223
+#note This is such a disgustingly obvious fish, but I don't expect John to block the N up top with a dinky 5-point play. AEGIST seems pretty awesome given the circumstances. Maybe I should just open the board with TAIGA 14B though? Quackle thinks so. I'm not sure.
+>John: EHRW 2F WH.RE +32 313
+>Evans: AAEGIST 13E AG +8 231
+#note Sims best. Worth a shot, no?
+>John: ADINV D9 VIAND +23 336
+#note Ugh, he has to have a V, doesn't he?
+>Evans: ACEIIST 6D AI +13 244
+#note Honestly, it doesn't look like I have a better option than this. Pathetic.
+>John: IP 7C PI +9 345
+>Evans: CEIIOST 8A ICE +19 263
+#note Scores well and opens a potential lane for eights. Sim loves it.
+>John: HNT A7 H.NT +7 352
+#note Makes sense.
+>Evans: DIOSTUZ 14J .UDOS +26 289
+#note I missed STUDIO 1A, which is nice because it puts me out of my misery faster. ADZ 11D is an option because it leaves one on the bag and fishes with a decent leave, but I have no clue what I'm fishing for or where it plays. This play isn't that bad.
+>John: EIKNNST 11C T.NK +16 368
+#note SKEAN 11A is best.
+>Evans: GIITUZ F4 Z. +11 300
+#note I saw ZIN 12B and opted against it. I was wrong. I get ZIN for 14, he gets ZINE/ZEIN for 26, I get GUT 13M for 16, he drops the S for DUMBOS, 13 and out -- that, with 2 from my rack, is an 11-point swing his way. ZA scores 11 and only gives him back 17 when he goes out with SINE/STANK, but when you add the 12 on my rack, it's an 18 point gain for him. I forgot to consider those extra 12 points. -7
+>John: EINS B11 SINE +17 385
+>John:  (GIITU) +12 397

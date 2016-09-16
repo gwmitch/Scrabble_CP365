@@ -1,0 +1,41 @@
+#player1 Verbie Verbie
+#player2 H_Garren H Garren
+>Verbie: ACHILRW H4 WHIRL +30 30
+#note The A helps the leave but by only .5, so apparently I'm better off sticking it on all at once.  Kills the back hook too.
+>H_Garren: AHK 6F HA.K +19 19
+>Verbie: ACIJNQR J5 RAJ +26 56
+#note Too soon to be blocking lanes!  Take the AWHIRL hook already (-5)
+>H_Garren: ITZ 5J .ITZ +26 45
+>Verbie: CEINOOQ 4K QI +37 93
+>H_Garren: EILV 5C VILE +19 64
+>Verbie: CEEINOO C3 CO.E +18 111
+#note NOVICE is 28 and a better clearing play here (-7.5)
+>H_Garren: BE 4C .BE +20 84
+>Verbie: EINNOOS 7C NOO +15 126
+#note OUCH- IONONES 9B (-38)
+>H_Garren: CITY N2 CITY +35 119
+>Verbie: DEIMNNS 8A DISME +53 179
+#note I got a hold call here.
+>H_Garren: ??AELOU K7 OUtLEAd +69 188
+>Verbie: AAGNNNY 3G YANG +25 204
+#note I never know what to do with multi-Ns.  L10 ANY preserves the G and scores better (-3)
+>H_Garren: DEPP 8K .PPED +39 227
+>Verbie: AANNRTU M8 .UNA +7 211
+#note right space, but too short.  PURANA is the preferred option (-5)
+>H_Garren: BDEIR 13I BI.DER +22 249
+>Verbie: AENORTT A1 ATTORNE. +80 291
+>H_Garren: AFGIO 10H FOA.I.G +17 266
+>Verbie: AADFRTV 11E FARAD +26 317
+#note Was torn between this and same word at 14F.. but FAVA 11E is the better move (-7)
+>H_Garren: NW F10 W.N +14 280
+>Verbie: GMOSSTV O13 SOM +24 341
+#note MOSTS in the same alley is 9 better on score and +15 according to the Quackie... but is leaving 2 better than leaving 4 here?  As it happens, I made the tiles-as-they-lay right play, see forward-3 for why...
+>H_Garren: EEILRST 13A LEISTER +73 353
+>Verbie: GNOSTVX 14A OX +38 379
+#note GOX(E)S, sure but then I'm V-stuck?  (supposed -4)
+>H_Garren: EEUU 4G E.E +13 366
+#note that's not going out.  A 2-tile group here likely would.
+>Verbie: GNSTV 3M V.G +14 393
+>H_Garren: UU 8G U.U +3 369
+>H_Garren:  (NST) +6 375
+#note lucky enough.

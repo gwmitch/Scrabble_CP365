@@ -1,0 +1,47 @@
+#player1 Jerry_Lerman Jerry Lerman
+#player2 Kevin_Fraley Kevin Fraley
+>Jerry_Lerman: GGIPRWZ 8G WIZ +30 30
+#note Missing GRIZ at 8F which simulates a bit better.  I haven't integrated all the 'new' words into my working vocabulary, apparently.  Had I thought of it, I would have played it.
+>Kevin_Fraley: ABGILOT H1 OBLIGAT. +86 86
+>Jerry_Lerman: GGMNPRY 6F GR.MP +20 50
+#note GRAMPY or GRAPY there both sim better
+
+>Kevin_Fraley: BEFOW 3C BEFOW. +36 122
+>Kevin_Fraley: BEFOW --  -36 86
+>Jerry_Lerman: AEGLNQY 4G Q. +11 61
+#note GLEY, AGLEY, and AGLY, hooking GRAMP sim near the top as well.  In fact, GLEY sims more than 3 points better than QI.  I suspect I did not know the word GRAMPY, because I never inspected any of the other plays. 
+>Kevin_Fraley: BEFOTW 1D WEBF.OT +19 105
+>Jerry_Lerman: AAEGLNY H1 ........NG +14 75
+#note Lost track of my tiles for a couple turns here...
+so cannot simulate them.  But using the GRAMPY hook still looks better than my choice here.
+
+>Kevin_Fraley: AEMX K4 EXAM +37 142
+#note Kevin doesn't miss the hook
+
+>Jerry_Lerman: EENTY 2B TEENY +54 129
+#note This must have been one of the reasons I went for obligating.  I believe I was one tile short of this play....and I drew what I needed
+
+>Kevin_Fraley: AACUV 5B VACUA +23 165
+>Jerry_Lerman: AEHILLU L1 HAUL +26 155
+#note Missed ELHI from L2 for 7 more points...sims 4.5 better than HAUL.  Also LIENAL at 9E - sims similar to HAUL.  I like ditching the U , given the Q's having been played.
+>Kevin_Fraley: EOV 1L .OVE +30 195
+>Jerry_Lerman: AEILOOS 8K SOLEI +32 187
+#note MOZO is the play.  Simulates 8-11 points better, despite scoring 9 fewer.
+>Kevin_Fraley: ELNRT N5 REL.NT +10 205
+>Jerry_Lerman: ?AEKOSY M4 KAY +24 211
+#note Simulates fairly close (1-2 points less) to 11J/11I KAYOS or KAYOES. In fact after 500 simulations it beats them.  This is a find that Quackle itself didn't consider under 'generate choices' -- so I feel pretty good about it.  (After 700 iterations, KAY has fallen back to 3rd.)
+>Kevin_Fraley: DEIINRT 3A RIND +23 228
+>Jerry_Lerman: ?EEIOSS D5 .OESItES +70 281
+>Kevin_Fraley: CPU 8A CUP. +24 252
+>Jerry_Lerman: DEORTTU 9B TO.T +12 293
+#note CUPS blocked TUTORED at C9.   POUTED at C8 sims much better along with DETOUR at E9, LOUTED or LOUDER or LOURED at M8.  This falls about 8 points short of DETOUR after over 1000 iterations.  In fact DETOUR beats all the other options by at least 7 points.
+>Kevin_Fraley: JO 10F JO. +27 279
+>Jerry_Lerman: ADEHNRU 12B UN.HARED +63 356
+>Kevin_Fraley: DR B12 .RD +8 287
+>Jerry_Lerman: ?AFIINO A13 OAF +23 379
+#note Champion player says all its choices win for me, but it strongly prefers M8 LIANOId  .  With the unseen tiles beeing ADEEIIRS forming DIARIES, DEARIES, DAIRIES and AIRSIDE, I'd have to be pretty certain that LIANOID didn't take an S before I'd plunk that down!
+
+>Kevin_Fraley: DEEIIRS I6 .E.ES +36 323
+>Jerry_Lerman: ?AIIN 13I AcINI +14 393
+#note Champion player found IRIDES at 11I for Kevin - only 24 (vs 36 for MEZES) - which would have blocked all my out plays at 13I, M10 and O10.
+>Jerry_Lerman:  (DIIR) +10 403
