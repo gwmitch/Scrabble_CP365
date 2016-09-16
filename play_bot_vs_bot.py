@@ -16,6 +16,7 @@ if __name__ == "__main__":
 
     scores = {"player1":0, "player2":0}
 
+    consecutive_passes = 0
     while True:
         print sg.board
         #print "BOARD VALUE:", sg.getBoardValue()
@@ -29,6 +30,7 @@ if __name__ == "__main__":
 
         m = curr_player.chooseMove(sg.board)
         if len(m) > 0:
+            consecutive_passes = 0
             if sg.isLegalMove(m) and curr_player.hasTiles(m):
                 print m
                 points = sg.finalMove(m)
@@ -41,6 +43,13 @@ if __name__ == "__main__":
                     scores['player2'] += points
         else:
             print "PLAYER PASSED"
+            consecutive_passes += 1
+
+        if len(curr_player.rack) == 0 or consecutive_passes == 6:
+
+            print "GAME OVER"
+            print scores
+            break
 
         p1turn = not p1turn
 

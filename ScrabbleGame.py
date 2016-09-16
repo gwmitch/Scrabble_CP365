@@ -244,25 +244,25 @@ class ScrabbleGame:
         self.undoMove(move)
         return True
 
-        
+
     def getHorizontalWordScore(self, row, start_col, move):
         # First find the col starting point of the move
         leftmost_col = start_col
-                
+
         # See if there are more existing tiles to the left
-        while self.board.getTile(row, leftmost_col) != ' ' and leftmost_col >= 0:
+        while leftmost_col >= 0 and self.board.getTile(row, leftmost_col) != ' ':
             leftmost_col -= 1
         leftmost_col += 1
-        
+
         # Now work from left to right and calculate score
         curr_col = leftmost_col
         word_score = 0
         word_multiplier = 1
-        while self.board.getTile(row, curr_col) != ' ' and curr_col < self.board_size:
+        while  curr_col < self.board_size and self.board.getTile(row, curr_col) != ' ':
             letter_multiplier = 1
             if (row, curr_col) in move:
                 if (row, curr_col) in BOARD_LETTER_MULTIPLIERS:
-                    letter_multiplier = BOARD_LETTER_MULTIPLIERS[(row, curr_col)] 
+                    letter_multiplier = BOARD_LETTER_MULTIPLIERS[(row, curr_col)]
                 elif (row, curr_col) in BOARD_WORD_MULTIPLIERS:
                     word_multiplier *= BOARD_WORD_MULTIPLIERS[(row, curr_col)]
             print "letter SCORE: ", TILE_POINTS[self.board.getTile(row, curr_col)], "MULTIPLIER:", letter_multiplier
@@ -274,25 +274,25 @@ class ScrabbleGame:
             return word_score
         else:
             return 0
-    
+
     def getVerticalWordScore(self, start_row, col, move):
         # First find the col starting point of the move
         topmost_row = start_row
-                
+
         # See if there are more existing tiles above
-        while self.board.getTile(topmost_row,col) != ' ' and topmost_row >= 0:
+        while topmost_row >= 0 and self.board.getTile(topmost_row,col) != ' ':
             topmost_row -= 1
         topmost_row += 1
-        
+
         # Now work from top to bottom and calculate score
         curr_row = topmost_row
         word_score = 0
         word_multiplier = 1
-        while self.board.getTile(curr_row, col) != ' ' and curr_row < self.board_size:
+        while curr_row < self.board_size and self.board.getTile(curr_row, col) != ' ':
             letter_multiplier = 1
             if (curr_row, col) in move:
                 if (curr_row, col) in BOARD_LETTER_MULTIPLIERS:
-                    letter_multiplier = BOARD_LETTER_MULTIPLIERS[(curr_row, col)] 
+                    letter_multiplier = BOARD_LETTER_MULTIPLIERS[(curr_row, col)]
                 elif (curr_row, col) in BOARD_WORD_MULTIPLIERS:
                     word_multiplier *= BOARD_WORD_MULTIPLIERS[(curr_row, col)]
             print "letter SCORE: ", TILE_POINTS[self.board.getTile(curr_row, col)], "MULTIPLIER:", letter_multiplier
@@ -304,17 +304,17 @@ class ScrabbleGame:
             return word_score
         else:
             return 0
-            
+
     def scoreMove(self, move):
         final_score = 0
-                        
-        if self.isMoveHorizontal(move):        
+
+        if self.isMoveHorizontal(move):
             # First find the col starting point of the move
             leftmost_col = self.board_size+1
             for (row, col), letter in move.items():
                 if col < leftmost_col:
                     leftmost_col = col
-                    
+
             curr_row = move.keys()[0][0] # all have the same row because the move is horizontal
             final_score += self.getHorizontalWordScore(curr_row, leftmost_col, move)
             for (row, col), letter in move.items():
@@ -325,7 +325,7 @@ class ScrabbleGame:
             for (row, col), letter in move.items():
                 if row < topmost_row:
                     topmost_row = row
-                    
+
             curr_col = move.keys()[0][1] # all have the same col because the move is vertical
             final_score += self.getVerticalWordScore(topmost_row, curr_col, move)
             for (row, col), letter in move.items():

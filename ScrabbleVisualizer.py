@@ -12,7 +12,7 @@ from scrabble_globals import *
 
 
 class Visualizer:
-    
+
     # Re-read the current game state image every 50ms to refresh the view
     # This should make the visualization behavior a bit nicer
     def runVisualizer(self):
@@ -20,7 +20,7 @@ class Visualizer:
             try:
                 self.board_im = cv2.imread(BOARD_STATE_IMAGE)
                 cv2.imshow('image', self.board_im)
-                cv2.waitKey(50) # Don't close the window
+                cv2.waitKey(250) # Don't close the window
             except cv2.error as e:
                 # Board image file wasn't ready...
                 pass
