@@ -137,12 +137,12 @@ class ScrabbleGame:
         if self.isMoveHorizontal(move):
             curr_row = rows[0]
             min_col, max_col = min(cols), max(cols)
-            print min_col, max_col
+            #print min_col, max_col
 
             for i in range(min_col, max_col + 1):
-                print i
+                #print i
                 if self.board.getTile(curr_row, i) == ' ':
-                    print "FOUND horizontal gap"
+                    #print "FOUND horizontal gap"
                     self.undoMove(move)
                     return False
         else:
@@ -151,7 +151,7 @@ class ScrabbleGame:
 
             for i in range(min_row, max_row + 1):
                 if self.board.getTile(i, curr_col) == ' ':
-                    print "FOUND vertical gap"
+                    #print "FOUND vertical gap"
                     self.undoMove(move)
                     return False
 
@@ -267,10 +267,10 @@ class ScrabbleGame:
                     letter_multiplier = BOARD_LETTER_MULTIPLIERS[(row, curr_col)]
                 elif (row, curr_col) in BOARD_WORD_MULTIPLIERS:
                     word_multiplier *= BOARD_WORD_MULTIPLIERS[(row, curr_col)]
-            print "letter SCORE: ", TILE_POINTS[self.board.getTile(row, curr_col)], "MULTIPLIER:", letter_multiplier
+            #print "letter SCORE: ", TILE_POINTS[self.board.getTile(row, curr_col)], "MULTIPLIER:", letter_multiplier
             word_score += letter_multiplier * TILE_POINTS[self.board.getTile(row, curr_col)]
             curr_col += 1
-        print "WORD SCORE: ", word_score, "MULTIPLIER:", word_multiplier
+        #print "WORD SCORE: ", word_score, "MULTIPLIER:", word_multiplier
         word_score *= word_multiplier
         if curr_col - leftmost_col > 1:
             return word_score
@@ -297,10 +297,10 @@ class ScrabbleGame:
                     letter_multiplier = BOARD_LETTER_MULTIPLIERS[(curr_row, col)]
                 elif (curr_row, col) in BOARD_WORD_MULTIPLIERS:
                     word_multiplier *= BOARD_WORD_MULTIPLIERS[(curr_row, col)]
-            print "letter SCORE: ", TILE_POINTS[self.board.getTile(curr_row, col)], "MULTIPLIER:", letter_multiplier
+            #print "letter SCORE: ", TILE_POINTS[self.board.getTile(curr_row, col)], "MULTIPLIER:", letter_multiplier
             word_score += letter_multiplier * TILE_POINTS[self.board.getTile(curr_row, col)]
             curr_row += 1
-        print "WORD SCORE: ", word_score, "MULTIPLIER:", word_multiplier
+        #print "WORD SCORE: ", word_score, "MULTIPLIER:", word_multiplier
         word_score *= word_multiplier
         if curr_row - topmost_row > 1:
             return word_score
