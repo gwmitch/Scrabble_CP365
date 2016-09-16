@@ -201,7 +201,7 @@ class ScrabbleGame:
         return word
 
     def isLegalWord(self, word):
-        print "Checking word:", word
+        #print "Checking word:", word
 
         if len(word) < 2:
             return True

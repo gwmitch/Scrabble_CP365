@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     while True:
         print sg.board
-        print "BOARD VALUE:", sg.getBoardValue()
+        #print "BOARD VALUE:", sg.getBoardValue()
         print scores
         if VISUALIZE:
             sg.dumpBoardImage()
