@@ -14,9 +14,11 @@ class LearningModel:
 		for i in range( 1, len(allData) ): ##exclude .DS_Store
 			currGame = self.parseSingleGame(allData[i])
 			if not (currGame is None):
+				##count += 1
 				currGameMoves = self.parseSingleGameToMoves(currGame)
 				self.games.append(Game(currGameMoves))
-
+			else:
+				 
 		print count
 		##self.games[0].printGame()
 
@@ -24,11 +26,9 @@ class LearningModel:
 		filename = "LearningData/" + game
 		try:
 			my_data = np.genfromtxt(filename, skip_header=0, dtype=str)
-			print filename
 			return my_data
 		except:
 			print "Error with file: " + filename
-
 			return None
 
 	def parseSingleGameToMoves(self, my_data ):
