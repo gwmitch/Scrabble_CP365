@@ -258,7 +258,7 @@ class ScrabbleGame:
         curr_col = leftmost_col
         word_score = 0
         word_multiplier = 1
-        while  curr_col < self.board_size and self.board.getTile(row, curr_col) != ' ':
+        while curr_col < self.board_size and self.board.getTile(row, curr_col) != ' ':
             letter_multiplier = 1
             if (row, curr_col) in move:
                 if (row, curr_col) in BOARD_LETTER_MULTIPLIERS:
