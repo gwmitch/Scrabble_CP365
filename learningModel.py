@@ -17,7 +17,7 @@ class LearningModel:
 				currGameMoves = self.parseSingleGameToMoves(currGame)
 				self.games.append(Game(currGameMoves))
 
-		print count
+		#print count
 		##self.games[0].printGame()
 
 	def parseSingleGame(self, game):
@@ -65,15 +65,9 @@ class Move:
 		moveString = "Player: " + self.player + " WordBank: " + self.wordBank + " Position: " + self.position + " WordPlayed: " + self.wordPlayed + " PointsGained: " + self.pointsGained + " TotalScore: " + self.totalScore
 		print moveString
 
-
-
-
-
-
 def loadAllDataSets():
 	allGames = os.listdir("LearningData/")
 	return allGames
-
 
 
 if __name__=="__main__":
@@ -83,3 +77,4 @@ if __name__=="__main__":
     emptyArr = []
     model = LearningModel(emptyArr)
     model.initialize(allGames)
+    print model.games[0].moves[0].wordPlayed
