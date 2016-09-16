@@ -12,7 +12,7 @@ if __name__ == "__main__":
     p1turn = True
     if VISUALIZE:
         # Launch game viewer in a separate process
-        subprocess.Popen(["python", "run_visualizer.py"])
+        subprocess.Popen([PYTHON_EXECUTABLE, "run_visualizer.py"])
 
     scores = {"player1":0, "player2":0}
 

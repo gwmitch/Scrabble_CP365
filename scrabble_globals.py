@@ -20,6 +20,10 @@ BOARD_FILENAME = IMAGES_DIR + "board.png"
 # Store the current game state image in this file for viewing purposes
 BOARD_STATE_IMAGE = IMAGES_DIR + "current_state.png"
 
+# Python executable (for launching the viewer in a separate process)
+# If "python" doesn't launch the correct interpreter for your system, then change this (e.g. "python2.7")
+PYTHON_EXECUTABLE = "python"
+
 #
 
 # Change the size of the game's board
