@@ -40,7 +40,7 @@ class ScrabbleBot(ScrabblePlayer):
         moveList = []
 
         for i in range(0, BOARD_SIZE):
-            currentMove = {}
+            currentMove  = {}
             currentBW = BoardWord(''.join(self.game.board.board[:,i].tolist()), True, i, 0)
             wordList = self.anagram(currentBW, self.rack)
             for item in wordList:
@@ -54,14 +54,14 @@ class ScrabbleBot(ScrabblePlayer):
 
         for k in range(0, BOARD_SIZE):
             currentMove = {}
-            currentBW = BoardWord(''.join(self.game.board.board[:,i].tolist()), False, i, 0)
+            currentBW = BoardWord(''.join(self.game.board.board[k,:].tolist()), False, i, 0)
             wordList = self.anagram(currentBW, self.rack)
             for item in wordList:
                 currentMove = {}
                 offset,word = item
                 for j in range(offset, (offset+ len(word))):
                         if word[j - offset] not in currentBW.letter[j]:
-                            currentMove[i, j] = word[j - offset]
+                            currentMove[k, j] = word[j - offset]
                 moveList.append(currentMove)
 
         return moveList
