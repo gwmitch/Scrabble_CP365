@@ -1,6 +1,8 @@
 # Scrabble_CP365
 #### Scrabble implementation plus scrabble bot
 
+### Chatroom for teams:
+[Gitter Chatroom for Scrabble_CP365](https://gitter.im/Scrabble_CP365/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 
 ## Note
 
