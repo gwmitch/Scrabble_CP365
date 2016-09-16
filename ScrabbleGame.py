@@ -8,6 +8,8 @@ sys.path.append('/usr/local/lib/python2.7/site-packages')
 import cv2
 import subprocess
 import twl
+import urllib2
+import wordnik
 from ScrabbleBoard import *
 from ScrabbleVisualizer import *
 from scrabble_globals import *
@@ -62,8 +64,8 @@ class ScrabbleGame:
 
     def initTiles(self, number_tiles = 100):
         tiles = []
-        for i in range(number_tiles):
-            tiles.append(random.choice(self.tile_distribution))
+        for i in range(len(self.tile_distribution)):
+            tiles.append(self.tile_distribution[i])
         return tiles
 
     def finalMove(self, move):
@@ -242,7 +244,6 @@ class ScrabbleGame:
                         return False
                     else:
                         col += len(word) + 1
-
         self.undoMove(move)
         return True
 
@@ -311,6 +312,7 @@ class ScrabbleGame:
         final_score = 0
         if len(move) == 7:
             final_score += 50
+            print "BINGO!"
         if self.isMoveHorizontal(move):
             # First find the col starting point of the move
             leftmost_col = self.board_size+1
