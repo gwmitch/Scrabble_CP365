@@ -25,9 +25,13 @@ class ScrabbleBot(ScrabblePlayer):
         move = self.checkLegalMoves(move)
         #print move
         #print self.rack
+
+        #if there is no move available, just do nothing
         if len(move) < 1:
-            move[7:7] = self.rack[0]
-            return {move[0]}
+            defMove = {}
+            x = 7,7
+            defMove[x] = self.rack[0]
+            return defMove
 
         return random.choice(move)
 
