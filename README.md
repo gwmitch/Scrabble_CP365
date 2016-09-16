@@ -28,3 +28,7 @@ $ cd jk
 $ cd mainframe
 ```
 
+
+#### Visualizer:
+
+The new visualizer launches a new process so that the refresh is better.  By default it uses the executable "python".  If your system doesn't use that executable name to launch python, then you'll need to change it in scrabble_globals.py.
