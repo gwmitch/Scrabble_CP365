@@ -1,6 +1,8 @@
+import subprocess
 from ScrabbleGame import *
 from ScrabblePlayer import *
 from ScrabbleBot import *
+from ScrabbleVisualizer import *
 
 if __name__ == "__main__":
     sg = ScrabbleGame(BOARD_SIZE)
@@ -9,7 +11,8 @@ if __name__ == "__main__":
 
     p1turn = True
     if VISUALIZE:
-        sg.visualizeBoard()
+        # Launch game viewer in a separate process
+        subprocess.Popen(["python", "run_visualizer.py"])
 
     scores = {"player1":0, "player2":0}
 
@@ -18,7 +21,7 @@ if __name__ == "__main__":
         print "BOARD VALUE:", sg.getBoardValue()
         print scores
         if VISUALIZE:
-            sg.visualizeBoard()
+            sg.dumpBoardImage()
         if p1turn:
             curr_player = player1
         else:

@@ -345,11 +345,10 @@ class ScrabbleGame:
             letter = filename[:-4]
             print filename, letter
             self.tile_ims[letter] = cv2.imread(IMAGES_DIR + filename)
+        cv2.imwrite(BOARD_STATE_IMAGE, self.board_im)
 
-        cv2.imshow('image', self.board_im)
 
-
-    def visualizeBoard(self):
+    def dumpBoardImage(self):
         tmp_image = self.board_im[:]
 
         for i in range(self.board_size):
@@ -363,5 +362,4 @@ class ScrabbleGame:
                     tmp_image[y_offset:y_offset+tile_img.shape[0],
                               x_offset:x_offset+tile_img.shape[1]] = tile_img
 
-        cv2.imshow('image', tmp_image)
-        cv2.waitKey(100) # Don't close the window
+        cv2.imwrite(BOARD_STATE_IMAGE, tmp_image)

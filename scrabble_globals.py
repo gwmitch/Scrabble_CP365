@@ -17,6 +17,9 @@ IMAGES_DIR = "images/"
 # Board background image
 BOARD_FILENAME = IMAGES_DIR + "board.png"
 
+# Store the current game state image in this file for viewing purposes
+BOARD_STATE_IMAGE = IMAGES_DIR + "current_state.png"
+
 #
 
 # Change the size of the game's board
