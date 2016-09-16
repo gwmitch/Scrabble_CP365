@@ -311,7 +311,7 @@ class ScrabbleGame:
         final_score = 0
         if len(move) == 7:
             final_score += 50
-            print "BINGO!"
+            print "BINGO! +50 Points!"
         if self.isMoveHorizontal(move):
             # First find the col starting point of the move
             leftmost_col = self.board_size+1
