@@ -12,4 +12,4 @@ class ScrabbleBot(ScrabblePlayer):
     # Input board is a ScrabbleBoard object
     def chooseMove(self, board):
         move = {}
-        return move
+       	return chooseMove

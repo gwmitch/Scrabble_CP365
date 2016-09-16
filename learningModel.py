@@ -77,4 +77,4 @@ if __name__=="__main__":
     emptyArr = []
     model = LearningModel(emptyArr)
     model.initialize(allGames)
-    print model.games[0].moves[0].wordPlayed
+    print model.games[0].moves[0].wordPlayed.lower()
