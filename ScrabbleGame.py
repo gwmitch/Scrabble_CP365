@@ -440,7 +440,21 @@ class ScrabbleGame:
                 print "PLAYER PASSED"
                 consecutive_passes += 1
 
-            if len(curr_player.rack) == 0 or consecutive_passes == 2:
+            if len(curr_player.rack) == 0 or consecutive_passes == 6:
+                # Deduct points from player with tiles remaining
+                # Add those points to player who finished first
+                if p1turn:
+                    total = 0
+                    for tile in player2.rack:
+                        total += TILE_POINTS[tile]
+                    scores['player1'] += total
+                    scores['player2'] -= total
+                else:
+                    total = 0
+                    for tile in player1.rack:
+                        total += TILE_POINTS[tile]
+                    scores['player2'] += total
+                    scores['player1'] -= total                    
                 print "GAME OVER"
                 print scores
                 return

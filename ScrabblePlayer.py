@@ -32,7 +32,6 @@ class ScrabblePlayer:
         self.rack += self.game.drawTiles(number_to_pick)
 
     def chooseMove(self, board):
-        move = {}
         print "My current rack:"
         for r in self.rack:
             print r.upper(),
@@ -56,6 +55,7 @@ class ScrabblePlayer:
                     return {}
                 row = int(row)
                 col = int(col)
+                move = {}
                 for c in word:
                     while self.game.board.getTile(row,col) != " ":
                         if direction == "v":
