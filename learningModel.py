@@ -3,6 +3,9 @@
 import numpy as np
 import os, sys
 from os import listdir
+from ScrabbleGame import *
+from ScrabblePlayer import *
+from scrabble_globals import *
 
 
 class LearningModel:
@@ -55,12 +58,22 @@ class Game:
 
 	def initializeBoard(self):
 		#self.board = [0 for col in range(405)] for row in range(15)]
-		self.board = [0] * 6264 #6489
+		self.board = [0] * 6489
 
 	def printGame(self):
 		for i in range(len(self.moves)):
 			print "move: "
 			self.moves[i].printMove()
+
+class TestMoveOnBoard(ScrabblePlayer):
+	
+	def inputMove(self, board):
+		moves = []
+		moves = parseSingleGameToMoves(currGame)
+		for move in moves:
+			
+
+
 
 class Move:
 
@@ -81,6 +94,7 @@ class Move:
 			print "Cannot determine direction of starting move." #fix this by looking at next move
 		else:
 
+
 	def changeLetterToNumber(self, letter):
 		letter_num = ord(letter) - 96
 		return letter_num
@@ -93,9 +107,9 @@ class Move:
 			list_position = (row * 405) + col + changeLetterToNumber(letter)
 			self.board[list_position] = 1
 			if is_vertical == True:
-				col ++
+				col += 1
 			else:
-				row ++
+				row += 1
 
 	def parseWordBank(self):
 		slot = 0
@@ -106,7 +120,8 @@ class Move:
 
 	def findMoveDirection(self):
 		start = self.position
-		return direction
+		for i in range()
+		return is_vertical
 
 def loadAllDataSets(dir_num):
 	games = os.listdir("GameData/" + str(dir_num) + "/")
@@ -115,6 +130,8 @@ def loadAllDataSets(dir_num):
 
 
 if __name__=="__main__":
+	sg = ScrabbleGame(BOARD_SIZE)
+
     ##my_data = loadSingleDataset()
     ##currGame = Game(parseData(my_data))
 	global total
