@@ -9,26 +9,29 @@ class LearningModel:
 	def __init__(self, games):
 		self.games = games
 
-	def initialize(self, allData): 
+	def initialize(self, allData, dir_num): 
+		global total
 		count = 0
 		for i in range( 1, len(allData) ): ##exclude .DS_Store
-			currGame = self.parseSingleGame(allData[i])
+			currGame = self.parseSingleGame(allData[i], dir_num)
 			if not (currGame is None):
 				currGameMoves = self.parseSingleGameToMoves(currGame)
 				self.games.append(Game(currGameMoves))
-
+				count += 1
+			#else:
+			#	count += 1 
+		total = total + count
+		print count
 		#print count
 		##self.games[0].printGame()
 
-	def parseSingleGame(self, game):
-		filename = "LearningData/" + game
+	def parseSingleGame(self, game, dir_num):
+		filename = "GameData/" + str(dir_num) + "/" + game
 		try:
-			my_data = np.genfromtxt(filename, skip_header=0, dtype=str)
-			print filename
+			my_data = np.genfromtxt(filename, skip_header=2, skip_footer=1, dtype=str)
 			return my_data
 		except:
-			print "Error with file: " + filename
-
+			#print "Error with file: " + filename
 			return None
 
 	def parseSingleGameToMoves(self, my_data):
@@ -105,17 +108,20 @@ class Move:
 		start = self.position
 		return direction
 
-def loadAllDataSets():
-	allGames = os.listdir("LearningData/")
-	return allGames
+def loadAllDataSets(dir_num):
+	games = os.listdir("GameData/" + str(dir_num) + "/")
+	return games
 
 
 
 if __name__=="__main__":
     ##my_data = loadSingleDataset()
     ##currGame = Game(parseData(my_data))
-    allGames = loadAllDataSets()
-    emptyArr = []
-    model = LearningModel(emptyArr)
-    model.initialize(allGames)
-    print model.games[0].moves[0].wordPlayed.lower()
+	global total
+	total = 0
+	for i in range(0, 246):
+		games = loadAllDataSets(i)
+		emptyArr = []
+		model = LearningModel(emptyArr)
+		model.initialize(games, i)
+	print total
