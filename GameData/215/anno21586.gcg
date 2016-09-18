@@ -1,0 +1,40 @@
+#player1 David_Whitley David Whitley
+#player2 Charles_Reinke Charles Reinke
+>David_Whitley: ABK 8G KAB +18 18
+>Charles_Reinke: IIORTUV -IIOUV +0 0
+#note Non-exchange plays like I6 VI(B)RIO don't seem to be worth it here, giving up too much for too little return.
+>David_Whitley: IIII -IIII +0 18
+>Charles_Reinke: DEIPRTT 9F TIRED +22 22
+#note This play is easily overlappable so hopefully the board will remain open.
+>David_Whitley: APSW 10E WAPS +27 45
+>Charles_Reinke: EIJMOPT 7H JO +27 49
+#note Wary of plays that put the J at D11.
+>David_Whitley: DITZ 6I DITZ +23 68
+>Charles_Reinke: AEIIMPT L3 MAI.E +32 81
+>David_Whitley: III -III +0 68
+>Charles_Reinke: DEINPTU 11C PIED +28 109
+#note My other choices were PUD and PUT at M2. After 23,000 iterations PUD wins the sim. But now that I'm back at the computer the rest of my plays probably won't have the benefit of being simmed that long.
+>David_Whitley: EHRSU 8K USHER +45 113
+>Charles_Reinke: EIINTTU 4H UINT.ITE +60 169
+>David_Whitley: AGM O1 MAG. +21 134
+>Charles_Reinke: CGGLQTV -GGLQV +0 169
+#note CL would be a slightly better leave but the L-to-T ratio in the bag caused me to do this exchange instead.
+>David_Whitley: OO C11 .OO +10 144
+>Charles_Reinke: CENORTX 14A CORTEX +68 237
+>David_Whitley: ?AAELOR 13F AREOLAs +67 211
+>Charles_Reinke: ADNNRVW H12 V.ND +36 273
+>David_Whitley: EFY A12 FY.E +48 259
+>Charles_Reinke: AENRUUW -ANUUW +0 273
+#note L11 UN(s)EW is way better than my play. I was digging for the last blank here.
+>David_Whitley: FHLS N6 FL.SH +27 286
+>Charles_Reinke: ?EEGILR 3C LEERInG +76 349
+>David_Whitley: BEG 12K BEG +18 304
+>Charles_Reinke: ELNOOQU M1 QUO.N +38 387
+#note D1 QU(E)EN seems unnecessary here.
+>David_Whitley: AAW 11I AWA +22 326
+>Charles_Reinke: EIILNOR O10 OILIER +26 413
+#note This play may be a mistake. It outruns many bingos on row 5 but not all. 4C IN is the safe play here.
+>David_Whitley: CNNSTUV D2 V.NTS +16 342
+>Charles_Reinke: ANOY F3 .AYON +10 423
+#note A(T)ONY.
+>Charles_Reinke:  (CNU) +10 433

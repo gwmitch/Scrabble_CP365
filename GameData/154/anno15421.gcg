@@ -1,0 +1,49 @@
+#player1 Jim Jim
+#player2 Jeremy Jeremy
+#description Saved by Elise version 0.0.3
+#lexicon TWL06
+>Jim: ADEFT 8D FATED +26 26
+>Jeremy: AIJORW? E5 JOWAR +30 30
+#note 5-ply winprob simulation (840), -10.26 / 54.9% [66.73s]
+#note -4.57 to 9C JAW. Elise's 5 ply evaluation.
+>Jim: EORU F2 EURO +15 41
+>Jeremy: ACIIOP? H7 ADIPIC +14 44
+#note 5-ply winprob simulation (160), -12.19 / 55.3% [46.28s]
+#note -18.94 POI 7G.  My move sucked pretty bad.
+>Jim: DKU 6B KUDO +19 60
+>Jeremy: ABNOQT? 7A QAT +22 66
+#note 5-ply winprob simulation (880), -25.80 / 47.5% [40.27s]
+#note -2.44 G5 BON(E)
+>Jim: ADEGOR D8 FORAGED +26 86
+>Jeremy: BEENOR? 14B REDBONEs +74 140
+#note 5-ply winprob simulation (880), +8.08 / 64.1% [37.13s]
+#note Best, but better if I score 74 points instead of just 70.
+>Jim: BUZ G7 ZEBU +60 146
+>Jeremy: GILNNOS 12H CLONINGS +74 214
+#note best, the only bingo here.
+>Jim: EGRY O8 GREYS +27 173
+>Jeremy: DIORTU? K5 DURaTION +82 296
+#note 5-ply winprob simulation (770), +80.78 / 95.3% [27.14s]
+#note -5.47 DIlUTOR 15H.  Also OUTRIDe 15I simmed better.  I guess that bottom row is too hot to leave open.
+>Jim: AT A7 QAT +36 209
+>Jeremy: AEMSSVV N10 MAGES +43 339
+#note 5-ply winprob simulation (2520), +86.25 / 97.3% [41.58s]
+#note best
+>Jim: ENY 15F YEN +31 240
+>Jeremy: EHISTVV L2 VIVE +23 362
+#note 5-ply winprob simulation (560), +93.00 / 97.7% [73.83s]
+#note -5.78 VIVE J2 sims that much better, and has a win percent of 98.5% to 97.7%
+>Jim: COW F10 COW +27 267
+>Jeremy: EHLLMST 2B HELMET +22 384
+#note 5-ply winprob simulation (1360), +103.71 / 98.8% [215.62s]
+#note -10.12 TELLS I3.  It deadens the board to bingos better.
+>Jim: FI 3B IF +25 292
+>Jeremy: AAEILSS I1 ALIASES +72 456
+#note 5-ply winprob simulation (1040), +151.63 / 100.0% [53.41s]
+#note best
+>Jim: ILT J8 LIT +12 304
+>Jeremy: HX C13 HEX +36 492
+#note OX at 014 blocks Jim's out of ANISE.
+>Jim: EIN 2L VINE +14 318
+>Jeremy: NOP O1 PEON +21 513
+>Jeremy: (A) +2 515

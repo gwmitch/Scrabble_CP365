@@ -1,0 +1,40 @@
+#player1 q q
+#player2 Jim_Burlant Jim Burlant
+>q: AAIINOW -AAIOW +0 0
+>Jim_Burlant: AEEIORS -OE +0 0
+#note Readers of this blog will recall a recent game in which, after my opponent opened by exchanging 2, my response from this exact rack was to play OE 8H.  So why did I exchange 2 this time instead of putting down OE?  This time, opponent exchanged 5, so I thought it likely that it would have drawn something like an F, H, M, P, W, or Y, and that OE would have played for 4 and given back at least 20.
+>q: EIKNNOO 8C NOOKIE +22 22
+>Jim_Burlant: AEFILRS D7 F.RESAIL +72 72
+#note On this board, FORESAIL is the only possible 8 in AEFILRS.  No matter where I play, the bingo scores 72 and gives up an S hook on row 15.  I chose to play here instead of at E7 because that would have put the E next to the triple-letter at F10.  Quackle agrees - this choice is best, simming roughly 1-1/2 points over the E7 placement.
+>q: BGIIMNY H5 BIG.MINY +70 92
+>Jim_Burlant: BDEEGIU C3 BEGUI.E +33 105
+#note Best - none of the other options (14A BUGLED, BEDBUG at 5E/5H) come within 8 points in the sim.
+>q: ?AAPQRS 13C Q. +22 114
+>Jim_Burlant: DEJMSTY 15A JETS +49 154
+#note Considered this, 4A JEED, and nothing else.  What swayed me:  Since a good leave wasn't salvagable, 4 tiles turned with this vs. 3 for JEED.  Also, JEED played for 40 and probably gave back at least as much, while this choice played for 49 and gave back a probable 40.  And the comeback options were more limited with this choice than JEED. I also felt that, with JEED, the wrong draw could leave me unable to do serious damage on row 15 after the probable reply came down the A column.  Q mildly disagrees; the 2-ply sim narrowly prefers JEED to this. The sim says this is a 1-1/2 point dog to JEED, and the bronze medalist (15D STYED) is a distant 3rd. Championship player has more or less the same verdict, though its equity differences are more substantial.
+>q: ?AAEPRS 5E PRE.ASAl +94 208
+>Jim_Burlant: ADEMRVY 4K MARVY +40 194
+#note Best - the next best choice, B4 YAM, trails by more than 10 points in a short sim of approximately 250 2-ply iterations.
+>q: DHIRTUX O4 .IRTH +33 241
+>Jim_Burlant: ADEHOSV 14B HA.VED +52 246
+#note While the DOS leave with HALVE does a better job guarding against a possible vowel overload than this choice, the extra 4 points for HALVED swayed me; since I was going to have to give up easy access to the triple no matter what, it made sense to maximize score.  Quackle agrees; while this play outscores 14B HALVE by 4 points, it only wins the sim by 3 points, and Championship Player says this wins by barely 1.
+>q: DILNPUX D2 PIX +46 287
+>Jim_Burlant: EEOOSUU -OOUUE +0 246
+#note Ouch.  For 15 points I might consider playing through this mess, but not for single digits.  Q agrees - this is the best play.  
+>q: DILNOUW 11G I.WOUND +22 309
+>Jim_Burlant: AAAERST N6 AA +10 256
+#note Nothing to do here except dump the surplus A's.  This is one of 4 plays that sim within 0.2 points of each other (the others being 7G AGA, N7 AA, and 3L AA) for sim winner honors and the 2-ply sim says they're all equally strong, winning a hair over 17%.  Championship player doesn't quite agree, saying that this choice sacrifices 5 equity points and 2% winning chances to N7 AA.  I don't agree with CP.  While my play does give back 20+ if opponent has F or W, that's not a concern if I hit the bingo I'm expecting to, and I have somewhere to score with FW if I draw them.  Admittedly , AA N6 does give up possible FOUN(D)ING or WOUN(D)ING bingos at M7, but those are fairly unlikely worst-case scenarios, IMO. And 13F AA (both the sim winner ahd championship player's choice) gives back any number of easy plays starting in O, which is a concern this late with OOOOOZ? unseen.   I trust the sim more than CP on this position.  Your mileage may vary.
+>q: EELLOOU M6 OLEO +13 322
+>Jim_Burlant: AELNRST 15F RENTALS +79 335
+#note Best bingo; the other bingo is PLANTERS 2D, which only scores 64.
+>q: ?CEFLUU 14J FEU +31 353
+>Jim_Burlant: ADEGINR 3I GRADE +30 365
+#note More often than not, the best play out of a no-go ADEGINR would be to fish.  So, why not do that here?  If I were to fish the D (my first inclination would be to preserve the uber-potent GAINER stem), the only playable bingo given this board/pool would be PERIGEAN on row 2.  Best case, given this pool I have a 2 in 9 chance of drawing into that if I fish off the D, and that is only if E? are still in the bag.  Other 2-tile fishes yield more potential bingos, but, again, there's only one line, and there's a very good chance that would be blocked, so fishing seems pointless.  My first priority has to be to stay in the game, and the 30 points for this play accomplish that.  This is not one of the original kibbitizer choices, but it immediately jumps atop the two-ply sim.  More importantly, this wins 40%; the next best choice, (FEU)ED 14J, only wins 34.
+>q: ?CDLTUZ J10 C.Z +20 373
+>Jim_Burlant: CINOTTW E10 TOW +23 388
+#note The two-ply sim and CP disagree yet again.  The sim says this is the best play, with 13L NOWT being a very close second, at a significant loss of valuation.  CP likes NOWT by quite a bit, but that's bogus.  As you'll see, the resulting draw guarantees that I can't win this game.  TOW was best; despite Quackle's claims otherwise, NOWT loses by 4 more.
+>q: ?DELOTU B1 qUOD +24 397
+>Jim_Burlant: CINNOT F3 TO.C +12 400
+#note Either this or COIR F2 are best, as they do the best job minimizing spread, since I don't have a win.  I cannot think of a better example of an unwinnable game than this one.  I made the best possible play on 10 of 12 turns.  On the one turn Quackle mildly disagreed with (JETS instead of JEED), I came out better off than I think I would have had I made Quackle's recommended play.  The position where I played AA had no clear best play as far as I could tell, and the sim bore that out.  I got the end game right.  I didn't miss a single scoreboard point, and my equity loss per the 2-ply sim was under 6 points.  If I can lose under those conditions, it just wasn't winnable, period.
+>q: ELT L9 LE.T +10 407
+>q:  (INN) +6 413

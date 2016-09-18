@@ -1,0 +1,45 @@
+#player1 Mike Mike
+#player2 Noah Noah
+#description Saved by Elise version 0.0.7
+>Mike: ?CCOOUV -COUV +0 0
+#note Or trade down to C?, or COCO 8G.
+>Noah: EIPRZ H4 PRIZE +38 38
+>Mike: ?CDOOWY 9E WOODY +35 35
+#note Would've been nice to know COWbOYED, but this isn't too bad a miss.
+>Noah: VX F8 V.X +29 67
+>Mike: ?CGLOSV E9 .OG +23 58
+#note COm(PRIZED) is totally worth it.
+>Noah: CLNUU 5D UNCU.L +16 83
+>Mike: ?ACLNSV D10 VAC +32 90
+#note 3-ply winprob simulation (1850), +5.29 / 62.2% [160.51s]
+>Noah: EJT 6B JET +28 111
+>Mike: ?EFHLNS 4B FEH +30 120
+#note Or FLESH J2.
+>Noah: DMO 3A DOM +25 136
+>Mike: ?BEILNS 13B LESBIaN +75 195
+#note 3-ply winprob simulation (2640), +14.61 / 67.0% [110.50s]
+>Noah: DEIINOT 12H EDITION +71 207
+>Mike: AAAHRTU 11J AAH +23 218
+#note Quackle prefers AHA at 11I; Elise wants to play AAH at 11K. I'll take the middle ground.
+>Noah: Q K10 Q.. +12 219
+>Mike: AGIRTTU 13L TRUG +22 240
+#note Quackle slightly prefers GUILT at B10, which I can sort of see. I'm more inclined to keep things closed, though.
+>Noah: AAII -AAII +0 219
+#note 3-ply winprob simulation (80), -71.79 / 22.6%
+>Mike: AGIKRTU F3 GU.K +21 261
+#note Quackle still wants to play GUILT, but I still don't like it. Elise wants to play GUILT I2 here, which makes no sense at all.
+>Noah: ?ABOPST B8 POTAB.eS +76 295
+>Mike: AAAIRTW A1 WA. +21 282
+#note Or AW C8.
+>Noah: ELO A8 OLE +25 320
+>Mike: AAIRRST 7G I.AR +15 297
+#note Quackle agrees; Elise suggests ROLE A7 as an alternative, but I'm not sure I like it.
+>Noah: EY A14 YE +25 345
+>Mike: AEILRST K2 REALIST +78 375
+#note 3-ply winprob simulation (560), +4.77 / 58.4% [46.41s]
+>Noah: AEO 8K .OEA +5 350
+>Mike: EFINRST M3 FERNI.ST +76 451
+#note Well, that worked out okay, I guess.
+>Noah: ADEEIMN H11 M..AD +24 374
+>Mike: INR N11 I..RN +10 461
+>Mike:  (EEIN) +8 469

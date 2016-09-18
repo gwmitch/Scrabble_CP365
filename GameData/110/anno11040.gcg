@@ -1,0 +1,44 @@
+#player1 NP NP
+#player2 Alice_Goodwin Alice Goodwin
+>NP: ELMNRTU 8G LUM +10 10
+>Alice_Goodwin: LOT 9F LOT +9 9
+>NP: EJNPRRT -JNR +0 10
+>Alice_Goodwin: NORTUWY J6 DOE +14 23
+>Alice_Goodwin: NORTUWY --  -14 9
+>NP: EHMPQRT -QTH +0 10
+#note Other exchanges are better... or maybe PHT 7H
+>Alice_Goodwin: OX 10F OX +25 34
+>NP: AEMPRRR E10 PARR +24 34
+>Alice_Goodwin: IK 13C KI. +14 48
+>NP: CDEGMRU 7I MUG +18 52
+>Alice_Goodwin: DEE K5 ED.E +12 60
+>NP: CDEENRT 5E DECENT.R +72 124
+>Alice_Goodwin: ?EIORSW L8 ROWdIES +73 133
+>NP: AENPUUY 12D P.UNY +36 160
+#note (phony)
+>Alice_Goodwin: ACEFT 15H FACET +44 177
+>NP: ABEHOSU 4K HABU +32 192
+#note 4H HOUSE
+>Alice_Goodwin: IQ 4D QI +25 202
+>NP: EIIINOS G1 IONI. +8 200
+#note needlessly aggressive
+>Alice_Goodwin: ?NNORST 1B SNORT.Ng +74 276
+#note oooh, NoTORN(I)S
+>NP: EGIORSW F1 .WO +29 229
+>Alice_Goodwin: ADHZ 13I HAZ.D +44 320
+>NP: AEGIRSY M7 GAY +25 254
+#note Missed opportunity here- (FACET)IAE. Clunky leave, but opens a new bingo lane, saves the S for HABUS, and the bag contains roughly 50% A's, E's, and I's. 
+>Alice_Goodwin: EISV O1 VIES +35 355
+>NP: AEEIIRS 7M .IE +4 258
+#note Now I REALLY wish I had seen FACETIAE. But if I'm going to fish off just 2, (S)EI on the bottom setting up my final S appears better than what I chose.
+>Alice_Goodwin: AT O6 T.A +9 364
+>NP: ABEIRST 14A BAITERS +90 348
+#note (the only words ending in -ARRE are BARRE, TARRE, BIZARRE)
+>Alice_Goodwin: ELO A12 LO.E +21 385
+>NP: DFGIJNV M2 JI. +24 372
+>Alice_Goodwin: AAEELO 14K E. +14 399
+>NP: DFGNV 3L V.N. +15 387
+>Alice_Goodwin: AAELO 11H AAL +8 407
+>NP: DFG H4 F.D +20 407
+>Alice_Goodwin: EO 2B OE +10 417
+>Alice_Goodwin:  (G) +4 421

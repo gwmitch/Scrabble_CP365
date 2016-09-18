@@ -1,0 +1,51 @@
+#player1 Rob_Robinsky Rob Robinsky
+#player2 Jim_Burlant Jim Burlant
+>Rob_Robinsky: DGU 8G DUG +10 10
+>Jim_Burlant: EEIINOQ H6 EQ.INE +15 15
+#note You can count the options that aren't exchanges on one hand.  Best per the 2-ply sim is to exchange 5 keeping EN.  I considered that.  And even with the much weaker OI leave for EQUINE as opposed to the EN from an exchange, in my own mind I just couldn't justify exchanging when I could play 5 tiles, score 15, and guarantee that the Q wouldn't come back from the dead at a more critical juncture of the game.  Additionally, this might make it harder for Rob to control the board.  The sim results indicate this position comes down to stylistic preference: the top 8 plays (of which this is one) sim within 0.8% winning chances and sacrifice not even 1-1/2 equity to Q's top choice.  Exchange 5 keeping EN wins 42.6%.  This sims 8th, wins 41.8%, and concedes 1.1 equity.
+>Rob_Robinsky: IM I6 MI. +23 33
+>Jim_Burlant: FHIOSTV 11E FIV. +20 35
+#note I wanted to hold the S and unload the V.  Despite giving up 21 scoreboard points to SHIFT 12H, Q agrees; this wins the 2-ply sim and is Championship Player's top choice as well. Nothing else worth considering beyond those two choices.
+>Rob_Robinsky: DEEG 12C GEED +20 53
+>Jim_Burlant: HHIOSTZ 13C OH +21 56
+#note  For some reason I missed C9 THIGH, which is best.  But the sim likes this play quite a bit; it concedes barely 2 equity and 1% winning chances to THIGH at roughly 1100 iterations.   Despite conceding 5 points to THIGH, the strength of this play is its defensive value:  where THIGH opens up 2 columns where he can play a 7, this choice puts him in a position where, if he doesn't have an S (which I do), he's going to be hard-pressed to score.  And even if he does score, he's going to have to open up some juicy through lines for me.  I'm 52% to win. 
+>Rob_Robinsky: ABKLRWY -ABK +0 53
+>Jim_Burlant: BHIISTZ 14A BIT +14 70
+#note Bad, bad, bad - since play had been limited to the southwest quadrant over the last couple of turns, I had become so hyper-focused on this area that I became blind to the board.  As I entered this rack into Quackle, looking at my scoresheet I didn't have to run the sim to know the obvious play was J2 ZITIS.  If I didn't want to open up with ZITIS, the one decent alternative would have been F10 BIDI.  But ZITIS still should have been the play.  This is a brain fart.  
+>Rob_Robinsky: DKO F10 K..DO +23 76
+#note And when you're having a fantastic tournament (like I was in this nationals), you catch huge breaks like this.  My play of BIT was absolutely abysmal and if there were any justice he would have had EIJ in his rack this turn.  Fortunately for me, Rob was struggling with poor tiles and couldn't mete out any punishment.
+>Jim_Burlant: DEEHISZ 15F SEIZED +60 130
+#note The most interesting position I had this whole game.  I initially considered SIZE 15F, leaving EDH in reserve to play at 15A on the next turn.  Then I started second-guessing:  SIZE gave back easy back hooks for bingos, what do I do if he takes out 15A?, etc.  Then I saw SEIZE leaving DH, but wondered "what if I don't draw an E?"  Ultimately, I said to myself, "screw it, SEIZED is 60 points, and it does set up the H for the next turn if 15A goes away."    Q says I had it backwards:  while this is the runner up according to both the sim and Championship Player, Q says EDH was the play, and this choice loses 8 equity, (it still loses 3 when simmed against an inferred AES).  In retrospect, Quackle may be right.  Though it's counterintuitive to potentially let him hit something if he can S-hook KIDDOS when I can score 60 with SEIZED, EDH scores 44.  Even if he takes out row 15 after EDH comes down, given this pool any number of probable 3-tile draws will enable me to reply to his probable row-15 play with a 12H play of at least 47 points. 
+>Rob_Robinsky: ALP 14J PAL +24 100
+>Jim_Burlant: HJNTTVY M12 THY +27 157
+#note Not the draw I was expecting, so maybe SEIZED was the better choice.  Whatever.  Not much else to do with this consonant overload.  This is best; the only other options that aren't exchanges are 15B THY and G4 NTH.
+>Rob_Robinsky: IN 15A IN +20 120
+>Jim_Burlant: AJNRTTV 13I JAR +27 184
+#note Q prefers VAT in the same location by roughly 5 points.  While 4 unique tiles is better than keeping dupes, I didn't think it was worth the 8-point scoreboard sacrifice to unload the V and keep the J the way Quackle does.
+>Rob_Robinsky: NSU J5 NUS +24 144
+>Jim_Burlant: AGNNTTV 4G VANG +14 198
+#note Q prefers the 4I placement by roughly 4-1/2 points and says 4I wins 73% to this plays's 70.  I like this for the defensive posture, as it doesn't open any easy bingo lines.
+>Rob_Robinsky: AR I10 AR +15 159
+>Jim_Burlant: ?NOORTT L6 TORTONi +66 264
+#note Best bingo - wins just shy of 95%.  Only other bingo options are N6 TORTONi and N6 aRNOTTO.
+>Rob_Robinsky: OUX 8L .OUX +33 192
+>Jim_Burlant: EIMORTW J9 OW +27 291
+#note On this board, there aren't many choices.  This is best - nothing else within 7 points in a 400-iteration sim.
+>Rob_Robinsky: ARY H1 RAY. +21 213
+>Jim_Burlant: CEEIMRT O4 CIME. +19 310
+#note My rack is at odds with the board.  I need to block his most lucrative lines (and hopefully turn some tiles while doing so), but nothing scores and nothing really defends rows 1 and 2, which are by far his biggest threats.  I settled for this at the time because it maximized score (Q confirms nothing above 19 points was available) and that it maximized turnover.  And while a bingo down the O column wasn't as probable a threat as a bingo on rows 1 or 2, I thought there might be some bingos available that did play in this column.  A closer look at the pool in Zyzzyva reveals a handful of bingos are available (XENOLITH, XYLOCARP, XEROSERE).  Q says this is best; in retrospect, I'm not sure I agree with Quackle and that, despite Q's feeble opinion of 2F CR(A)TE, that might have been better.  Then again, 20/20 hindsight might have something to do with that. :-) 
+>Rob_Robinsky: ?AELLOS 1A SALLOwE. +74 287
+#note Rob's back up to not quite 14% winning chances, but my puzzlement over how to handle my next rack increases his winning chances that much more.
+>Jim_Burlant: CELRSTU -LU +0 310
+#note I had absolutely no idea what to do here.  I rejected RUSE K2 because I thought the CLT leave could be problematic with the wrong draw.  Since the bingo didn't play, a fish of some sort should have been in order.  But I couldn't find a safe way to unload both the L and the U; N8 ULU was way too dangerous.  Outside of (EQUINE)S for 17, nothing else scores more than 8 points, and anything I can put down plays for next to nothing, keeps the U, and almost certainly lets him tie the game.  So, after spending several minutes on this turn, I counted to make sure the bag had at least 7 (it had 9) and opted to exchange.  
+>Rob_Robinsky: AE G3 A.E +13 300
+>Jim_Burlant: CEIRSTW 5C TWIC. +20 330
+#note The sim wants me to fish with 7L OW, and the CEIRST leave makes that a tempting proposition.  Championship Player takes a different tack, wanting me to play 5C WRITE.  I wanted to hasten the end of the game and score enough that he couldn't win without bingoing - and add a little more resistance.  Championship player says this is a very strong choice, finishing up as a bronze medalist to WRITE.
+>Rob_Robinsky: AAL 4C AAL +20 320
+>Jim_Burlant: BENPRST 3A BEST +24 354
+#note Nerves were getting to me, and I fumbled a bit here.  Apparently TERN in the same location is best, and this doesn't make Championship Player's radar.  But, given the vowel overload in his rack it gets the job done.  Another interesting option I didn't see was ARPENTS 2H.
+>Rob_Robinsky: EEFIORU M7 R.OF +20 340
+>Jim_Burlant: NPR 14E N.R +5 359
+>Rob_Robinsky: EEIU 3G ..E +10 350
+>Jim_Burlant: P 13B P.. +13 372
+>Jim_Burlant:  (EIU) +6 378

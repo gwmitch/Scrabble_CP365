@@ -1,0 +1,34 @@
+#player1 Jason_Keller Jason Keller
+#player2 Evans_Clinchy Evans Clinchy
+>Jason_Keller: II -II +0 0
+>Evans_Clinchy: ?AAEENU -AEU +0 0
+#note Sim says to play EAU rather than trade it. I strongly disagree, taking into account defense and the fact that EAU doesn't hook well (only the B and X).
+>Jason_Keller: ?ACDIRT 8D CARoTID +74 74
+>Evans_Clinchy: ?AAENOS K5 pAESANO +84 84
+>Jason_Keller: AAEGHST 10H THA.AGES +66 140
+>Evans_Clinchy: AELLOUY O7 LOU.Y +24 108
+#note TOLUYL H10 comes up first statically, but this sims way better. Gotta take out the S in the triple lane.
+>Jason_Keller: BEIOX D7 I.EBOX +34 174
+>Evans_Clinchy: AEELSTY F3 EASTE.LY +71 179
+>Jason_Keller: GINPRT 4D PR.TING +22 196
+>Evans_Clinchy: EENOQRU H10 .ORQUE +48 227
+>Jason_Keller: EHOV C11 HOVE +34 230
+>Evans_Clinchy: AEILNOP N1 OPALINE +74 301
+>Jason_Keller: GIW O1 WIG +43 273
+>Evans_Clinchy: EEIKNUZ M3 ZEK +66 367
+>Jason_Keller: BOW E11 BOW +42 315
+>Evans_Clinchy: EFINNOU 13H .UINONE +34 401
+>Jason_Keller: AJM 12L JAM +48 363
+>Evans_Clinchy: ADDFLMV H1 VAL.D +27 428
+#note This is the straight equity-robot play. But sim it many-ply, and you'll find a better idea: FLAMED 15D. It unloads a few of the clunky consonants and blocks two things -- the bingo line at the bottom and the hooks to HOVE. It only scores 16, but that's more than enough when you've taken out almost every bingo or high-scoring play that can beat you. Only thing left to fear now is FETID 14J for 74, but that's not terribly likely, and even that looks outrunnable*. Also, MALFED in the same spot might be better than FLAMED, sacrificing one point to avoid the EF/BOWEL comeback for 36.
+>Jason_Keller: FRTU 15A TURF +44 407
+#note This is brutal. I don't play FLAMED/MALFED, and now look what happens. He scores 44, he opens a second bingo line, and now I have only a small lead and two spots to block. Suddenly in serious trouble.
+>Evans_Clinchy: DEFIMNR 14J FE +28 456
+#note Yuck. Of the eight tiles unseen to me, any one of three could be in the bag for him to bingo in line A. If the E's in the bag, he has DISTRICT, the R is DICTIEST, and the C is DIRTIEST. Also three kill me in line 15 -- the S for DIERETIC, or either of the two I's for DESERTIC. I don't have much time to break down all the possible endgames, so I just blindly block one of the spots and pray.
+>Jason_Keller: CDEIIRT 14J ..TID +43 450
+#note As luck would have it, I chose right and blocked DIERETIC. But he still finds his 43-point comeback to keep it close.
+>Evans_Clinchy: DIMNRS L4 MIND +36 492
+#note Pretty ridiculous game. Happy to sneak away with a win.
+>Jason_Keller: CEIR 5B CRIE. +22 472
+#note *obligatory joke about how if you know Jason, you know why this is a funny outplay*
+>Jason_Keller:  (RS) +4 476

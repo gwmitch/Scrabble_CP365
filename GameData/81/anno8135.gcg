@@ -1,0 +1,44 @@
+#player1 scott_jackson scott jackson
+#player2 opponent opponent
+>scott_jackson: AEEEERU -AEEEU +0 0
+>opponent: FI 8H IF +10 10
+>scott_jackson: AEIRRYZ G6 AIRY +18 18
+#note setting up the Z possibly
+>opponent: AAH F5 AHA +29 39
+>scott_jackson: EEFQRRZ E3 FEZ +52 70
+>opponent: ENW D2 NEW +27 66
+>scott_jackson: EKMQRRR -KMQRR +0 70
+#note 1A MERK 61! It was such an ugly rack I didn't even look up there. Oh well.
+>opponent: GOT J8 TOG +15 81
+>scott_jackson: ABEERVW H1 BEWARE +42 112
+#note Also at 1A for 44
+>opponent: IO I3 OI +11 92
+>scott_jackson: EEEOSUV J1 EVE +20 132
+#note Here come the vowels! Best.
+>opponent: ISTXY K3 SIXTY +37 129
+>scott_jackson: DEOOOSU L4 DUO +25 157
+#note I thought sacrificing the 5 points by playing here instead of at C2 was okay, but you can probably do just as much damage on the C column anyway. Definitely the wrong play, and I ended up getting burned for it.
+>opponent: ??EIJNR C3 REJoINs +94 223
+>scott_jackson: EMOOSTU 8A MO.O +21 178
+#note best
+>opponent: ACE F9 ACE +16 239
+>scott_jackson: EOORSTU F1 OUT +12 190
+#note better at B1, though I like keeping the A column completely open.
+>opponent: ABDE 12C BEAD +21 260
+>scott_jackson: EMNORSS 13C OM +20 210
+#note SOM is better
+>opponent: AINV 1A VINA +32 292
+>scott_jackson: AENNRSS 11F .NSNARES +71 281
+>opponent: GLLU M6 GULL +11 303
+>scott_jackson: GLPRSTT L10 P.LT +12 293
+#note Best is GL(o)P? Huh? My play is up pretty high, so whatever.
+>opponent: AEIPR H10 A.PIRE +33 336
+>scott_jackson: GIKRSTT 8L I.K +8 301
+#note Seemed like my best option - I have the last S and there's no A's left. My opponent also probably has the Q and will need to ditch it quickly on this board. In a 4-play sim this wins 18%. 13G K(I)T is best, I assume because it blocks the Q spot. In reality my opponent would still be able to play QU(o)D at A6, and my next rack would be GIIORST which I can't win with.
+>opponent: Q 13G Q. +21 357
+>scott_jackson: GIORSTT 14F GI.T +20 321
+#note Taking the points won't score enough now, I have to hope to play on the O column when the bag is empty. According to Quackle nothing I do will win (assuming my opponent plays optimally).
+>opponent: CDDHLNU A8 .UNCH +16 373
+#note 13J DU(T)CH and J13 (UH) both win. 
+>scott_jackson: EORST O8 STORE +42 363
+>scott_jackson:  (DDL) +10 373

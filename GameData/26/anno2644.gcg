@@ -1,0 +1,48 @@
+#player1 Sam Sam
+#player2 Joe_Bihlmeyer Joe Bihlmeyer
+>Sam: AADHIIR 8F AHI +12 12
+#note Well, I didn't notice this was still simming...so after 124,767 2-ply iterations, AHI 8H comes out ahead of AHI 8F by .1. I would have thought my play was better simply because of the S-hook lane...huh. 
+>Joe_Bihlmeyer: LOOT 7F TOOL +16 16
+>Sam: ADDFILR 9D FID +11 23
+>Joe_Bihlmeyer: AITX 8A TAXI +42 58
+>Sam: ABDELMR 7B BAD +28 51
+#note Superleaves: ABLR=4.24, ALMR=3.62, BELR=5.73, ELMR=3.5. That's surprising given M=B+2.42. Despite these leave values, MED 7B sims best easily, followed by BED, MAD, and my BAD 7B. I think it has the least potential for overlaps, which is important on this closed board. Also, saving the B enables my own overlaps. 
+>Joe_Bihlmeyer: AFR 6A FAR +25 83
+>Sam: EELMORU 6I EMU +13 64
+#note This is about a one-point mistake behind OHO G7 and LEU 9H. I like OHO/FIDO a lot, didn't see it, but would probably prefer LEU given I don't know many bingos in EELMRU??
+>Joe_Bihlmeyer: ANRUY 5J UNARY +24 107
+>Sam: EKLLORW L2 KOL. +16 80
+#note Well, this was an awful play. Any of LOWLY N1, WORK M3, or WELLY N1 would have been better; I found the first and second. (Grammar lesson of the day: former and latter should only be used with groups of two. I was going to say "the former two" before my dictionary widget told me otherwise.) About a 7-point error. 
+>Joe_Bihlmeyer: AEG M1 GAE +18 125
+>Sam: AEELQRW -EQW +0 80
+#note I remember noticing I had KABAL* B5 last turn. Just didn't see QABALA B5 here. This is second-best, a 7-point error.
+>Joe_Bihlmeyer: OO 1M .OO +12 137
+>Sam: ADEELRU 9H LEU +7 87
+#note I didn't see DEKARE 2J, which is best. I did see KAE 2L, which is better than LEU. 10-point error.
+>Joe_Bihlmeyer: ALNPT 10J PLANT +25 162
+>Sam: ADEIORU L10 .UDIO +12 99
+#note The terrific UAKARI 2J is best. Didn't see it. My play is second, though one could argue that KADI 2L is better than it. 13.5-point error.
+>Joe_Bihlmeyer: EJN 14J JE.N +27 189
+>Sam: AEEMORS 2L ..ME +30 129
+>Joe_Bihlmeyer: COW 8J COW +19 208
+>Sam: AEEORSV O6 OVERSEA +91 220
+>Joe_Bihlmeyer: GITW 4G TWIG +18 226
+>Sam: EGINSTY 8J ...Y +12 232
+#note Did not see EDIFYING D6 for 39. The problem with my fish is that, with Joe having used row 4, I now need to end a bingo with S, and only 9/26 unseen tiles give me an S-ending bingo, including the two blanks. I guess eights are possible here too (TIGHTENS, STRINGED, INGESTED, etc.) STEWY H1, which I considered, is 6.5 points better than COWY. 20-point error on this play.
+>Joe_Bihlmeyer: ?BEHRSZ 11E HaZERS +42 268
+#note Figured Joe had the other blank after this play. He told me his seventh tile later. It makes sense to block considering my fish.
+>Sam: EGINSTV H11 .VENT +36 268
+>Joe_Bihlmeyer: Q I3 Q. +21 289
+>Sam: ?CGIIST G2 GI. +5 273
+#note I was getting low on time by this point, as it was a long game (15 turns each) and I had thought for a while on some previous plays, so I made this play somewhat quickly. This is Champ Player's favorite. Not sure how exactly to sim when in the pre-endgame but still so far out.
+>Joe_Bihlmeyer: BEE G13 BEE +19 308
+#note Blocking it up for me.
+>Sam: ?CIPRST 13K P. +8 281
+#note Didn't know TIPCaRTS A8. Again, I need to study, and each game is pointing to that. PEN 14F, Q's non-bingo fave, won't win because Joe will certainly block the T at A8. I gave myself a 3/8 chance at ClARINETS 15A, figuring that Joe would block the T. As it turns out, it was a 1/2 shot, with AI in the bag. Guess which one I drew...
+>Joe_Bihlmeyer: DEINNRS 12A DINNER +24 332
+#note DINER 12B is slightly better in equity, but both win 75% of the time. Good play by Joe.
+>Sam: ?CIIRST B10 CR.TIc +26 307
+#note Didn't know the supercool TRIaDICS A8, which is the only thing better than my play. 6-point mistake.
+>Joe_Bihlmeyer: AS F2 AS +11 343
+#note Plays for 16 at 15K, but Joe wasn't sure of AUDIOS and didn't want to lose that way. PIAS 13K is also 16. 
+>Joe_Bihlmeyer:  (IS) +4 347

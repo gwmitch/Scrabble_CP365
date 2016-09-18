@@ -1,0 +1,45 @@
+#player1 Player_1 Player 1
+#player2 Opponent Opponent
+>Player_1: FLOW 8G FOWL +20 20
+#note This is the first game of Player 1 that we are analyzing.  As you can see, player 1 is a pretty good player.  And while we don't have all of their racks, we can still notice some possible tendencies.
+>Opponent: BDEGJOO 7F JOB +23 23
+>Player_1: QZ -QZ +0 20
+>Opponent: DEGGNOO 9H GOOD +21 44
+>Player_1: ADRY L9 YARD +26 46
+>Opponent: AEEGINU J6 EU..GIAE +15 59
+>Player_1: ?EILRSU 10B RUtILES +67 113
+>Opponent: AEEGNPR I11 PANG +17 76
+>Player_1: KST 15H TSK +29 142
+>Opponent: AEEENRR D6 REEN.ER +14 90
+>Player_1: HNT K5 NTH +19 161
+#note This is a bit weird, but he might be very consonant heavy.
+>Opponent: EEIMNVZ 8A VIM.N +30 120
+>Player_1: Q B7 Q. +11 172
+>Opponent: ?AEEPTZ C3 ZETA +28 148
+>Player_1: CLW 4A CL.W +24 196
+>Opponent: ?BEIPTT 11C P.T +18 166
+>Player_1: AV 13G VA.. +11 207
+#note Even though we really don't have Player 1's rack, this really can't be right.  Hitting REENTERS for a bingo is really hard, and there are more dangerous threats.  This might be okay if he has a huge rack or at least an S (and preferably a blank honestly) but I don't really like it.  Since this board has huge setup potential, you really need to try to outscore.
+>Opponent: ?BEEINT M10 BEEN +21 187
+>Player_1: IS N10 SI +14 221
+#note This probably isn't right either without the case S.  Doesn't score enough and gives the opponent too much liberty to create more setups.  It's looking like Player 1 doesn't react to setups very well and doesn't see its potential, and as a result goes overboard in closing the board, not seeing that his opponent can just create lines to the point of submission.
+>Opponent: ?DHILMT A1 DIT.H +33 220
+>Player_1: DO B1 OD +15 236
+#note Scoring 15 to block the board with a 1 point lead and no strong indication of range is not a good idea.  A good player can abuse this horribly.
+>Opponent: ?ALMY D2 YA. +20 240
+>Player_1: III -III +0 236
+#note I can't say I get this.  After playing off 2 tiles for 15, trading doesn't seem good, and if your rack is that bad you can trade more than 3 tiles.  The blank, S, and to a smaller degree X are all very useful here.  And now you're going to be behind on a board where being down isn't a good thing.
+>Opponent: ?ACILMN O11 NIM +10 250
+>Player_1: EO E5 OE +7 243
+#note This is not a good play by player 1 with really any rack.  It's seeming like a closed board isn't actually a bad thing against Player 1, as long as you aren't losing.
+>Opponent: ?ACIILU F4 AI +4 254
+>Player_1: A 5A .A. +8 251
+#note Not really sure of the logic here, but probably not a fan regardless.
+>Opponent: ?ACILOU N13 OI +9 263
+>Player_1: S 14N .S +8 259
+#note Unknown but probably not a very good block given his rack/range.  EX is probably better if he has it.  Again, maybe not worth avoiding closed boards against Player 1.
+>Opponent: ?ACFLRU G2 CURL +12 275
+>Player_1: EEORTUX E1 REX +34 293
+#note We're sensing a theme.  Is there more evidence to support this conclusion that we can exploit player 1?
+>Opponent: ?AFI L2 FIlA +14 289
+>Opponent:  (EOTU) +8 297

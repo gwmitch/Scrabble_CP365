@@ -1,0 +1,45 @@
+#player1 Mike Mike
+#player2 John John
+#description Saved by Elise version 0.0.7
+>Mike: ABCIRRV 8D BRAVI +26 26
+>John: AAY E8 .AYA +14 14
+>Mike: BCEORRT F7 C.ROB +24 50
+>John: ARW D11 WAR +20 34
+>Mike: EEERTVY 14B VEERY +45 95
+#note Taking care not to make the same mistake as two games ago!
+>John: AQT 7H QAT +24 58
+>Mike: EEFIIOT 6I FIE +17 112
+#note 3-ply winprob simulation (4360), +10.15 / 63.8% [108.86s]
+>John: EKM C12 ME.K +28 86
+>Mike: AEGGIOT 15F AGOG +23 135
+#note Or AGGIE. I prefer this for defensive purposes, though.
+>John: DIMOU 5K DUOMI +22 108
+>Mike: EEEINOT N1 TONE.E +20 155
+#note Looks ugly, but there's nothing better.
+>John: HIS 1L HI.S +33 141
+>Mike: DEIIILN -IIL +0 155
+#note One thing I'm noticing as a trend as I analyze these games is that I'm exchanging a little bit too readily. Elise says LINED O4 is best by a huge margin; I'm going to dispute that. Quackle's top choices are LININ 3J (didn't see it) or INDIE O5, both of which I think I can live with.
+>John: NU 3L NU. +6 147
+>Mike: DEEIINR O4 D.NER +31 186
+#note INDIE again. Elise thinks my play is closer to the mark than Quackle does.
+>John: ALNRS 9H SNARL +18 165
+>Mike: CEIINPT L8 C.IPT +24 210
+#note Quackle prefers PELITIC in this spot; Elise prefers my play. I'm open to suggestions.
+>John: EX 10I EX +52 217
+>Mike: EEHIJNO 2J JOE +32 242
+#note 3-ply winprob simulation (2040), -3.53 / 60.4% [90.73s]
+>John: AF 7C FA +13 230
+>Mike: EHILNOT 6B HOLT +25 267
+>John: TU J2 .UT +10 240
+>Mike: ?EILNPS N8 aLPINES +79 346
+>John: IL E4 LI. +6 246
+>Mike: ?DIOOUW C4 WO.. +10 356
+#note Elise comes up with some 3/1000 chance that this loses (which Quackle overlooks). I'll take my chances.
+>John: AINST O11 SATIN +27 273
+>Mike: ?DEIOUZ K11 OUZEl +36 392
+#note Quackle thinks DUMA 12A is best; it's second choice, ZEIn 2F, tops Elise's evaluation.
+>John: DEG F3 GED +10 283
+>John: DEG --  -10 273
+#note Huh. Okay then.
+>Mike: DI 4C .I.D +16 408
+>Mike:  (DEG) +10 418

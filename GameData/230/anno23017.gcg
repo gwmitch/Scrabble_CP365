@@ -1,0 +1,61 @@
+#player1 rp302 rp302
+#player2 axcertypo axcertypo
+>rp302: DOPQSTU 8D QUODS +50 50
+#note This game acts as a simplified example of winnability. Its metric is unfortunately flawed: it uses Quackle's equity measurement. 
+>axcertypo: ADKPRRS F7 P.RK +20 20
+#note However, Quackle's equity calculator is probably the only reliable metric for most Scrabble players today. The only metric that can compare to this metric is a top expert's analysis. I used a player who is very difficult to assess; who makes many decisions that do not align with any global strategical heuristic. This player is therefore quite difficult to exploit, which makes an equity-based strategy (points+leave+random opponent racks) the optimal strategy to undertake.
+>rp302: AAMOPTY 11C PATY +32 82
+#note -2
+>axcertypo: ADEEIRS 12A IRADE +26 46
+#note -5
+>rp302: AAHMNOT A12 .NTO +12 94
+#note -35
+>axcertypo: CEEIOSZ 13C COSIE +37 83
+#note -10
+>rp302: AAAEHMM 12G HMM +18 112
+#note -55
+>axcertypo: EEGJLUZ H5 JUG. +12 95
+>rp302: AAAERST 11H AA +10 122
+#note -63
+>axcertypo: AEEGLTZ 5H .EEZ +40 135
+>rp302: AENNRST 14G TANNERS +65 187
+#note -88
+>axcertypo: AGLLTVY 6J TALLY +33 168
+>rp302: ?EILRTV M3 VIL. +14 201
+#note -105
+>axcertypo: AGIOSVW 15H WO +32 200
+>rp302: ?EEFORT 13K FOE +23 224
+#note -123
+>axcertypo: AGIIOSV L10 VIG.. +18 218
+>rp302: ?EEENRT G7 E. +11 235
+#note -135
+>axcertypo: AEINORS 10E A.IN +17 235
+>rp302: ?EEENRT 15M TEN +12 247
+#note -140
+>axcertypo: EIINORS 7M ION +18 253
+>rp302: ?DEEIRR 3H REDRI.En +62 309
+>axcertypo: CEIRSUX O1 XE.IC +42 295
+>rp302: BEGILTW 8N WE +30 339
+#note -150
+>axcertypo: BDFORSU L2 F.B +24 319
+>rp302: ?BGILTU H1 BU. +15 354
+#note Blocking only possible bingo: SAHUARO? Check. 
+
+Allowing me to win if I have AADHORS (if I see the winning play in F2 AS(U)RA) or at a minimum allowing me to tie with OH(E)D N1? 
+Well, for that, there's Mastercard.
+
+Can you find a play that wins with every single draw?
+
+>axcertypo: AADORSU N1 OD. +23 342
+#note -1, brining total equity loss to 11.
+>rp302: ?GHILOT 9C HI +20 374
+#note -26, bringing total equity loss to 176
+>axcertypo: AARSU B6 AURAS +15 357
+>axcertypo:  (?GLOT) +10 367
+#note This game is a demonstration of how 2 seemingly small mistakes can cascade into a loss, whereas 10 errors, some quite significant, can translate into a win. 
+
+You can come to two logical conclusions from this. Either:
+
+a) You can blame this loss on bad luck, timing, drawing, or on your opponents fortune.
+b) You can blame this loss on something you can control, in this case the moves you make.
+

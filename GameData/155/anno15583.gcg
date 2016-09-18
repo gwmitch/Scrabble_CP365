@@ -1,0 +1,86 @@
+#player1 Quackle_0.97 Quackle 0.97
+#player2 Elise_0.0.5 Elise 0.0.5
+#description Saved by Elise version 0.0.5
+#lexicon TWL06
+>Quackle_0.97: BIINOSU -BIOU +0 0
+#note Time remaining on clock: [09:28.22]
+>Elise_0.0.5: GLRSWXY 8H WRY +18 18
+#note 3-ply winprob simulation (2160), -21.08 / 49.7% [23.16s]
+#note Time remaining on clock: [09:35.89]
+>Quackle_0.97: EGIIMNS I8 REMISING +63 63
+#note Time remaining on clock: [09:06.58]
+>Elise_0.0.5: EGLOSSX H10 OXES +30 48
+#note 3-ply winprob simulation (1280), -53.26 / 36.7% [42.66s]
+#note Time remaining on clock: [08:52.22]
+>Quackle_0.97: CLNOPT? 7F CLOP +34 97
+#note Time remaining on clock: [08:07.17]
+>Elise_0.0.5: EGGKLLS 15F GLEG +18 66
+#note 3-ply winprob simulation (2240), -62.45 / 32.0% [32.86s]
+#note Time remaining on clock: [08:18.64]
+>Quackle_0.97: AHINQT? G7 LAIN +20 117
+#note Time remaining on clock: [06:58.45]
+>Elise_0.0.5: EGIIKLS J10 ES +22 88
+#note 3-ply winprob simulation (1760), -52.89 / 35.5% [27.86s]
+#note Time remaining on clock: [07:50.06]
+>Quackle_0.97: HJOQTT? 9F QI +11 128
+#note Time remaining on clock: [06:17.12]
+>Elise_0.0.5: GIIKLO? F13 IGG +9 97
+#note 3-ply winprob simulation (1792), -55.39 / 34.7% [48.81s]
+#note Time remaining on clock: [07:00.22]
+>Quackle_0.97: HJNOTT? E11 JOT +22 150
+#note Time remaining on clock: [05:35.23]
+>Elise_0.0.5: IIKLOU? -IKOU +0 97
+#note 3-ply winprob simulation (2160), -62.89 / 30.8% [42.56s]
+#note Time remaining on clock: [06:16.81]
+>Quackle_0.97: ADFHNT? 13H SIFT +7 157
+#note Time remaining on clock: [04:48.60]
+>Elise_0.0.5: AEIIIL? -AII +0 97
+#note 3-ply winprob simulation (960), -67.65 / 29.0% [31.38s]
+#note Time remaining on clock: [05:44.40]
+>Quackle_0.97: AAADHN? 14E AGA +17 174
+#note Time remaining on clock: [04:14.80]
+>Elise_0.0.5: EILMOT? L7 MOTILEs +75 172
+#note Time remaining on clock: [05:43.92]
+>Quackle_0.97: ADEHNT? M2 cHANTED +80 254
+#note Time remaining on clock: [03:26.16]
+>Elise_0.0.5: DEFNNOS L3 OF +25 197
+#note 3-ply winprob simulation (1680), -65.14 / 21.6% [21.16s]
+#note Time remaining on clock: [05:22.28]
+>Quackle_0.97: BBEITTV K5 VIE +17 271
+#note Time remaining on clock: [03:00.66]
+>Elise_0.0.5: DEENNRS 12D NO +4 201
+#note 3-ply winprob simulation (2480), -51.24 / 29.5% [30.50s]
+#note Time remaining on clock: [04:51.31]
+>Quackle_0.97: ABBRTTU 13A RUBATI +18 289
+#note Time remaining on clock: [02:29.46]
+>Elise_0.0.5: DEEINRS N8 DENIERS +75 276
+#note Time remaining on clock: [04:50.92]
+>Quackle_0.97: BCEITTZ A12 CRIB +33 322
+#note Time remaining on clock: [02:02.74]
+>Elise_0.0.5: AEHIOUW O12 HE +20 296
+#note 5-ply winprob simulation (3680), -39.51 / 28.8% [69.19s]
+#note Time remaining on clock: [03:41.40]
+>Quackle_0.97: ADERTTZ 4L FAT +6 328
+#note Time remaining on clock: [01:22.93]
+>Elise_0.0.5: AAIOUVW 3L OHIA +9 305
+#note 3-ply winprob simulation (1280), -41.08 / 28.2% [21.72s]
+#note Time remaining on clock: [03:19.40]
+>Quackle_0.97: AADERTZ 6G ER +13 341
+#note Time remaining on clock: [00:42.62]
+>Elise_0.0.5: AEOOUVW O1 OVA +18 323
+#note 5-ply winprob simulation (2784), -28.34 / 29.4% [82.48s]
+#note Time remaining on clock: [01:56.68]
+>Quackle_0.97: AADDRTZ B13 UTA +14 355
+#note Time remaining on clock: [00:13.73]
+>Elise_0.0.5: AELOOUW M14 OW +7 330
+#note 3-ply winprob simulation (1760), -26.77 / 36.5% [18.66s]
+#note Time remaining on clock: [01:37.87]
+>Quackle_0.97: ADDNRRZ H3 NARROW +10 365
+#note Time remaining on clock: [-00:13.10]
+>Elise_0.0.5: AEKLOUY I2 YULE +15 345
+#note Time remaining on clock: [01:16.43]
+>Quackle_0.97: DDPRUUZ D12 NARD +12 377
+#note Time remaining on clock: [-00:41.24]
+>Elise_0.0.5: AKO 4F KOALA +9 354
+#note Time remaining on clock: [01:16.43]
+>Elise_0.0.5: (DPUUZ) +34 388
