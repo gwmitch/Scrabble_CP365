@@ -1,6 +1,8 @@
+from __future__ import division
 import numpy as np;
 import twl;
 import random;
+from copy import deepcopy
 from ScrabblePlayer import *
 from scrabble_globals import *
 
@@ -8,6 +10,7 @@ from scrabble_globals import *
 # OUR BOT GOES HERE
 
 # self.rack is an instance variable for the bot's current rack of tiles
+V_WEIGHT = .99
 
 class BoardWord():
     def __init__(self, _letter, _direction, _x, _y):
@@ -25,16 +28,15 @@ class ScrabbleBot(ScrabblePlayer):
         move = self.checkLegalMoves(move)
         #print move
         #print self.rack
-
         #if there is no move available, just do nothing
         if self.game.board.isEmpty():
             wordList = twl.anagram(''.join(self.rack))
             for word in wordList:
                 defMove = {}
-                print word
+                # print word
                 for i in range(len(word)):
                     defMove[(7, 7+i)] = word[i]
-                print defMove
+                # print defMove
                 move.append(defMove)
             # defMove = {}
             # x = 7,7
@@ -42,7 +44,9 @@ class ScrabbleBot(ScrabblePlayer):
             # return defMove
         if len(move) < 1:
             return move
-        return self.greedyMove(move)
+        move = self.greedyMove(move)
+        print self.rackWeight(move)
+        return move
 
 
     def buildList(self):
@@ -161,3 +165,50 @@ class ScrabbleBot(ScrabblePlayer):
                 finalMove = move
             self.game.undoMove(move)
         return finalMove
+
+    def vowelProb(self, move):
+        board = list(self.game.board.board.flatten().tostring())
+        letters = list((self.game.tile_distribution))
+        vowelCount  = 0
+        # print letters
+        for letter in letters:
+            if letter in board:
+                board.remove(letter)
+                letters.remove(letter)
+        # print letters
+        for letter in letters:
+            if letter in list("aeiou"):
+                vowelCount += 1
+        vowelRatio = vowelCount/len(letters)
+        # print vowelCount, len(letters), vowelCount/len(letters), "ratio"
+        return vowelRatio * len(move)
+
+    def vowelRackWeight(self, ratio):
+        return 1
+
+    def pointRackWeight(self, points):
+        return 1
+
+    def rackWeight(self, move):
+        finalWeight = 1
+        tempRack = deepcopy(self.rack)
+        vowelCount = 0
+        consCount = 0
+        pointCount = 0
+        for key, value in move:
+            tempRack.remove(move[(key,value)])
+        for letter in tempRack:
+            if letter in "aeiou":
+                vowelCount += 1
+            else:
+                consCount += 1
+            if letter == "v":
+                finalWeight *= V_WEIGHT
+            pointCount += TILE_POINTS[letter]
+        vowelCount += self.vowelProb(move)
+        consCount += len(move)-self.vowelProb(move)
+        # print self.vowelProb(move), "vowel"
+        vcRatio = min(vowelCount, consCount)/max(vowelCount, consCount)
+        finalWeight *= self.vowelRackWeight(vcRatio)
+        finalWeight *= self.pointRackWeight(pointCount)
+        return finalWeight
