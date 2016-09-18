@@ -10,7 +10,9 @@ from scrabble_globals import *
 # OUR BOT GOES HERE
 
 # self.rack is an instance variable for the bot's current rack of tiles
-V_WEIGHT = .99
+V_WEIGHT = 3 # lose how many points for each v left in hand
+VOWEL_RACK_WEIGHT = 10 #how much is an uneven vowel/consonant ratio on your next turn penalized
+POINT_RACK_WEIGHT = 1 #how much are you rewarded for keeping points in your hand
 
 class BoardWord():
     def __init__(self, _letter, _direction, _x, _y):
@@ -183,14 +185,16 @@ class ScrabbleBot(ScrabblePlayer):
         # print vowelCount, len(letters), vowelCount/len(letters), "ratio"
         return vowelRatio * len(move)
 
-    def vowelRackWeight(self, ratio):
-        return 1
+    def vowelRackWeight(self, ratio): #ratio of vowels to consonants in next hand
+        IDEAL_RATIO = 1
+        rat_flaw = IDEAL_RATIO - ratio
+        return VOWEL_RACK_WEIGHT * rat_flaw
 
-    def pointRackWeight(self, points):
-        return 1
+    def pointRackWeight(self, points): #number of points left in hand
+        return POINT_RACK_WEIGHT * points
 
     def rackWeight(self, move):
-        finalWeight = 1
+        finalWeight = 0
         tempRack = deepcopy(self.rack)
         vowelCount = 0
         consCount = 0
@@ -203,12 +207,12 @@ class ScrabbleBot(ScrabblePlayer):
             else:
                 consCount += 1
             if letter == "v":
-                finalWeight *= V_WEIGHT
+                finalWeight -= V_WEIGHT
             pointCount += TILE_POINTS[letter]
         vowelCount += self.vowelProb(move)
         consCount += len(move)-self.vowelProb(move)
         # print self.vowelProb(move), "vowel"
-        vcRatio = min(vowelCount, consCount)/max(vowelCount, consCount)
-        finalWeight *= self.vowelRackWeight(vcRatio)
-        finalWeight *= self.pointRackWeight(pointCount)
+        vcRatio = min(vowelCount, consCount)max(vowelCount, consCount) # 1 is best
+        finalWeight -= self.vowelRackWeight(vcRatio)
+        finalWeight += self.pointRackWeight(pointCount)
         return finalWeight
