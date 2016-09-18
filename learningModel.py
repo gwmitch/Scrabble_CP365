@@ -19,35 +19,20 @@ class LearningModel:
 			if not (currGame is None):
 				currGameMoves = self.parseSingleGameToMoves(currGame)
 				self.games.append(Game(currGameMoves))
-<<<<<<< HEAD
 				count += 1
 			#else:
 			#	count += 1 
 		total = total + count
 		print count
-		#print total
-=======
-
-		#print count
->>>>>>> b7c9ac969256d03e96d8fb0ca1d28452ca07cbac
 		##self.games[0].printGame()
 
 	def parseSingleGame(self, game, dir_num):
 		filename = "GameData/" + str(dir_num) + "/" + game
 		try:
-<<<<<<< HEAD
 			my_data = np.genfromtxt(filename, skip_header=2, skip_footer=1, dtype=str)
 			return my_data
 		except:
 			#print "Error with file: " + filename
-=======
-			my_data = np.genfromtxt(filename, skip_header=0, dtype=str)
-			print filename
-			return my_data
-		except:
-			print "Error with file: " + filename
-
->>>>>>> b7c9ac969256d03e96d8fb0ca1d28452ca07cbac
 			return None
 
 	def parseSingleGameToMoves(self, my_data ):
@@ -84,26 +69,14 @@ class Move:
 		moveString = "Player: " + self.player + " WordBank: " + self.wordBank + " Position: " + self.position + " WordPlayed: " + self.wordPlayed + " PointsGained: " + self.pointsGained + " TotalScore: " + self.totalScore
 		print moveString
 
-<<<<<<< HEAD
-
-
-
-
 
 def loadAllDataSets(dir_num):
 	games = os.listdir("GameData/" + str(dir_num) + "/")
 	return games
-=======
-def loadAllDataSets():
-	allGames = os.listdir("LearningData/")
-	return allGames
->>>>>>> b7c9ac969256d03e96d8fb0ca1d28452ca07cbac
-
 
 if __name__=="__main__":
     ##my_data = loadSingleDataset()
     ##currGame = Game(parseData(my_data))
-<<<<<<< HEAD
 	global total
 	total = 0
 	for i in range(0, 246):
@@ -112,10 +85,5 @@ if __name__=="__main__":
 		model = LearningModel(emptyArr)
 		model.initialize(games, i)
 	print total
-=======
-    allGames = loadAllDataSets()
-    emptyArr = []
-    model = LearningModel(emptyArr)
-    model.initialize(allGames)
-    print model.games[0].moves[0].wordPlayed.lower()
->>>>>>> b7c9ac969256d03e96d8fb0ca1d28452ca07cbac
+	
+    #print model.games[0].moves[0].wordPlayed.lower()
