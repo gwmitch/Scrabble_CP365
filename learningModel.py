@@ -9,6 +9,7 @@ from scrabble_globals import *
 
 
 class LearningModel:
+
 	def __init__(self, games):
 		self.games = games
 
@@ -24,7 +25,7 @@ class LearningModel:
 			#else:
 			#	count += 1 
 		total = total + count
-		print count
+		#print count
 		#print count
 		##self.games[0].printGame()
 
@@ -41,17 +42,18 @@ class LearningModel:
 		allMoves = []
 		for row in my_data:
 			moveContents = []
-			for x in range(len(row)):
+			for x in row:
 				for letter in x:
 					if letter.islower():
 						blank_tile = letter
-				x.replace(".", blank_tile)
-				moveContents.append(row[x])
+						x.replace(".", blank_tile)
+				moveContents.append(x)
 			currMove = Move(moveContents)
 			allMoves.append(currMove)
 		return allMoves
 
 class Game:
+
 	def __init__( self, moves ): #right now everything is stored as a string 
 		self.moves = moves
 		self.numberMoves = len(moves)
@@ -67,12 +69,23 @@ class Game:
 
 class TestMoveOnBoard(ScrabblePlayer):
 	
-	def inputMove(self, board):
-		moves = []
-		moves = parseSingleGameToMoves(currGame)
-		for move in moves:
-			
+	def inputMove(self):
+		self.move_dictionary = {}
+		#moves = []
+		for key, move in self.move_dictionary.iteritems():
+			if(self.game.boardWouldBeLegal(move)):
+				return move
 
+	def isMoveVertical(self):
+		if self.move_dictionary.keys()[1][0] != self.move_dictionary.keys()[0][0]:
+			return true
+		return false
+
+  	def goesThroughCenter(self):
+  		move = self.inputMove()
+  		if (7,7) in self.move_dictionary.keys():
+  			return true
+  		return false
 
 
 class Move:
@@ -89,27 +102,34 @@ class Move:
 		moveString = "Player: " + self.player + " WordBank: " + self.wordBank + " Position: " + self.position + " WordPlayed: " + self.wordPlayed + " PointsGained: " + self.pointsGained + " TotalScore: " + self.totalScore
 		print moveString
 
-	def findStartingDirection(self):
-		if self.position == "F8":
-			print "Cannot determine direction of starting move." #fix this by looking at next move
-		else:
-
-
+	#def findStartingDirection(self):
+	#	if self.position == "H8":
+	#		print "Cannot determine direction of starting move."
+	#	else:
+     # 		self.parseMoveLocation()
+      #		is_vertical = TestMoveOnBoard.goesThroughCenter()
+      #	return is_vertical
+      
 	def changeLetterToNumber(self, letter):
 		letter_num = ord(letter) - 96
 		return letter_num
 
 	def parseMoveLocation(self):
-		col = changeLetterToNumber(self.position[0]) - 1
-		row = int(self.position[1] + self.position[2]) - 1
-		is_vertical = findMoveDirection()
+		self.col = changeLetterToNumber(self.position[0]) - 1
+		self.row = int(self.position[1] + self.position[2]) - 1
+
 		for letter in self.wordPlayed:
-			list_position = (row * 405) + col + changeLetterToNumber(letter)
+			TestMoveOnBoard.move_dictionary[(self.row, self.col)]= str(letter)
+
+	def addMoveToList(self):
+		is_vertical = TestMoveOnBoard.isMoveVertical()
+		for letter in self.wordPlayed:
+			list_position = (self.row * 405) + self.col + changeLetterToNumber(letter)
 			self.board[list_position] = 1
-			if is_vertical == True:
-				col += 1
-			else:
-				row += 1
+		if is_vertical == true:
+			self.col += 1
+		else:
+			self.row += 1
 
 	def parseWordBank(self):
 		slot = 0
@@ -118,21 +138,17 @@ class Move:
 			self.board[list_position] = 1
 			slot += 27
 
-	def findMoveDirection(self):
-		start = self.position
-		for i in range()
-		return is_vertical
+	#def findMoveDirection(self):
+	#	TestMoveOnBoard
+	#	return is_vertical
 
 def loadAllDataSets(dir_num):
 	games = os.listdir("GameData/" + str(dir_num) + "/")
 	return games
 
-
-
 if __name__=="__main__":
-	sg = ScrabbleGame(BOARD_SIZE)
 
-    ##my_data = loadSingleDataset()
+    ##my_data = loadSingleDatasetp()
     ##currGame = Game(parseData(my_data))
 	global total
 	total = 0
@@ -141,4 +157,4 @@ if __name__=="__main__":
 		emptyArr = []
 		model = LearningModel(emptyArr)
 		model.initialize(games, i)
-	print total
+	#print total
