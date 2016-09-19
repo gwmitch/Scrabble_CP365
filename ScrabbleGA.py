@@ -1,4 +1,5 @@
 from __future__ import division
+import time #remove when done testing
 import random
 import random
 import string
@@ -24,17 +25,19 @@ class GA:
         scores = []
         mybots = []
         for i in range(pop_size): scores.append(0) #initializes list
+        print scores
         for p1 in range(pop_size):
             for j in range(pop_size-1):
                 sGame = ScrabbleGame(BOARD_SIZE)
-                p2 = (i+j)%pop_size
+                p2 = (p1+j)%pop_size
                 bot1 = ScrabbleBotter(sGame.drawTiles(RACK_MAX_SIZE), sGame, self.bots[p1])
                 bot2 = ScrabbleBotter(sGame.drawTiles(RACK_MAX_SIZE), sGame, self.bots[p2])
                 sg = sGame.playGame(bot1, bot2)
-            if i in scores:
-                scores[i] += sg[0] - sg[1]
-            if p2 in scores:
+                scores[p1] += sg[0] - sg[1]
                 scores[p2] += sg[1] - sg[0]
+                print "score ", scores
+                time.sleep(5)
+
         print "scores ", scores
         for ind in scores:
             self.fitnesses[ind] = scores[ind] * 1/len(self.bots)
@@ -42,7 +45,6 @@ class GA:
 
     def generateRandomSolution(self):
         s = []
-        #for i in range(self.bots_size):
         for i in range(length):
             s.append(random.uniform(0,1))
         return s

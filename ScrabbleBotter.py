@@ -302,8 +302,8 @@ class ScrabbleBotter(ScrabblePlayer):
         rat_flaw = IDEAL_RATIO - ratio
         return self.VOWEL_RACK_WEIGHT * rat_flaw
 
-    def pointRackWeight(self, points): #number of points for average letter left in hand
-        return self.POINT_RACK_WEIGHT * points/(RACK_MAX_SIZE-length(move))
+    def pointRackWeight(self, points, move): #number of points for average letter left in hand
+        return self.POINT_RACK_WEIGHT * points/(RACK_MAX_SIZE-len(move))
 
     def rackWeight(self, move):
         finalWeight = 0
@@ -327,7 +327,8 @@ class ScrabbleBotter(ScrabblePlayer):
         #edited here to include division
         vcRatio = min(vowelCount, consCount)/max(vowelCount, consCount) # 1 is best
         finalWeight -= self.vowelRackWeight(vcRatio)
-        finalWeight += self.pointRackWeight(pointCount)
+        if len(move) != RACK_MAX_SIZE:
+            finalWeight += self.pointRackWeight(pointCount, move)
         return finalWeight
     #Returns a value for a move based on the point value AND all heuristics
     def getValue(self, move):

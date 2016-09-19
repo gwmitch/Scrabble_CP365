@@ -413,9 +413,10 @@ class ScrabbleGame:
         scores = {"player1":0, "player2":0}
 
         consecutive_passes = 0
+
         while True:
-            print self.board
-            print scores
+            #print self.board
+            #print scores
             if VISUALIZE:
                 self.dumpBoardImage()
             if p1turn:
@@ -427,7 +428,7 @@ class ScrabbleGame:
             if len(m) > 0:
                 consecutive_passes = 0
                 if self.isLegalMove(m) and curr_player.hasTiles(m):
-                    print m
+                    #print m
                     points = self.finalMove(m)
                     curr_player.updateRack(m)
                     print "SCORE %d POINTS" % points
@@ -454,9 +455,9 @@ class ScrabbleGame:
                     for tile in player1.rack:
                         total += TILE_POINTS[tile]
                     scores['player2'] += total
-                    scores['player1'] -= total                    
+                    scores['player1'] -= total
                 print "GAME OVER"
                 print scores
-                return
+                return scores.values()
 
             p1turn = not p1turn
