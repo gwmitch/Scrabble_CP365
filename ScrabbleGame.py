@@ -217,7 +217,7 @@ class ScrabbleGame:
                 wordApi = WordApi.WordApi(client)
                 example = wordApi.getDefinitions(word)
                 if not example:
-                    print word + ": a rare breed of zebra"
+                    print word + ": to produce a sound resembling the cry of a sickly opposum of the genus Chacodelphys"
                 else:
                     print word + ":", example[0].text
             # os.system('''espeak -s 130 -v mb-en1 "checking %s"''' % word)
