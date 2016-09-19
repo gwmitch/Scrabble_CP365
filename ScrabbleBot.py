@@ -50,6 +50,187 @@ class ScrabbleBot(ScrabblePlayer):
         print self.rackWeight(move)
         return move
 
+    def findAppendMoves(self):
+        b = self.game.board.board
+        appendMoves = []
+        for x in range(BOARD_SIZE):
+            for y in range(BOARD_SIZE):
+                if b[y][x] == ' ':
+                    # find directions in which the player might play
+                    adjacent_to_letter = False
+                    left_allowed = True
+                    right_allowed = True
+                    top_allowed = True
+                    bottom_allowed = True
+
+                    if y == 0:
+                        top_allowed = False
+                    elif b[y - 1][x] != ' ':
+                        top_allowed = False
+                        bottom_allowed = False
+                        adjacent_to_letter = True
+                    if y == BOARD_SIZE - 1:
+                        bottom_allowed = False
+                    elif b[y + 1][x] != ' ':
+                        top_allowed = False
+                        bottom_allowed = False
+                        adjacent_to_letter = True
+
+                    if x == 0:
+                        left_allowed = False
+                    elif b[y][x - 1] != ' ':
+                        left_allowed = False
+                        right_allowed = False
+                        adjacent_to_letter = True
+                    if x == BOARD_SIZE - 1:
+                        right_allowed = False
+                    elif b[y][x + 1] != ' ':
+                        left_allowed = False
+                        right_allowed = False
+                        adjacent_to_letter = True
+
+                    if not adjacent_to_letter:
+                        continue
+
+                    if y > 0 and x > 0:
+                        if b[y - 1][x - 1] != ' ':
+                            left_allowed = False
+                            top_allowed = False
+                    if x < BOARD_SIZE - 1 and y > 0:
+                        if b[y - 1][x + 1] != ' ':
+                            right_allowed = False
+                            top_allowed = False
+                    if x > 0 and y < BOARD_SIZE - 1:
+                        if b[y + 1][x - 1] != ' ':
+                            left_allowed = False
+                            bottom_allowed = False
+                    if x < BOARD_SIZE - 1 and y < BOARD_SIZE - 1:
+                        if b[y + 1][x + 1] != ' ':
+                            right_allowed = False
+                            bottom_allowed = False
+
+                    if left_allowed or right_allowed:
+                        # check which letters can be plugged into this spot
+                        prev_string = ""
+                        after_string = ""
+                        yIndex = y - 1
+                        while yIndex >= 0:
+                            if b[yIndex][x] == ' ':
+                                break
+                            prev_string = b[yIndex][x] + prev_string
+                            yIndex -= 1
+                        yIndex = y + 1
+                        while yIndex < BOARD_SIZE:
+                            if b[yIndex][x] == ' ':
+                                break
+                            after_string += b[yIndex][x]
+                            yIndex += 1
+
+                        correct_letters = []
+                        for letter in set(self.rack):
+                            if twl.check(prev_string + letter + after_string):
+                                correct_letters.append(letter)
+
+                        # just a tiny optimization
+                        if len(correct_letters) == 0:
+                            continue
+
+                        # find amount of space for the new word
+                        row_preceding = ""
+                        if left_allowed:
+                            xIndex = x - 1
+                            while xIndex >= 0:
+                                if b[y][xIndex] == ' ':
+                                    row_preceding += " "
+                                    xIndex -= 1
+                                else:
+                                    # strip last empty space since it is adjacent to a letter
+                                    row_preceding = row_preceding[:len(row_preceding) - 1]
+                                    break
+
+                        row_succeeding = ""
+                        if right_allowed:
+                            xIndex = x + 1
+                            while xIndex < BOARD_SIZE:
+                                if b[y][xIndex] == ' ':
+                                    row_succeeding += " "
+                                    xIndex += 1
+                                else:
+                                    # strip last empty space since it is adjacent to a letter
+                                    row_succeeding = row_succeeding[:len(row_succeeding) - 1]
+                                    break
+
+                        # these variables will help to find the position of the word in the board
+                        wordY = y
+                        wordX = x - len(row_preceding)
+                        for letter in correct_letters:
+                            hand = self.rack[:]
+                            hand.remove(letter)
+                            moves = self.anagram(row_preceding + letter + row_succeeding, hand)
+                            for move in moves:
+                                appendMoves.append((wordX + move[0], wordY, False, move[1]))
+
+                    elif top_allowed or bottom_allowed:
+                        # check which letters can be plugged into this spot
+                        prev_string = ""
+                        after_string = ""
+                        xIndex = x - 1
+                        while xIndex >= 0:
+                            if b[y][xIndex] == ' ':
+                                break
+                            prev_string = b[y][xIndex] + prev_string
+                            xIndex -= 1
+                        xIndex = x + 1
+                        while xIndex < BOARD_SIZE:
+                            if b[y][xIndex] == ' ':
+                                break
+                            after_string += b[y][xIndex]
+                            xIndex += 1
+
+                        correct_letters = []
+                        for letter in set(self.rack):
+                            if twl.check(prev_string + letter + after_string):
+                                correct_letters.append(letter)
+
+                        # just a tiny optimization
+                        if len(correct_letters) == 0:
+                            continue
+
+                        # find amount of space for the new word
+                        row_preceding = ""
+                        if left_allowed:
+                            yIndex = y - 1
+                            while yIndex >= 0:
+                                if b[x][yIndex] == ' ':
+                                    row_preceding += " "
+                                    yIndex -= 1
+                                else:
+                                    # strip last empty space since it is adjacent to a letter
+                                    row_preceding = row_preceding[:len(row_preceding) - 1]
+                                    break
+
+                        row_succeeding = ""
+                        if right_allowed:
+                            yIndex = y + 1
+                            while yIndex < BOARD_SIZE:
+                                if b[x][yIndex] == ' ':
+                                    row_succeeding += " "
+                                    yIndex += 1
+                                else:
+                                    # strip last empty space since it is adjacent to a letter
+                                    row_succeeding = row_succeeding[:len(row_succeeding) - 1]
+                                    break
+
+                        # these variables will help to find the position of the word in the board
+                        wordY = y - len(row_preceding)
+                        wordX = x
+                        for letter in correct_letters:
+                            hand = self.rack[:]
+                            hand.remove(letter)
+                            moves = self.anagram(row_preceding + letter + row_succeeding, hand)
+                            for move in moves:
+                                appendMoves.append((wordX, wordY + move[0], True, move[1]))
+        return appendMoves
 
     def buildList(self):
         moveList = []
@@ -57,7 +238,7 @@ class ScrabbleBot(ScrabblePlayer):
         for i in range(0, BOARD_SIZE):
             currentMove  = {}
             currentBW = BoardWord(''.join(self.game.board.board[:,i].tolist()), True, i, 0)
-            wordList = self.anagram(currentBW, self.rack)
+            wordList = self.anagram(currentBW.letter, self.rack)
             for item in wordList:
                 currentMove = {}
                 offset,word = item
@@ -70,7 +251,7 @@ class ScrabbleBot(ScrabblePlayer):
         for k in range(0, BOARD_SIZE):
             currentMove = {}
             currentBW = BoardWord(''.join(self.game.board.board[k,:].tolist()), False, i, 0)
-            wordList = self.anagram(currentBW, self.rack)
+            wordList = self.anagram(currentBW.letter, self.rack)
             for item in wordList:
                 currentMove = {}
                 offset,word = item
@@ -78,6 +259,19 @@ class ScrabbleBot(ScrabblePlayer):
                         if word[j - offset] not in currentBW.letter[j]:
                             currentMove[k, j] = word[j - offset]
                 moveList.append(currentMove)
+
+        appendMoves = self.findAppendMoves()
+        for xPos, yPos, vertical, word in appendMoves:
+            currentMove = {}
+            if not vertical:
+                for i in range(len(word)):
+                    if word[i] not in self.game.board.board[yPos][xPos + i]:
+                        currentMove[yPos, xPos + i] = word[i]
+            else:
+                for i in range(len(word)):
+                    if word[i] not in self.game.board.board[yPos + i][xPos]:
+                        currentMove[yPos + i, xPos] = word[i]
+            moveList.append(currentMove)
 
         return moveList
 
@@ -128,7 +322,7 @@ class ScrabbleBot(ScrabblePlayer):
         return -1
 
     def anagram(self, boardword, hand):
-        letters = boardword.letter
+        letters = boardword
         cleanstring = letters.strip()
         combo = cleanstring.join(hand)
         combinations = list(twl.anagram(combo))
