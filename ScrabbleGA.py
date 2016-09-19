@@ -135,7 +135,7 @@ class GA:
         fl.close()
         return
 
-    def evolve(self, pop_size, number_epochs, mutation = .1, min_mutation = .001, shrink = .95):
+    def evolve(self, pop_size, number_epochs, mutation = .3, min_mutation = .001, shrink = .95):
 
         self.generateInitPopulation(pop_size)
         self.logBest(-1)
@@ -153,4 +153,4 @@ class GA:
 
 if __name__=="__main__":
     ga = GA()
-    ga.evolve(2, 10000)
+    ga.evolve(6, 10000)
