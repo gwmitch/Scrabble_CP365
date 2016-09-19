@@ -223,7 +223,8 @@ class ScrabbleGame:
             # os.system('''espeak -s 130 -v mb-en1 "checking %s"''' % word)
             return twl.check(word)
 
-    def boardWouldBeLegal(self, move, showDef):
+
+    def boardWouldBeLegal(self, move, showDef = False):
         # Fake move
         self.performMove(move)
         # check the verticals
@@ -434,7 +435,7 @@ class ScrabbleGame:
 
         while True:
             #print self.board
-            #print scores
+            print scores
             if VISUALIZE:
                 self.dumpBoardImage()
             if p1turn:

@@ -36,8 +36,6 @@ class ScrabbleBotter(ScrabblePlayer):
         moves = []
         moves = self.buildList()
         moves = self.checkLegalMoves(moves)
-        #print move
-        #print self.rack
 
         #if there is no move available, just do nothing
         if self.game.board.isEmpty():
@@ -362,7 +360,7 @@ class ScrabbleBotter(ScrabblePlayer):
         for move in moves:
             self.game.performMove(move)
             if self.game.scoreMove(move) > high:
-                print high
+                #print high
                 high = self.game.scoreMove(move)
                 finalMove = move
             self.game.undoMove(move)
@@ -550,6 +548,6 @@ class ScrabbleBotter(ScrabblePlayer):
                 high = value
                 finalMove = move
 
-        print "Highest possible pv: %s" % highPointVal
-        print "Value: %s" % high
+        #print "Highest possible pv: %s" % highPointVal
+        #print "Value: %s" % high
         return finalMove
