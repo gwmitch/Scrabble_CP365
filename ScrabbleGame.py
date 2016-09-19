@@ -384,7 +384,7 @@ class ScrabbleGame:
             return False
 
         # every word formed is a word from the word list
-        if not self.boardWouldBeLegal(move, True):
+        if not self.boardWouldBeLegal(move, SHOW_DEFINITIONS):
             print "ILLEGAL: NOT ALL FORMED WORDS ARE IN WORD LIST"
             return False
 
