@@ -25,19 +25,28 @@ class GA:
         mybots = []
         for i in range(pop_size): scores.append(0) #initializes list
         for p1 in range(pop_size):
-            for j in range(pop_size-1):
+            for j in range(1, pop_size):
                 sGame = ScrabbleGame(BOARD_SIZE)
+                # print p1
                 p2 = (p1+j)%pop_size
+                # print p2
+                # print self.bots
                 bot1 = ScrabbleBotter(sGame.drawTiles(RACK_MAX_SIZE), sGame, self.bots[p1])
                 bot2 = ScrabbleBotter(sGame.drawTiles(RACK_MAX_SIZE), sGame, self.bots[p2])
                 sg = sGame.playGame(bot1, bot2)
-                scores[p1] += sg[0] - sg[1]
+                # print sg[0], sg[1]
+                # print sg[0] - sg[1]
+                # print scores[p1] + (sg[0] - sg[1])
+                scores[p1] = scores[p1] + (sg[0] - sg[1])
                 scores[p2] += sg[1] - sg[0]
-                print "score ", scores
+                # print "score ", scores
 
-        print "scores ", scores
-        for ind in scores:
-            self.fitnesses[ind] = scores[ind] * 1/len(self.bots)
+        # print "scores ", scores
+        for ind in range(len(scores)):
+            print ind
+            print self.fitnesses
+            print scores
+            self.fitnesses[ind] = scores[ind] * 1/pop_size
             print ind, scores[ind], self.fitnesses[ind]
 
     def generateRandomSolution(self):
@@ -48,13 +57,17 @@ class GA:
 
     def generateInitPopulation(self, pop_size):
         for i in range(pop_size):
+            self.fitnesses.append(0)
             self.bots.append(self.generateRandomSolution())
         self.generatePopulationFitness()
 
 
     def pickFitParent(self):
-        self.fitnesses += (min(self.fitnesses)) + 1 #pushing them all above 0
+        # print self.fitnesses
+        for i in range(len(self.fitnesses)):
+            self.fitnesses[i] += (abs(min(self.fitnesses)) + 1) #pushing them all above 0
         total_fitnesses = sum(self.fitnesses)
+        # print self.fitnesses
         r = random.randrange(total_fitnesses)
         ind = -1
         while r > 0:
@@ -65,47 +78,63 @@ class GA:
     def pickBestN(self, n):
         bestGenomes = []
         for i in range(n):
+            # print "?"
+            print self.fitnesses
             max_value = max(self.fitnesses)
             max_index = self.fitnesses.index(max_value)
+            # print max_index, "max index"
+            print self.bots[max_index]
             bestGenomes.append(self.bots.pop(max_index)) #remove best from population
-            self.bots_fitnesses.pop(max_index)   #remove best from fitnesses
+            self.bots.append(0)
+            self.fitnesses.pop(max_index)   #remove best from fitnesses
+            self.fitnesses.append(0)
         return bestGenomes
 
     def crossover(self, p1, p2):
         baby = []
         for i in range(len(p1)):
-            baby.append(random.choice(p1[i],p2[i]))
+            baby.append(random.choice((p1[i],p2[i])))
+        # print baby, "baby"
         return baby
 
     def mutate(self, child, mutation_rate):
-        new_child = []
         for weight in child:
             if random.random() < mutation_rate:
                 weight = np.random.normal(weight, weight*.15)
-        return new_child
+        return child
 
     def getBestSolution(self):
         max_ind = self.bots_fitnesses.index(max(self.bots_fitnesses))
         return self.bots[max_ind]
 
-    def generateNewPopulation(self, mutation, survival=5):
+    def generateNewPopulation(self, mutation, survival=1):
         new_pop = []
         i = 0
         while i < len(self.bots)-survival:
+            # print "?"
             p1 = self.pickFitParent()
             p2 = self.pickFitParent()
             child = self.crossover(p1, p2)
+            # print "??"
+            # print child
             child = self.mutate(child, mutation)
+            # print child
             new_pop.append(child)
-        new_pop.append(self.pickBestN(survival))
+            i += 1
+        # print new_pop, "!"
+        bestN = self.pickBestN(survival)
+        # print bestN, "?!"
+        for item in bestN:
+            new_pop.append(item)
+        # print new_pop, "!!"
         self.bots = new_pop
 
     def evolve(self, number_epochs, mutation = .01, min_mutation = .001, shrink = .95):
-        self.generateInitPopulation(10)
+        self.generateInitPopulation(2)
         print("self.fitnesses: ", self.fitnesses)
         for i in range(number_epochs):
             self.generateNewPopulation(mutation)
-            self.generatePopulationFitnesses()
+            self.generatePopulationFitness()
             if mutation > min_mutation:
                 mutation *= shrink
         try:
