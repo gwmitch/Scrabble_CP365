@@ -37,6 +37,8 @@ class ScrabbleBotter(ScrabblePlayer):
         moves = self.checkLegalMoves(moves)
         #print move
         #print self.rack
+
+        #if there is no move available, just do nothing
         if self.game.board.isEmpty():
             wordList = twl.anagram(''.join(self.rack))
             for word in wordList:
@@ -46,12 +48,12 @@ class ScrabbleBotter(ScrabblePlayer):
                     defMove[(7, 7+i)] = word[i]
                 # print defMove
                 moves.append(defMove)
-
-        #if there is no move available, just do nothing
+            # defMove = {}
+            # x = 7,7
+            # defMove[x] = self.rack[0]
+            # return defMove
         if len(moves) < 1:
-            defMove = {}
-            return defMove
-
+            return moves
         return self.smartMove(moves)
 
     def buildList(self):
@@ -181,8 +183,8 @@ class ScrabbleBotter(ScrabblePlayer):
         return value
 
     #Returns the sum of the word multipliers that a move will get
-    #Multipliers are squared to emphasize triples over doubles
-    #IE a move that gets a triple and a double will return 13
+    #IE a move that hits a triple and a double will return 5
+    #Avg range 0-6
     def wordMultsGot(self, move):
         total = 0
         for key in move:
@@ -191,8 +193,8 @@ class ScrabbleBotter(ScrabblePlayer):
         return total
 
     #Returns the sum of the letter multipliers that a move will get
-    #Multipliers are squared to emphasize triples over doubles
-    #IE a move that gets a triple and a double will return 13
+    #IE a move that hits a triple and a double will return 5
+    #Avg range 0-6
     def letterMultsGot(self, move):
         total = 0
         for key in move:
@@ -334,12 +336,12 @@ class ScrabbleBotter(ScrabblePlayer):
         value += self.boardOpened(move)
         value += self.letterMultsGot(move) * self.LETTER_MULTS_GOT_W
         value += self.wordMultsGot(move) * self.WORD_MULTS_GOT_W
-        value += self.tileValue(move) * self.TILE_VALUE_W * (.3+(1.0*len(self.game.tile_bag) / len(self.game.tile_distribution)))
+        value += self.tileValue(move) * self.TILE_VALUE_W
         value += self.rackWeight(move) * self.RACK_QUALITY_W
         return value
 
     def smartMove(self, moves):
-        highPointVal = self.pointVal(moves[0])
+        highPointVal = 0
         high = self.getValue(moves[0])
         finalMove = moves[0]
         del moves[0]
