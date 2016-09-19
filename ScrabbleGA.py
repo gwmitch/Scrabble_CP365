@@ -1,5 +1,4 @@
 from __future__ import division
-import time #remove when done testing
 import random
 import random
 import string
@@ -25,7 +24,6 @@ class GA:
         scores = []
         mybots = []
         for i in range(pop_size): scores.append(0) #initializes list
-        print scores
         for p1 in range(pop_size):
             for j in range(pop_size-1):
                 sGame = ScrabbleGame(BOARD_SIZE)
@@ -36,7 +34,6 @@ class GA:
                 scores[p1] += sg[0] - sg[1]
                 scores[p2] += sg[1] - sg[0]
                 print "score ", scores
-                time.sleep(5)
 
         print "scores ", scores
         for ind in scores:

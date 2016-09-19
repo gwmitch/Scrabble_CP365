@@ -29,8 +29,6 @@ class ScrabbleBotter(ScrabblePlayer):
         self.V_WEIGHT = weights[7]
         self.VOWEL_RACK_WEIGHT = weights[8]
         self.POINT_RACK_WEIGHT = weights[9]
-    # Need to return a dictionary of (row, col):letter pairs
-    # Input board is a ScrabbleBoard object
     def chooseMove(self, board):
         moves = []
         moves = self.buildList()
@@ -48,10 +46,6 @@ class ScrabbleBotter(ScrabblePlayer):
                     defMove[(7, 7+i)] = word[i]
                 # print defMove
                 moves.append(defMove)
-            # defMove = {}
-            # x = 7,7
-            # defMove[x] = self.rack[0]
-            # return defMove
         if len(moves) < 1:
             return moves
         return self.smartMove(moves)
