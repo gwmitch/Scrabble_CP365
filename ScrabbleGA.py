@@ -26,14 +26,14 @@ class GA:
         for p1 in range(pop_size-1):
             for p2 in range(p1+1, pop_size):
                 sGame = ScrabbleGame(BOARD_SIZE)
-                
+
                 bot1 = ScrabbleBotter(sGame.drawTiles(RACK_MAX_SIZE), sGame, self.bots[p1])
                 bot2 = ScrabbleBotter(sGame.drawTiles(RACK_MAX_SIZE), sGame, self.bots[p2])
                 sg = sGame.playGame(bot1, bot2)
-                
+
                 scores[p1] = scores[p1] + (sg[0] - sg[1])
                 scores[p2] += sg[1] - sg[0]
-                
+
         for ind in range(len(scores)):
             self.fitnesses[ind] = scores[ind] * 1/pop_size
             print ind, scores[ind], self.fitnesses[ind]
@@ -45,9 +45,16 @@ class GA:
         return s
 
     def generateInitPopulation(self, pop_size):
-        for i in range(pop_size):
+        weights = [0.434552526983, 0.0695333713975, -0.244925612275, 0.151061392263, 0.504794041753, 0.468776347428, 0.644338989372, 0.54300419617, 1.18654167414, -0.246213177556, 0.769765798309]
+
+        for i in range(pop_size-1):
             self.fitnesses.append(0)
-            self.bots.append(self.generateRandomSolution())
+            mybot = []
+            for j in range(len(weights)):
+                mybot.append(np.random.normal(weights[j], .2))
+            self.bots.append(mybot)
+        self.fitnesses.append(0)
+        self.bots.append(weights)
         self.generatePopulationFitness()
 
 
@@ -85,7 +92,7 @@ class GA:
     def mutate(self, child, mutation_rate):
         for weight in child:
             if random.random() < mutation_rate:
-                weight = np.random.normal(weight, weight*.15)
+                weight = np.random.normal(weight, .1)
         return child
 
     def getBestSolution(self):
@@ -108,27 +115,36 @@ class GA:
         for item in bestN:
             new_pop.append(item)
         self.bots = new_pop
+    def logBest(self, num):
+        try:
+            fl=open("weights.txt", "a")
+        except:
+            print("could not open")
+        max_index = self.fitnesses.index(max(self.fitnesses))
+        bestBot = ''.join(str(e)+', ' for e in self.bots[max_index])
+        print self.bots[max_index]
+        #print bestBot
+        fl.write(str(num))
+        fl.write(" ")
+        fl.write(bestBot)
+        fl.write("\n")
+        fl.close()
 
-    def evolve(self, number_epochs, pop_size, mutation = .01, min_mutation = .001, shrink = .95):
+    def evolve(self, pop_size, number_epochs, mutation = .1, min_mutation = .001, shrink = .95):
+
         self.generateInitPopulation(pop_size)
+        self.logBest(-1)
         print("self.fitnesses: ", self.fitnesses)
         for i in range(number_epochs):
+            print "GENERATION ", i
             self.generateNewPopulation(mutation)
             self.generatePopulationFitness()
             if mutation > min_mutation:
                 mutation *= shrink
-        max_index = self.fitnesses.index(max(self.fitnesses))
-        bestBot = ''.join(str(e)+' ' for e in self.bots[max_index])
-
-        try:
-            fl=open("weights.txt", "w")
-            fl.write(bestBot)
-            fl.close()
-        except:
-            print("could not open")
-            sys.exit(0)
+            self.logBest(i)
+        sys.exit(0)
 
 
 if __name__=="__main__":
     ga = GA()
-    ga.evolve(10, 5)
+    ga.evolve(8, 100000000)
