@@ -1,6 +1,8 @@
+from __future__ import division
 import numpy as np;
 import twl;
 import random;
+from copy import deepcopy
 from ScrabblePlayer import *
 from scrabble_globals import *
 
@@ -14,15 +16,19 @@ class BoardWord():
 
 class ScrabbleBotter(ScrabblePlayer):
 
-    LETTER_MULTS_GOT_W = .1
-    WORD_MULTS_GOT_W = 2.0
-    LETTER_MULTS_OPENED_W = -.5
-    WORD_MULTS_OPENED_W = -2.0
-    SPACES_OPENED_W = .1
-    TILE_VALUE_W = 4.0 #Most important one, it seems
-    RACK_QUALITY_W = 0
-
-
+    def __init__(self, starting_tiles, game, weights):
+        self.rack = starting_tiles
+        self.game = game
+        self.LETTER_MULTS_GOT_W = weights[0]
+        self.WORD_MULTS_GOT_W = weights[1]
+        self.LETTER_MULTS_OPENED_W = weights[2]
+        self.WORD_MULTS_OPENED_W = weights[3]
+        self.SPACES_OPENED_W = weights[4]
+        self.TILE_VALUE_W = weights[5] #Most important one, it seems
+        self.RACK_QUALITY_W = weights[6]
+        self.V_WEIGHT = weights[7]
+        self.VOWEL_RACK_WEIGHT = weights[8]
+        self.POINT_RACK_WEIGHT = weights[9]
     # Need to return a dictionary of (row, col):letter pairs
     # Input board is a ScrabbleBoard object
     def chooseMove(self, board):
@@ -159,7 +165,7 @@ class ScrabbleBotter(ScrabblePlayer):
 
 
 
-    #Returns the straightforward point value of a word 
+    #Returns the straightforward point value of a word
     #Avg range 1-200
     def pointVal(self, move):
         self.game.performMove(move)
@@ -265,10 +271,55 @@ class ScrabbleBotter(ScrabblePlayer):
             relativeValue += actualVal - desiredVal
         return relativeValue
 
-    #TODO
-    def rackQuality(self, move):
-        return 1
+    def vowelProb(self, move):
+        board = list(self.game.board.board.flatten().tostring())
+        letters = list((self.game.tile_distribution))
+        vowelCount  = 0
+        # print letters
+        for letter in letters:
+            if letter in board:
+                board.remove(letter)
+                letters.remove(letter)
+        # print letters
+        for letter in letters:
+            if letter in list("aeiou"):
+                vowelCount += 1
+        vowelRatio = vowelCount/len(letters)
+        # print vowelCount, len(letters), vowelCount/len(letters), "ratio"
+        return vowelRatio * len(move)
 
+    def vowelRackWeight(self, ratio): #ratio of vowels to consonants in next hand
+        IDEAL_RATIO = 1
+        rat_flaw = IDEAL_RATIO - ratio
+        return self.VOWEL_RACK_WEIGHT * rat_flaw
+
+    def pointRackWeight(self, points): #number of points left in hand
+        return self.POINT_RACK_WEIGHT * points
+
+    def rackWeight(self, move):
+        finalWeight = 0
+        tempRack = deepcopy(self.rack)
+        vowelCount = 0
+        consCount = 0
+        pointCount = 0
+        for key, value in move:
+            tempRack.remove(move[(key,value)])
+        for letter in tempRack:
+            if letter in "aeiou":
+                vowelCount += 1
+            else:
+                consCount += 1
+            if letter == "v":
+                finalWeight -= self.V_WEIGHT
+            pointCount += TILE_POINTS[letter]
+        vowelCount += self.vowelProb(move)
+        consCount += len(move)-self.vowelProb(move)
+        # print self.vowelProb(move), "vowel"
+        #edited here to include division
+        vcRatio = min(vowelCount, consCount)/max(vowelCount, consCount) # 1 is best
+        finalWeight -= self.vowelRackWeight(vcRatio)
+        finalWeight += self.pointRackWeight(pointCount)
+        return finalWeight
     #Returns a value for a move based on the point value AND all heuristics
     def getValue(self, move):
         value = 0
@@ -277,7 +328,7 @@ class ScrabbleBotter(ScrabblePlayer):
         value += self.letterMultsGot(move) * self.LETTER_MULTS_GOT_W
         value += self.wordMultsGot(move) * self.WORD_MULTS_GOT_W
         value += self.tileValue(move) * self.TILE_VALUE_W
-        value += self.rackQuality(move) * self.RACK_QUALITY_W
+        value += self.rackWeight(move) * self.RACK_QUALITY_W
         return value
 
     def smartMove(self, moves):
@@ -287,7 +338,7 @@ class ScrabbleBotter(ScrabblePlayer):
         del moves[0]
         for move in moves:
             value = self.getValue(move)
-            pv = self.pointVal(move) 
+            pv = self.pointVal(move)
             if pv > highPointVal: highPointVal = pv
             if value > high:
                 high = value
