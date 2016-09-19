@@ -278,7 +278,7 @@ class ScrabbleBot(ScrabblePlayer):
     def checkLegalMoves(self, moves):
         finalMoves = []
         for move in moves:
-            if(self.game.boardWouldBeLegal(move)):
+            if(self.game.boardWouldBeLegal(move, False)):
                 finalMoves.append(move)
                 #print move
         return finalMoves
@@ -354,13 +354,13 @@ class ScrabbleBot(ScrabblePlayer):
     def greedyMove(self, moves):
         high = 0
         for move in moves:
-            print "rw ", self.rackWeight(move)
-            print "tv ", self.tileValue(move)
-            print "mW ", self.wordMultsGot(move)
-            print "mL ", self.letterMultsGot(move)
+            # print "rw ", self.rackWeight(move)
+            # print "tv ", self.tileValue(move)
+            # print "mW ", self.wordMultsGot(move)
+            # print "mL ", self.letterMultsGot(move)
             self.game.performMove(move)
             if self.game.scoreMove(move) > high:
-                print high
+                # print high
                 high = self.game.scoreMove(move)
                 finalMove = move
             self.game.undoMove(move)
@@ -430,13 +430,13 @@ class ScrabbleBot(ScrabblePlayer):
                 letterVals[letter] = TILE_POINTS.get(letter)
                 multiWord = self.onBW(tile)
                 multiLetter = self.onBL(tile)
-                print "mL ", multiLetter
+                # print "mL ", multiLetter
                 letterVals[letter] = letterVals.get(letter) * multiLetter
-
-                print letterVals
-                print letter
+                #
+                # print letterVals
+                # print letter
                 total += (letterVals.get(letter) - (TILE_POINTS.get(letter) * 2))
-                print total
+                # print total
         return total * multiWord
 
     def onBL(self, move):

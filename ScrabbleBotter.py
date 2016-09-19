@@ -285,7 +285,7 @@ class ScrabbleBotter(ScrabblePlayer):
     def checkLegalMoves(self, moves):
         finalMoves = []
         for move in moves:
-            if(self.game.boardWouldBeLegal(move)):
+            if(self.game.boardWouldBeLegal(move, False)):
                 finalMoves.append(move)
                 #print move
         return finalMoves
