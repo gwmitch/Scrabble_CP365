@@ -217,13 +217,13 @@ class ScrabbleGame:
                 wordApi = WordApi.WordApi(client)
                 example = wordApi.getDefinitions(word)
                 if not example:
-                    print word + " is a rare breed of zebu"
+                    print word + ": a is a rare breed of zebra"
                 else:
                     print word + ":", example[0].text
             # os.system('''espeak -s 130 -v mb-en1 "checking %s"''' % word)
             return twl.check(word)
 
-    def boardWouldBeLegal(self, move, showDef=False):
+    def boardWouldBeLegal(self, move, showDef):
         # Fake move
         self.performMove(move)
         # check the verticals
