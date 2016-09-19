@@ -8,7 +8,7 @@ from scrabble_globals import *
 
 
 # OUR BOT GOES HERE
-
+VISUALIZE = False
 # self.rack is an instance variable for the bot's current rack of tiles
 V_WEIGHT = 3 # lose how many points for each v left in hand
 VOWEL_RACK_WEIGHT = 10 #how much is an uneven vowel/consonant ratio on your next turn penalized
