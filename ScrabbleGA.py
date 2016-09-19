@@ -16,7 +16,6 @@ class GA:
     def __init__(self):
         self.bots = [] #list of genes? (doubles)
         #self.weights = []
-        self.sGame = ScrabbleGame(BOARD_SIZE)
         self.fitnesses = []
 
     def generatePopulationFitness(self):
@@ -25,13 +24,13 @@ class GA:
         scores = []
         mybots = []
         for i in range(pop_size): scores.append(0) #initializes list
-        for i in range(pop_size): #generates bots
-            bot = ScrabbleBotter(self.sGame.drawTiles(RACK_MAX_SIZE), self.sGame, self.bots[i])
-            mybots.append(bot)
         for p1 in range(pop_size):
             for j in range(pop_size-1):
+                sGame = ScrabbleGame(BOARD_SIZE)
                 p2 = (i+j)%pop_size
-                sg = self.sGame.playGame(mybots[p1], mybots[p2])
+                bot1 = ScrabbleBotter(sGame.drawTiles(RACK_MAX_SIZE), sGame, self.bots[p1])
+                bot2 = ScrabbleBotter(sGame.drawTiles(RACK_MAX_SIZE), sGame, self.bots[p2])
+                sg = sGame.playGame(bot1, bot2)
             if i in scores:
                 scores[i] += sg[0] - sg[1]
             if p2 in scores:
