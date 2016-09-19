@@ -9,6 +9,7 @@ import cv2
 import subprocess
 import twl
 import urllib2
+from wordnik import *
 from ScrabbleBoard import *
 from ScrabbleVisualizer import *
 from scrabble_globals import *
@@ -203,19 +204,25 @@ class ScrabbleGame:
             curr_col += 1
         return word
 
-    def isLegalWord(self, word):
+    def isLegalWord(self, word, showDef):
         #print "Checking word:", word
 
         if len(word) < 2:
             return True
         else:
+            if showDef and twl.check(word):
+                apiUrl = 'http://api.wordnik.com/v4'
+                apiKey = 'a36e84fa31f406e67c00304812c00bee78b560eacdb269be9'
+                client = swagger.ApiClient(apiKey, apiUrl)
+                wordApi = WordApi.WordApi(client)
+                example = wordApi.getDefinitions(word)
+                print word + ":", example[0].text
             # os.system('''espeak -s 130 -v mb-en1 "checking %s"''' % word)
             return twl.check(word)
 
-    def boardWouldBeLegal(self, move):
+    def boardWouldBeLegal(self, move, showDef):
         # Fake move
         self.performMove(move)
-
         # check the verticals
         for col in range(self.board.board_size):
             row = 0
@@ -224,7 +231,11 @@ class ScrabbleGame:
                     row += 1
                 else:
                     word = self.getVerticalWord(row, col)
-                    if not self.isLegalWord(word):
+                    newBool = True
+                    for item in move.values():
+                        if item not in word:
+                            newBool = False
+                    if not self.isLegalWord(word, (showDef and newBool)):
                         self.undoMove(move)
                         return False
                     else:
@@ -238,7 +249,11 @@ class ScrabbleGame:
                     col += 1
                 else:
                     word = self.getHorizontalWord(row, col)
-                    if not self.isLegalWord(word):
+                    newBool = True
+                    for item in move.values():
+                        if item not in word:
+                            newBool = False
+                    if not self.isLegalWord(word, (showDef and newBool)):
                         self.undoMove(move)
                         return False
                     else:
@@ -366,7 +381,7 @@ class ScrabbleGame:
             return False
 
         # every word formed is a word from the word list
-        if not self.boardWouldBeLegal(move):
+        if not self.boardWouldBeLegal(move, True):
             print "ILLEGAL: NOT ALL FORMED WORDS ARE IN WORD LIST"
             return False
 
