@@ -6,7 +6,7 @@ TILE_SIZE = 38
 BORDER_SIZE = 2
 
 # Show the graphics or not?
-VISUALIZE = True
+VISUALIZE = False
 
 # Which word list to use
 WORDLIST_FILENAME = "wordlists/short_words.txt"
