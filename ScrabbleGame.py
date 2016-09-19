@@ -216,10 +216,10 @@ class ScrabbleGame:
                 client = swagger.ApiClient(apiKey, apiUrl)
                 wordApi = WordApi.WordApi(client)
                 example = wordApi.getDefinitions(word)
-                if len(example) > 0:
-                    print word + ":", example[0].text
-                else:
+                if not example:
                     print word + "is a really obscure word!"
+                else:
+                    print word + ":", example[0].text
             # os.system('''espeak -s 130 -v mb-en1 "checking %s"''' % word)
             return twl.check(word)
 
