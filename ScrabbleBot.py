@@ -216,8 +216,12 @@ class ScrabbleBot(ScrabblePlayer):
         vowelCount += self.vowelProb(move)
         consCount += len(move)-self.vowelProb(move)
         # print self.vowelProb(move), "vowel"
+<<<<<<< HEAD
+        vcRatio = min(vowelCount, consCount) / max(vowelCount, consCount) # 1 is best
+=======
         #edited here to include division
         vcRatio = min(vowelCount, consCount)/max(vowelCount, consCount) # 1 is best
+>>>>>>> eb9dde5e410185f3f0d32396e00fda821bbfa7d2
         finalWeight -= self.vowelRackWeight(vcRatio)
         finalWeight += self.pointRackWeight(pointCount)
         return finalWeight
