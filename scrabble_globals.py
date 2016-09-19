@@ -11,7 +11,7 @@ VISUALIZE = True
 # Which word list to use
 WORDLIST_FILENAME = "wordlists/short_words.txt"
 
-SHOW_DEFINITIONS = False
+SHOW_DEFINITIONS = True
 
 # Images subdirectory
 IMAGES_DIR = "images/"
