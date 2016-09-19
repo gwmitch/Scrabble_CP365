@@ -21,14 +21,14 @@ class ScrabbleBotter(ScrabblePlayer):
         self.game = game
         self.LETTER_MULTS_GOT_W = weights[0]
         self.WORD_MULTS_GOT_W = weights[1]
-        self.LETTER_MULTS_OPENED_W = weights[2]
+        self.LETTER_MULTS_OPENED_W = weights[2] #this is useless
         self.WORD_MULTS_OPENED_W = weights[3]
         self.SPACES_OPENED_W = weights[4]
         self.TILE_VALUE_W = weights[5] #Most important one, it seems
         self.RACK_QUALITY_W = weights[6]
         self.V_WEIGHT = weights[7]
         self.VOWEL_RACK_WEIGHT = weights[8]
-        self.POINT_RACK_WEIGHT = weights[9]
+        self.POINT_RACK_WEIGHT = weights[9] # this is useless
         self.POINT_WEIGHT = weights[10]
     # Need to return a dictionary of (row, col):letter pairs
     # Input board is a ScrabbleBoard object
@@ -304,7 +304,7 @@ class ScrabbleBotter(ScrabblePlayer):
         return self.VOWEL_RACK_WEIGHT * rat_flaw
 
     def pointRackWeight(self, points, move_size): #number of points for average letter left in hand
-        if RACK_MAX_SIZE-move_size == 0: return self.POINT_RACK_WEIGHT # why?
+        if RACK_MAX_SIZE-move_size == 0: return 0
         else: return self.POINT_RACK_WEIGHT * points/(RACK_MAX_SIZE-move_size)
 
     def rackWeight(self, move):
