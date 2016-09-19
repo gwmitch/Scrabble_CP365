@@ -1,6 +1,7 @@
 from ScrabbleGame import *
 from ScrabblePlayer import *
 from ScrabbleBot import *
+from ScrabbleBotter import *
 
 if __name__ == "__main__":
     sg = ScrabbleGame(BOARD_SIZE)
