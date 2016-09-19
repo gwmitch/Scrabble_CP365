@@ -160,6 +160,10 @@ class ScrabbleBot(ScrabblePlayer):
     def greedyMove(self, moves):
         high = 0
         for move in moves:
+            print "rw ", self.rackWeight(move)
+            print "tv ", self.tileValue(move)
+            print "mW ", self.wordMultsGot(move)
+            print "mL ", self.letterMultsGot(move)
             self.game.performMove(move)
             if self.game.scoreMove(move) > high:
                 print high
@@ -212,7 +216,64 @@ class ScrabbleBot(ScrabblePlayer):
         vowelCount += self.vowelProb(move)
         consCount += len(move)-self.vowelProb(move)
         # print self.vowelProb(move), "vowel"
+<<<<<<< HEAD
         vcRatio = min(vowelCount, consCount) / max(vowelCount, consCount) # 1 is best
+=======
+        #edited here to include division
+        vcRatio = min(vowelCount, consCount)/max(vowelCount, consCount) # 1 is best
+>>>>>>> eb9dde5e410185f3f0d32396e00fda821bbfa7d2
         finalWeight -= self.vowelRackWeight(vcRatio)
         finalWeight += self.pointRackWeight(pointCount)
         return finalWeight
+
+    def tileValue(self, move):
+        multiWord = 1
+        multiLetter = 1
+        letterVals = {}
+        total = 0
+        VALUE_CUTOFF = 1
+
+        #build a list of tiles and their actual play values
+        # the 2 lets us know that the goal is for every tile to be worth more than 1
+        for tile, letter in move.items():
+
+            if TILE_POINTS.get(letter) > VALUE_CUTOFF:
+                letterVals[letter] = TILE_POINTS.get(letter)
+                multiWord = self.onBW(tile)
+                multiLetter = self.onBL(tile)
+                print "mL ", multiLetter
+                letterVals[letter] = letterVals.get(letter) * multiLetter
+
+                print letterVals
+                print letter
+                total += (letterVals.get(letter) - (TILE_POINTS.get(letter) * 2))
+                print total
+        return total * multiWord
+
+    def onBL(self, move):
+        if move in BOARD_LETTER_MULTIPLIERS.keys():
+            return BOARD_LETTER_MULTIPLIERS.get(move)
+        else:
+            return 1
+
+    def onBW(self, move):
+        if move in BOARD_WORD_MULTIPLIERS.keys():
+            return BOARD_WORD_MULTIPLIERS.get(move)
+        else:
+            return 1
+
+    def wordMultsGot(self, move):
+        multiCounter = 0
+
+        for pos, letter in move.items():
+            if pos in BOARD_WORD_MULTIPLIERS:
+                multiCounter += BOARD_WORD_MULTIPLIERS.get(pos)
+        return multiCounter
+
+    def letterMultsGot(self, move):
+        multiCounter = 0
+
+        for pos in move.keys():
+            if pos in BOARD_LETTER_MULTIPLIERS:
+                multiCounter += BOARD_LETTER_MULTIPLIERS.get(pos)
+        return multiCounter
