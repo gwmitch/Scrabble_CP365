@@ -12,7 +12,7 @@ y=my_data[:27,:]
 
 #def createDense:
 #set up model,numbers are arbitrary
-model = model = Sequential()
+model =  Sequential()
 model.add(Dense(37, input_dim=27, init='uniform', activation='relu'))
 model.add(Dense(27, init='uniform', activation='relu'))
 model.add(Dense(1, init='uniform', activation='sigmoid'))
